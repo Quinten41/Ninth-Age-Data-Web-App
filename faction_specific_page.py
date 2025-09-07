@@ -31,7 +31,7 @@ faction_names = ['Beast Herds', 'Dread Elves', 'Dwarven Holds',\
 def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games):
     '''Display the Faction Specific Page content.'''
 
-    faction_name = st.selectbox('Please Select a Faction',
+    faction_name = st.selectbox('Select a Faction',
                  ['None'] + faction_names)
     
     if faction_name == 'None':

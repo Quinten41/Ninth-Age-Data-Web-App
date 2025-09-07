@@ -307,13 +307,17 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
         )
         scatter = ax.scatter(
             x_vals, y_vals,
-            s=percent_vals*30,
+            s=percent_vals*25,
             c=percent_vals, cmap='Blues', alpha=0.8, zorder=2, edgecolor='k'
         )
 
+        # Change ylim to fit the data better
+        ax.set_ylim(bottom=max( min(y_vals)-1, 7.5), top=min(max(y_vals)+1, 12.5))
+
+        # Add text labels for each point showing the percentage value
         rgba = mcolors.to_hex(plt.get_cmap('Blues')(0.8))
         for x, y, pct in zip(x_vals, y_vals, percent_vals):
-            ax.text(x, y + 0.2, f"{pct:.1f}%", ha='center', va='bottom', fontsize=9, color=rgba)
+            ax.text(x, y + 0.175, f"{pct:.1f}%", ha='center', va='bottom', fontsize=8, color=rgba)
 
         ax.axhline(10, linestyle='--', color='gray', alpha=0.5)
         ax.set_xticks(range(int(summary['Magicalness'].max()) + 1))
