@@ -1,0 +1,680 @@
+{
+    "id_match": "6802668311476a1e5b61cf52",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "6802668311476a1e5b61cf52",
+    "scoreOne": 20,
+    "scoreTwo": 0,
+    "armyOne": "OnG",
+    "armyTwo": "KoE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Goblin Witch",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Skull Fetish",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Demagogue",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Attack Gnasher",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Monster Munch",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Demagogue",
+                "cost": 165,
+                "options": [
+                    {
+                        "name": "Beastie",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Mask of Mindless Violence",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Demagogue",
+                "cost": 60,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Darrmu and Goblin Gardens",
+                        "type": "Other"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 3,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 3,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 4,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 5,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 45,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Netter",
+                        "type": "Other"
+                    }
+                ],
+                "index": 6,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 45,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Netter",
+                        "type": "Other"
+                    }
+                ],
+                "index": 7,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Reavers",
+                "cost": 331,
+                "options": [
+                    {
+                        "name": "Goga Cauldron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lance and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Goblin Reavers",
+                "cost": 323,
+                "options": [
+                    {
+                        "name": "Goga Cauldron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lance and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 24,
+                "category": "Core"
+            },
+            {
+                "name": "Goblin Rabble",
+                "cost": 280,
+                "options": [
+                    {
+                        "name": "Goga Cauldron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Goblin Rabble",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Goblin Artillery",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Splatterer",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Goblin Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Git Launcher",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Goblin Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Git Launcher",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Gogtuk Neophytes",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Gogtuk Neophytes",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Gnasher Dashers",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Gnasher Dashers",
+                "cost": 150,
+                "options": [],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Wrecking Team",
+                "cost": 100,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Wrecking Team",
+                "cost": 100,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1525,
+            "Core": 1134,
+            "Special": 1340,
+            "Total": 3999
+        },
+        "magicalness": 10
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Damsel",
+                "cost": 550,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Destrier",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Sainted",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Paladin",
+                "cost": 365,
+                "options": [
+                    {
+                        "name": "Pegasus Charger",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Ghostly Guard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Hero's Heart",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Folk Hero",
+                "cost": 235,
+                "options": [
+                    {
+                        "name": "Destrier",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Attached",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Bannerman",
+                        "type": "Heroic Traits"
+                    },
+                    {
+                        "name": "Cleric",
+                        "type": "Heroic Traits"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Knights of the Realm",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Mounted Serjeants",
+                "cost": 260,
+                "options": [
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Mounted Serjeants",
+                "cost": 260,
+                "options": [
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Knights of the Quest",
+                "cost": 595,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 9,
+                "category": "Special"
+            },
+            {
+                "name": "Knights of the Quest",
+                "cost": 560,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Knight Banneret",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Knights Penitent",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Enlisted Outlaws",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Hooded Men",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Longbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Enlisted Outlaws",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Hooded Men",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Longbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1150,
+            "Core": 1015,
+            "Special": 1835,
+            "Total": 4000
+        },
+        "magicalness": 7
+    }
+}

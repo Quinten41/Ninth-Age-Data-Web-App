@@ -1,0 +1,457 @@
+{
+    "id_match": "68278d5aab08e85432990341",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "68278d5aab08e85432990341",
+    "scoreOne": 13,
+    "scoreTwo": 7,
+    "armyOne": "OK",
+    "armyTwo": "UD",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Mammoth Hunter",
+                "cost": 540,
+                "options": [
+                    {
+                        "name": "General, Disciplined and Wildheart",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Rock Aurochs",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hunting Spear",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Mammoth Hunter",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Tusker",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hunting Spear",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Shaman",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Godspeaker",
+                        "type": "Big Name"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Shaman",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Gut Roarer",
+                        "type": "Big Name"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Tribesmen",
+                "cost": 468,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Tribesmen",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 4,
+                "category": "Core"
+            },
+            {
+                "name": "Sabretooth Tigers",
+                "cost": 170,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Tusker Cavalry",
+                "cost": 475,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Tusker Cavalry",
+                "cost": 455,
+                "options": [
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Yetis",
+                "cost": 280,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Frost Mammoth",
+                "cost": 380,
+                "options": [
+                    {
+                        "name": "Hunting Spear",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Chained Beasts"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1600,
+            "Core": 1010,
+            "Special": 1210,
+            "Total": 3998
+        },
+        "magicalness": 9
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Death Cult Hierarch",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Cosmology",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Soul Conduit",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Nomarch",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Ghostly Guard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Deathless Noble",
+                        "type": "Occupation"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Sun's Embrace",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skeleton Warriors",
+                "cost": 457,
+                "options": [
+                    {
+                        "name": "Sigil of the Closed Gates",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 43,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Warriors",
+                "cost": 225,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Banner of the Entombed",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Chariots",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Aspis Arrows and Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Core"
+            },
+            {
+                "name": "Shabtis",
+                "cost": 447,
+                "options": [
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Sand Stalkers",
+                "cost": 305,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Sand Stalkers",
+                "cost": 305,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Casket of Phatep",
+                "cost": 230,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Shabti Archers",
+                "cost": 180,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Shabti Archers",
+                "cost": 180,
+                "options": [],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Colossus",
+                "cost": 415,
+                "options": [
+                    {
+                        "name": "Giant Aspis Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Mason's Menagerie"
+            },
+            {
+                "name": "Colossus",
+                "cost": 415,
+                "options": [
+                    {
+                        "name": "Giant Aspis Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Mason's Menagerie"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 510,
+            "Core": 1012,
+            "Special": 1647,
+            "Total": 3999
+        },
+        "magicalness": 4
+    }
+}

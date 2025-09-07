@@ -1,0 +1,485 @@
+{
+    "id_match": "67a227630d3b2b35ba779fbf",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "67a227630d3b2b35ba779fbf",
+    "scoreOne": 2,
+    "scoreTwo": 18,
+    "armyOne": "KoE",
+    "armyTwo": "DL",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Paladin",
+                "cost": 575,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Fey Steed",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Bastard Sword",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Percival's Panoply",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Fortress of Faith",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Black Knight's Tonic",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Sainted and Gallantry",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Damsel",
+                "cost": 400,
+                "options": [
+                    {
+                        "name": "Revered Unicorn",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Folk Hero",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Destrier",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Giant Slayer",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Warding of Unity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Attached",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Bannerman",
+                        "type": "Heroic Traits"
+                    },
+                    {
+                        "name": "Cleric",
+                        "type": "Heroic Traits"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Knights of the Realm",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Castellan's Crest",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Knight Banneret",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Mounted Serjeants",
+                "cost": 445,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Knights of the Court",
+                "cost": 600,
+                "options": [
+                    {
+                        "name": "Relic Shroud",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Castellan's Crest",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Knight Banneret",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 9,
+                "category": "Special"
+            },
+            {
+                "name": "Knights of the Quest",
+                "cost": 540,
+                "options": [
+                    {
+                        "name": "Castellan's Crest",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Distortion Emblem",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Knight Banneret",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 7,
+                "category": "Special"
+            },
+            {
+                "name": "Yeoman Outriders",
+                "cost": 150,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Yeoman Outriders",
+                "cost": 150,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Naiads",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Fey"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1295,
+            "Core": 1015,
+            "Special": 1440,
+            "Total": 4000
+        },
+        "magicalness": "5[object Object]"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Maw of Akaan",
+                "cost": 810,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Witchcraft",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Hammer Hand",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Digestive Vomit",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Unholy Appetite",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Kuulima's Deceiver",
+                "cost": 480,
+                "options": [
+                    {
+                        "name": "Protean Magic [4]",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Piercing Spike",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Guiding Piercing Spike",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 384,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 18,
+                "category": "Core"
+            },
+            {
+                "name": "Myrmidons",
+                "cost": 364,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 18,
+                "category": "Core"
+            },
+            {
+                "name": "Imps",
+                "cost": 255,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "All-Seeing Eye",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Firestarter - Spear of Infinity",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Hope Harvester",
+                "cost": 380,
+                "options": [
+                    {
+                        "name": "All-Seeing Eye",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Engine of Damnation",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Hope Harvester",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "All-Seeing Eye",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Fly",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Hidden Knives",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Fly",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Hidden Knives",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 1,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Hellhounds",
+                "cost": 160,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Veil Serpents",
+                "cost": 480,
+                "options": [
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Aves"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1290,
+            "Core": 1003,
+            "Special": 1220,
+            "Total": 3993
+        },
+        "magicalness": "5[object Object]"
+    }
+}

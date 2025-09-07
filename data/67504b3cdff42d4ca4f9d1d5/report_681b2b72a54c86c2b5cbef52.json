@@ -1,0 +1,459 @@
+{
+    "id_match": "681b2b72a54c86c2b5cbef52",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "681b2b72a54c86c2b5cbef52",
+    "scoreOne": 9,
+    "scoreTwo": 11,
+    "armyOne": "HE",
+    "armyTwo": "HE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Mage",
+                "cost": 520,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Order of the Fiery Heart",
+                        "type": "Honour"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Gleaming Robe",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Commander",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Elven Horse",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Supernatural Dexterity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Queen's Cavalier",
+                        "type": "Honour"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Nova Flare",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Commander",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Queen's Companion",
+                        "type": "Honour"
+                    },
+                    {
+                        "name": "Moonlight Arrows",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Longbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Commander",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Rod of Battle",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Royal Huntsman",
+                        "type": "Honour"
+                    },
+                    {
+                        "name": "Great Weapon and Elven Finesse",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Citizen Spears",
+                "cost": 468,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 34,
+                "category": "Core"
+            },
+            {
+                "name": "Citizen Archers",
+                "cost": 342,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 26,
+                "category": "Core"
+            },
+            {
+                "name": "Erlein Reavers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Lion Guard",
+                "cost": 520,
+                "options": [
+                    {
+                        "name": "Navigator's Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 23,
+                "category": "Special"
+            },
+            {
+                "name": "Knights of Rymâ",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 9,
+                "category": "Special"
+            },
+            {
+                "name": "Phoenix",
+                "cost": 400,
+                "options": [
+                    {
+                        "name": "Fire Phoenix",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Sky Sloop",
+                "cost": 230,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Sky Sloop",
+                "cost": 230,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1110,
+            "Core": 1000,
+            "Special": 1890,
+            "Total": 4000
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Mage",
+                "cost": 610,
+                "options": [
+                    {
+                        "name": "Griffon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Scroll of Power",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Commander",
+                "cost": 205,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Queen's Companion",
+                        "type": "Honour"
+                    },
+                    {
+                        "name": "Moonlight Arrows",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Longbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Citizen Spears",
+                "cost": 285,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Citizen Spears",
+                "cost": 285,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Citizen Archers",
+                "cost": 246,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 18,
+                "category": "Core"
+            },
+            {
+                "name": "Erlein Reavers",
+                "cost": 185,
+                "options": [
+                    {
+                        "name": "Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Phoenix",
+                "cost": 440,
+                "options": [
+                    {
+                        "name": "Fire Phoenix",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Warden's Bond",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Phoenix",
+                "cost": 440,
+                "options": [
+                    {
+                        "name": "Fire Phoenix",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Warden's Bond",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Queen's Guard",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 19,
+                "category": "Special"
+            },
+            {
+                "name": "Sky Sloop",
+                "cost": 230,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Sky Sloop",
+                "cost": 230,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Sword Masters",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Sword Masters",
+                "cost": 200,
+                "options": [],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 815,
+            "Core": 1001,
+            "Special": 2180,
+            "Total": 3996
+        },
+        "magicalness": 7
+    }
+}

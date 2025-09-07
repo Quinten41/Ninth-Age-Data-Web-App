@@ -1,0 +1,658 @@
+{
+    "id_match": "67f128e30f1af3249422091b",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67f128e30f1af3249422091b",
+    "scoreOne": 14,
+    "scoreTwo": 6,
+    "armyOne": "ID",
+    "armyTwo": "KoE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Prophet",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Prophet of Nezibkesh",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Sigil of Protection",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Tablet of Vezodinezh",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Overlord",
+                "cost": 525,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Bull of Shamut",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Vorpal Binding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Onyx Core",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Ring of Desiccation",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vizier",
+                "cost": 215,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Giant Slayer",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Infernal Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Infernal Warriors",
+                "cost": 509,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Banner of the Twice-Branded",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 21,
+                "category": "Core"
+            },
+            {
+                "name": "Infernal Warriors",
+                "cost": 509,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Banner of the Twice-Branded",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 21,
+                "category": "Core"
+            },
+            {
+                "name": "Disciples of Lugar",
+                "cost": 600,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Banner of Shamut",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 24,
+                "category": "Special"
+            },
+            {
+                "name": "Taurukh Anointed",
+                "cost": 500,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Gunnery Team",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Rocket Battery",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Gunnery Team",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Rocket Battery",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Infernal Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Naphtha Thrower",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1310,
+            "Core": 1018,
+            "Special": 1670,
+            "Total": 3998
+        },
+        "magicalness": 8
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Paladin",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Ghostly Guard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Sainted and Gallantry",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Paladin",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hero's Heart",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "King Slayer",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Potion of Swiftness",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Duke",
+                "cost": 325,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield Breaker",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Bastard Sword",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Wild Warding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Faith",
+                        "type": "Knightly Principle"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Duke",
+                "cost": 255,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Warding of Unity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Justice",
+                        "type": "Knightly Principle"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Duke",
+                "cost": 235,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Bastard Sword",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Sigil of Protection",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Crown of the Wizard King",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Folk Hero",
+                "cost": 120,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Attached",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Minstrel",
+                        "type": "Heroic Traits"
+                    },
+                    {
+                        "name": "Divination",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Folk Hero",
+                "cost": 115,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Giant Slayer",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Longbow with Shots 3",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Attached",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Minstrel",
+                        "type": "Heroic Traits"
+                    },
+                    {
+                        "name": "Divination",
+                        "type": "Path"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Lowborn Levies",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 35,
+                "category": "Core"
+            },
+            {
+                "name": "Lowborn Levies",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Halberd and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 35,
+                "category": "Core"
+            },
+            {
+                "name": "Lowborn Levies",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 35,
+                "category": "Core"
+            },
+            {
+                "name": "Lowborn Archers",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Crossbow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Prepared Position",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 19,
+                "category": "Core"
+            },
+            {
+                "name": "Men-at-Arms",
+                "cost": 295,
+                "options": [
+                    {
+                        "name": "Oriflamme",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Ordo Wardens",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Special"
+            },
+            {
+                "name": "Men-at-Arms",
+                "cost": 285,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Ordo Wardens",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 20,
+                "category": "Special"
+            },
+            {
+                "name": "Sacred Reliquary",
+                "cost": 180,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Sacred Reliquary",
+                "cost": 180,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Enlisted Outlaws",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Longbow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Prepared Position",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Hooded Men",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Enlisted Outlaws",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Longbow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Prepared Position",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Hooded Men",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1600,
+            "Core": 1120,
+            "Special": 1280,
+            "Total": 4000
+        },
+        "magicalness": 2
+    }
+}

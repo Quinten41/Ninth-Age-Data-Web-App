@@ -1,0 +1,225 @@
+{
+    "id_match": "67fb7bce3dae4be55537e65c",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "67fb7bce3dae4be55537e65c",
+    "scoreOne": 0,
+    "scoreTwo": 20,
+    "armyOne": "VC",
+    "armyTwo": "VS",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Vampire Count",
+                "cost": 690,
+                "options": [
+                    {
+                        "name": "General, Disciplined, and The Dead Arise",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Battleline Hero",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Lahmia",
+                        "type": "Ancestral Blood Power"
+                    },
+                    {
+                        "name": "Commandment",
+                        "type": "Blood Powers"
+                    },
+                    {
+                        "name": "Occultism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Destiny's Call",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "King Slayer",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Necromancer",
+                "cost": 655,
+                "options": [
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Cadaver Wagon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Lich",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Barrow King",
+                "cost": 175,
+                "options": [
+                    {
+                        "name": "Skeletal Steed",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Warding of Unity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hypnotic Pendant",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Ghouls",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 35,
+                "category": "Core"
+            },
+            {
+                "name": "Skeletons",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 35,
+                "category": "Core"
+            },
+            {
+                "name": "Zombies",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Ghasts",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Barrow Knights",
+                "cost": 505,
+                "options": [
+                    {
+                        "name": "Black Standard of Zagvozd",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 14,
+                "category": "Special"
+            },
+            {
+                "name": "Court of the Damned",
+                "cost": 300,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Great Bats",
+                "cost": 95,
+                "options": [],
+                "index": 0,
+                "models": 2,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1520,
+            "Core": 1000,
+            "Special": 1480,
+            "Total": 4000
+        },
+        "magicalness": 12
+    }
+}

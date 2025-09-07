@@ -1,0 +1,197 @@
+{
+    "id_match": "67be33d2a84ed46843dbc555",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "67be33d2a84ed46843dbc555",
+    "scoreOne": 3,
+    "scoreTwo": 17,
+    "armyOne": "KoE",
+    "armyTwo": "HE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Damsel",
+                "cost": 500,
+                "options": [
+                    {
+                        "name": "Revered Unicorn",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Divination",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Duke",
+                "cost": 410,
+                "options": [
+                    {
+                        "name": "Destrier",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Percival's Panoply",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "King Slayer",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Generosity",
+                        "type": "Knightly Principle"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Duke",
+                "cost": 355,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Recruiting Officer",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Destrier",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Uther's Mettle",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Sigil of Protection",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Honour",
+                        "type": "Knightly Principle"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Knights of the Realm",
+                "cost": 600,
+                "options": [
+                    {
+                        "name": "Solemn Oath",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Knight Banneret",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Knights of the Realm",
+                "cost": 560,
+                "options": [
+                    {
+                        "name": "Castellan's Crest",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Solemn Oath",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Knight Banneret",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Knights of the Quest",
+                "cost": 790,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Knight Banneret",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Fresh Meat",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 11,
+                "category": "Special"
+            },
+            {
+                "name": "Knights Penitent",
+                "cost": 775,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Fresh Meat",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1265,
+            "Core": 1160,
+            "Special": 1565,
+            "Total": 3990
+        },
+        "magicalness": 7
+    }
+}

@@ -1,0 +1,369 @@
+{
+    "id_match": "6725f26eff16d576376c65d9",
+    "firstTurn": -1,
+    "type": 1,
+    "id": "6725f26eff16d576376c65d9",
+    "scoreOne": 9,
+    "scoreTwo": 11,
+    "armyOne": "WDG",
+    "armyTwo": "SA",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Exalted Herald",
+                "cost": 700,
+                "options": [],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Exalted Herald",
+                "cost": 700,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 335,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Warriors",
+                "cost": 335,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Barbarian Horsemen",
+                "cost": 275,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Chosen",
+                "cost": 525,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Gluttony",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Hellmaw",
+                "cost": 310,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Chosen Chariot",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Envy",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Chosen Chariot",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Envy",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Chimera",
+                "cost": 240,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1400,
+            "Core": 1181.25,
+            "Special": 1655,
+            "Total": 4000
+        },
+        "magicalness": 0
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Tegu Veteran",
+                "cost": 795,
+                "options": [
+                    {
+                        "name": "Alpha Carnosaur",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Rex",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Enclave Wizard",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Obsidian Rock",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Veteran",
+                "cost": 415,
+                "options": [
+                    {
+                        "name": "Saurian Raptor",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Enclave Wizard",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Basalt Infusion",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Eldritch Inscriptions",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Skink Veteran",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Serpent's Nest Charm",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Pouakai Sky Tyrant",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Caiman Warriors",
+                "cost": 525,
+                "options": [
+                    {
+                        "name": "Obelisk of Collaboration",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Tooth and Claw",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Warriors",
+                "cost": 260,
+                "options": [
+                    {
+                        "name": "Magnetic Short Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Hunters",
+                "cost": 219,
+                "options": [
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 19,
+                "category": "Core"
+            },
+            {
+                "name": "Raptor Riders",
+                "cost": 448,
+                "options": [
+                    {
+                        "name": "Koru Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 9,
+                "category": "Special"
+            },
+            {
+                "name": "Rhamphodon Riders",
+                "cost": 385,
+                "options": [],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Carnosaur",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Magna Sauria"
+            },
+            {
+                "name": "Carnosaur",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Magna Sauria"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1480,
+            "Core": 1004,
+            "Special": 833,
+            "Total": 3997
+        },
+        "magicalness": "2[object Object][object Object]"
+    }
+}

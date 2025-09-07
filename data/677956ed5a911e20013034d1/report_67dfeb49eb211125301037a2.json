@@ -1,0 +1,575 @@
+{
+    "id_match": "67dfeb49eb211125301037a2",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "67dfeb49eb211125301037a2",
+    "scoreOne": 16,
+    "scoreTwo": 4,
+    "armyOne": "DH",
+    "armyTwo": "EoS",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "King",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Shield Bearers",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Rune of Steel",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Destruction",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Might",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Craftsmanship",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Rune",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Resolve",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Runic Smith",
+                "cost": 405,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Iron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Lightning",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Harnessing",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Channelling",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Rune",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Resolve",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Resilience",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Greybeards",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Vanguard",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of the Anvil",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Greybeards",
+                "cost": 505,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Swiftness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Deep Watch",
+                "cost": 426,
+                "options": [
+                    {
+                        "name": "Rune of Revocation",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Wisdom",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 22,
+                "category": "Special"
+            },
+            {
+                "name": "Deep Watch",
+                "cost": 385,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 1,
+                "models": 20,
+                "category": "Special"
+            },
+            {
+                "name": "Deep Watch",
+                "cost": 360,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 20,
+                "category": "Special"
+            },
+            {
+                "name": "Miners",
+                "cost": 224,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Special"
+            },
+            {
+                "name": "Forge Wardens",
+                "cost": 200,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Forge Wardens",
+                "cost": 200,
+                "options": [],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Anvil of Power",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Rune of Resolve",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Resilience",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 985,
+            "Core": 1015,
+            "Special": 1995,
+            "Total": 3995
+        },
+        "magicalness": 0
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Battlefield Wizard",
+                "cost": 410,
+                "options": [
+                    {
+                        "name": "Arcane Engine",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Essence of a Free Mind",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Battleline Hero",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Imperial Seal",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "General, Imperial Authority, and +1 Cou",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Warding of Unity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Hero's Heart",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer and Imperial Authority",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 100,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Artificer",
+                "cost": 95,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Long Rifle",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Artificer",
+                "cost": 95,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Long Rifle",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "State Infantry",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 50,
+                "category": "Core"
+            },
+            {
+                "name": "State Infantry",
+                "cost": 410,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 39,
+                "category": "Core"
+            },
+            {
+                "name": "State Marksmen",
+                "cost": 282,
+                "options": [
+                    {
+                        "name": "Marksman's Pennant",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Crossbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 18,
+                "category": "Core"
+            },
+            {
+                "name": "Imperial Guard",
+                "cost": 431,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 28,
+                "category": "Special"
+            },
+            {
+                "name": "Knights of the Sun Griffon",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Reiters",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Brace of Pistols and Fire on Impact",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Blackpowder Artillery",
+                "cost": 175,
+                "options": [
+                    {
+                        "name": "Volley Gun",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Blackpowder Artillery",
+                "cost": 175,
+                "options": [
+                    {
+                        "name": "Volley Gun",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Steam Tank",
+                "cost": 420,
+                "options": [],
+                "index": 0,
+                "category": "Sunna's Fury"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1200,
+            "Core": 1202,
+            "Special": 1171,
+            "Total": 3993
+        },
+        "magicalness": 6
+    }
+}

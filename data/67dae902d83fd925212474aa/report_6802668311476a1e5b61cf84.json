@@ -1,0 +1,530 @@
+{
+    "id_match": "6802668311476a1e5b61cf84",
+    "firstTurn": -1,
+    "type": 1,
+    "id": "6802668311476a1e5b61cf84",
+    "scoreOne": 6,
+    "scoreTwo": 14,
+    "armyOne": "BH",
+    "armyTwo": "ID",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Soothsayer",
+                "cost": 385,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Pillager Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rain Augur Brew",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Wildhorn Chieftain",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Seed of the Dark Forest",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Greater Totem Bearer",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Wild Warding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Beast Axe",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Raiding Chariots",
+                "cost": 320,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Core"
+            },
+            {
+                "name": "Mongrel Herd",
+                "cost": 174,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 22,
+                "category": "Core"
+            },
+            {
+                "name": "Mongrel Herd",
+                "cost": 174,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 22,
+                "category": "Core"
+            },
+            {
+                "name": "Wildhorn Herd",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Longhorn Herd",
+                "cost": 352,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 22,
+                "category": "Special"
+            },
+            {
+                "name": "Razortusk Chariot",
+                "cost": 230,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Razortusk Chariot",
+                "cost": 230,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Razortusk Chariot",
+                "cost": 230,
+                "options": [],
+                "index": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Razortusk Chariot",
+                "cost": 230,
+                "options": [],
+                "index": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Gargoyles",
+                "cost": 155,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Gargoyles",
+                "cost": 155,
+                "options": [],
+                "index": 1,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Beast Giant",
+                "cost": 295,
+                "options": [
+                    {
+                        "name": "Beer Barrel",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Terrors of the Wild"
+            },
+            {
+                "name": "Beast Giant",
+                "cost": 295,
+                "options": [
+                    {
+                        "name": "Beer Barrel",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Terrors of the Wild"
+            },
+            {
+                "name": "Beast Giant",
+                "cost": 295,
+                "options": [
+                    {
+                        "name": "Beer Barrel",
+                        "type": "Other"
+                    }
+                ],
+                "index": 2,
+                "category": "Terrors of the Wild"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 705,
+            "Core": 1035,
+            "Special": 1582,
+            "Total": 4000
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Prophet",
+                "cost": 590,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Recruiting Officer",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Prophet of Lugar",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Flame of the East",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Breath of the Brass Bull",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vizier",
+                "cost": 280,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Blaze of Protection",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Shield Breaker",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Golden Idol of Shamut",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vassal Levies",
+                "cost": 365,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Vassal Levies",
+                "cost": 365,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Vassal Levies",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 21,
+                "category": "Core"
+            },
+            {
+                "name": "Disciples of Lugar",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Immortals",
+                "cost": 325,
+                "options": [
+                    {
+                        "name": "Infernal Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Immortals",
+                "cost": 325,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Immortals",
+                "cost": 325,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Immortals",
+                "cost": 325,
+                "options": [
+                    {
+                        "name": "Infernal Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 3,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Gunnery Team",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Naphtha Thrower",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Gunnery Team",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Naphtha Thrower",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Vassal Slingshot",
+                "cost": 80,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Vassal Slingshot",
+                "cost": 80,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 870,
+            "Core": 1000,
+            "Special": 2130,
+            "Total": 4000
+        },
+        "magicalness": 8
+    }
+}

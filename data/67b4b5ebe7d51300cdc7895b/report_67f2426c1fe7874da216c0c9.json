@@ -1,0 +1,393 @@
+{
+    "id_match": "67f2426c1fe7874da216c0c9",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67f2426c1fe7874da216c0c9",
+    "scoreOne": 0,
+    "scoreTwo": 20,
+    "armyOne": "SA",
+    "armyTwo": "DL",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Anurarch Archmage",
+                "cost": 560,
+                "options": [
+                    {
+                        "name": "Light Troops and Closely Guarded",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Veil Mastery",
+                        "type": "Arcane Mastery"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Caiman Mentor",
+                "cost": 395,
+                "options": [
+                    {
+                        "name": "Vital Essence",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Combat Legend",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skink Veteran",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Serpent's Nest Charm",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Dragon's Brew",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Pouakai Sky Tyrant",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 30,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Warriors",
+                "cost": 425,
+                "options": [
+                    {
+                        "name": "Rending Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Tegu Guards",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Koru Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Thyroscutus Herd",
+                "cost": 245,
+                "options": [
+                    {
+                        "name": "Great Protector",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Venomous Fortress",
+                        "type": "Howdah"
+                    }
+                ],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Thyroscutus Herd",
+                "cost": 225,
+                "options": [
+                    {
+                        "name": "Magnetic Great Bow",
+                        "type": "Howdah"
+                    }
+                ],
+                "index": 1,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Weapon Beasts",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Salamander",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Weapon Beasts",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Spearback",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 4,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1275,
+            "Core": 1005,
+            "Special": 1720,
+            "Total": 4000
+        },
+        "magicalness": "2[object Object][object Object]"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Maw of Akaan",
+                "cost": 720,
+                "options": [
+                    {
+                        "name": "Wizard Apprentice",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mirrored Scales",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Unholy Appetite",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Miser of Sugulag",
+                "cost": 690,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mirrored Scales",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Harbinger of Father Chaos",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Smothering Coils",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Guiding Smothering Coils",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 578,
+                "options": [
+                    {
+                        "name": "Bronze Backbone",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 24,
+                "category": "Core"
+            },
+            {
+                "name": "Lemures",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Centipede Legs",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Clawed Fiends",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Unhinging Jaw",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Clawed Fiends",
+                "cost": 258,
+                "options": [
+                    {
+                        "name": "Mesmerising Plumage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Hidden Knives",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Hidden Knives",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 2,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1600,
+            "Core": 1008,
+            "Special": 1388,
+            "Total": 3996
+        },
+        "magicalness": 5
+    }
+}

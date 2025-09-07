@@ -1,0 +1,398 @@
+{
+    "id_match": "6821047909f2b36aaef2d808",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "6821047909f2b36aaef2d808",
+    "scoreOne": 20,
+    "scoreTwo": 0,
+    "armyOne": "WDG",
+    "armyTwo": "VS",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Chosen Lord",
+                "cost": 830,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Recruiting Officer",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Wasteland Dragon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Trophy Rack",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Immortal Gauntlets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wyrd Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Dark Prelate",
+                        "type": "Gifts of the Dark Gods"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sorcerer",
+                "cost": 530,
+                "options": [
+                    {
+                        "name": "Curse of Lycanthropy",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Zealots' Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Warhounds",
+                "cost": 130,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Chosen Knights",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Pride",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Damnation",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Warrior Chariot",
+                "cost": 220,
+                "options": [
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Warrior Chariot",
+                "cost": 220,
+                "options": [
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1360,
+            "Core": 875,
+            "Special": 1440,
+            "Total": 3500
+        },
+        "magicalness": 9
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Swarm Priest",
+                "cost": 590,
+                "options": [
+                    {
+                        "name": "Sacred Platform",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Whispering Bell",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Thaumaturgy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Caelysian Pantheon",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Bloodfur Legate",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Secrets of the Doom Blade",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wild Warding",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vermin Senator",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Battleline Hero",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Blackfur Veterans",
+                "cost": 520,
+                "options": [
+                    {
+                        "name": "Sacred Aquila",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Vermin Legionaries",
+                "cost": 305,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Vermin Slingers",
+                "cost": 160,
+                "options": [],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Doomspark Device",
+                "cost": 240,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Vermin Artillery",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Rakachit Mauss Rifle",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Experimental Weapon Teams",
+                "cost": 188,
+                "options": [
+                    {
+                        "name": "Jezail and Shield",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Rat Swarm",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Shadowfur Stalkers",
+                "cost": 140,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Shadowfur Stalkers",
+                "cost": 140,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Arena Beast",
+                "cost": 280,
+                "options": [],
+                "index": 0,
+                "category": "Bread and Games"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1180,
+            "Core": 985,
+            "Special": 1053,
+            "Total": 3498
+        },
+        "magicalness": 7
+    }
+}

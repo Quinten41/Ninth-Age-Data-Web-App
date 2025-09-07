@@ -1,0 +1,453 @@
+{
+    "id_match": "68331d2f60a255e42690afda",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "68331d2f60a255e42690afda",
+    "scoreOne": 16,
+    "scoreTwo": 4,
+    "armyOne": "DL",
+    "armyTwo": "SE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Maw of Akaan",
+                "cost": 820,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Hammer Hand",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Unholy Appetite",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Omen of Savar",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Chitinous Scales",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Throne of Overwhelming Splendour",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Thaumaturgy",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 260,
+                "options": [
+                    {
+                        "name": "Torporous Tendrils",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Succubi",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Mesmerising Plumage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Succubi",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Mesmerising Plumage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Succubi",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Horrifying Visage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 3,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 430,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 430,
+                "options": [],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Bloat Flies",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Unhinging Jaw",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Unholy Appetite",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Favoured of Gluttony",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Aves"
+            },
+            {
+                "name": "Bloat Flies",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Unhinging Jaw",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Unholy Appetite",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Favoured of Gluttony",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Aves"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1400,
+            "Core": 1000,
+            "Special": 860,
+            "Total": 4000
+        },
+        "magicalness": 8
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Druid",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spell Scroll",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Forest Prince",
+                "cost": 465,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Destiny's Call",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rod of Battle",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Elven Cloak",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hunter's Honour",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Forest Guardian",
+                        "type": "Kindred"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Thicket Shepherd",
+                "cost": 300,
+                "options": [
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Scarred Bark",
+                        "type": "Aspect of Nature"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Chieftain",
+                "cost": 205,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Supernatural Dexterity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Obsidian Rock",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Elven Cloak",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Great Weapon and Elven Finesse",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Pathfinder",
+                        "type": "Kindred"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sylvan Archers",
+                "cost": 420,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Forest Guard",
+                "cost": 412,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rending Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 29,
+                "category": "Core"
+            },
+            {
+                "name": "Forest Guard",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Thicket Beasts",
+                "cost": 410,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Blade Dancers",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 9,
+                "category": "Special"
+            },
+            {
+                "name": "Blade Dancers",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 9,
+                "category": "Special"
+            },
+            {
+                "name": "Briar Maidens",
+                "cost": 378,
+                "options": [
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Unseen Arrows"
+            },
+            {
+                "name": "Pathfinders",
+                "cost": 280,
+                "options": [],
+                "index": 0,
+                "models": 7,
+                "category": "Unseen Arrows"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1460,
+            "Core": 1012,
+            "Special": 870,
+            "Total": 4000
+        },
+        "magicalness": "7[object Object]"
+    }
+}

@@ -1,0 +1,404 @@
+{
+    "id_match": "68374d9136e43788c65beb77",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "68374d9136e43788c65beb77",
+    "scoreOne": 3,
+    "scoreTwo": 17,
+    "armyOne": "DL",
+    "armyTwo": "OnG",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Sentinel of Nukuja",
+                "cost": 740,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Strixian Spirit",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Thaumaturgy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Sorcerous Antennae",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Miser of Sugulag",
+                "cost": 730,
+                "options": [
+                    {
+                        "name": "Divination",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Unnatural Roots",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Mirrored Scales",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Succubi",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Imps",
+                "cost": 267,
+                "options": [
+                    {
+                        "name": "All-Seeing Eye",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Firestarter - Spear of Infinity",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 11,
+                "category": "Core"
+            },
+            {
+                "name": "Imps",
+                "cost": 267,
+                "options": [
+                    {
+                        "name": "All-Seeing Eye",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Firestarter - Spear of Infinity",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 11,
+                "category": "Core"
+            },
+            {
+                "name": "Clawed Fiends",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 430,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 430,
+                "options": [],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1470,
+            "Core": 1174,
+            "Special": 1355,
+            "Total": 3999
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Orc Shaman",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Tribe Leader",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Recruiting Officer",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Iron Orc Loner",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "Attack Gnasher",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Death Cheater",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Troll Hide",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Light Troops and Hand-and-a-Half",
+                        "type": "Mount"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Brood Alpha",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Monster Munch",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Feral Orcs",
+                "cost": 355,
+                "options": [
+                    {
+                        "name": "Distortion Emblem",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 35,
+                "category": "Core"
+            },
+            {
+                "name": "Feral Orcs",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Feral Orc Marauders",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Goblin Reavers",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Bow and Spies",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Creepy-Crawlies",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Great Green Idol",
+                "cost": 380,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orc Chariots",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Giant",
+                "cost": 325,
+                "options": [
+                    {
+                        "name": "Armed to the Teeth",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Big Brother",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 280,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 280,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 280,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 15,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1040,
+            "Core": 1045,
+            "Special": 1915,
+            "Total": 4000
+        },
+        "magicalness": 8
+    }
+}

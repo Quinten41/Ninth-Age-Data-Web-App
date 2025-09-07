@@ -1,0 +1,629 @@
+{
+    "id_match": "683beed036e43788c65fd334",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "683beed036e43788c65fd334",
+    "scoreOne": 12,
+    "scoreTwo": 8,
+    "armyOne": "VS",
+    "armyTwo": "BH",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Swarm Priest",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Thaumaturgy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Caelysian Pantheon",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Bloodfur Legate",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Destiny's Call",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Swarm Master",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Tarina's Lyre",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Pistol",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vermin Senator",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Storm Rocket",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "House Prefect",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Potion of Rat Form",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Skorchit Alchemist",
+                        "type": "House"
+                    },
+                    {
+                        "name": "Deepfire Thrower",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "House Prefect",
+                "cost": 100,
+                "options": [
+                    {
+                        "name": "Rodentium Bullets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Stygian Overseer",
+                        "type": "House"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Duskblade Assassin",
+                "cost": 120,
+                "options": [],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Duskblade Assassin",
+                "cost": 120,
+                "options": [],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Duskblade Assassin",
+                "cost": 120,
+                "options": [],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Vermin Legionaries",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 45,
+                "category": "Core"
+            },
+            {
+                "name": "Vermin Legionaries",
+                "cost": 335,
+                "options": [
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Vermin Legionaries",
+                "cost": 315,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Shadowfur Stalkers",
+                "cost": 140,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Shadowfur Stalkers",
+                "cost": 140,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Shadowfur Stalkers",
+                "cost": 140,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 2,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Experimental Weapon Teams",
+                "cost": 135,
+                "options": [
+                    {
+                        "name": "Canister Launcher",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Experimental Weapon Teams",
+                "cost": 135,
+                "options": [
+                    {
+                        "name": "Canister Launcher",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Legionary Drill Team",
+                "cost": 80,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Legionary Drill Team",
+                "cost": 80,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Legionary Drill Team",
+                "cost": 80,
+                "options": [],
+                "index": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Stygian Earthbreaker",
+                "cost": 260,
+                "options": [],
+                "index": 0,
+                "category": "Bread and Games"
+            },
+            {
+                "name": "Stygian Earthbreaker",
+                "cost": 260,
+                "options": [],
+                "index": 1,
+                "category": "Bread and Games"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1550,
+            "Core": 1000,
+            "Special": 930,
+            "Total": 4000
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Soothsayer",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Wildhorn Chieftain",
+                "cost": 305,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rain Augur Brew",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Greater Totem Bearer",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Wildhorn Chieftain",
+                "cost": 105,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Hunting Call",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Wildhorn Herd",
+                "cost": 225,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Wildhorn Herd",
+                "cost": 225,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Wildhorn Herd",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Mongrel Herd",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Minotaurs",
+                "cost": 577,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Distortion Emblem",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Totem Bearer",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Black Wing Totem",
+                        "type": "Totems"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Minotaurs",
+                "cost": 552,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Totem Bearer",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Black Wing Totem",
+                        "type": "Totems"
+                    }
+                ],
+                "index": 1,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Centaurs",
+                "cost": 400,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Gargoyles",
+                "cost": 155,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Raiding Chariots",
+                "cost": 120,
+                "options": [],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Raiding Chariots",
+                "cost": 120,
+                "options": [],
+                "index": 1,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Jabberwock",
+                "cost": 270,
+                "options": [],
+                "index": 0,
+                "category": "Terrors of the Wild"
+            },
+            {
+                "name": "Jabberwock",
+                "cost": 270,
+                "options": [],
+                "index": 1,
+                "category": "Terrors of the Wild"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 730,
+            "Core": 1006.25,
+            "Special": 1924,
+            "Total": 3999
+        },
+        "magicalness": 9
+    }
+}

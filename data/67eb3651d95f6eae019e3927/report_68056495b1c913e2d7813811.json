@@ -1,0 +1,274 @@
+{
+    "id_match": "68056495b1c913e2d7813811",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "68056495b1c913e2d7813811",
+    "scoreOne": 10,
+    "scoreTwo": 10,
+    "armyOne": "OnG",
+    "armyTwo": "KoE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Iron Orc Loner",
+                "cost": 500,
+                "options": [
+                    {
+                        "name": "Wyvern",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Big Wing",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Attack Gnasher",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Dragon's Brew",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Iron Orc Loner",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "Light Troops and Hand-and-a-Half",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Death Cheater",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Troll Hide",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Orc Shaman",
+                "cost": 395,
+                "options": [
+                    {
+                        "name": "Grunter",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Monster Munch",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spell Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Tribe Leader",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Brood Alpha",
+                "cost": 255,
+                "options": [
+                    {
+                        "name": "Grunter",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Veteran Orc Marauders",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Veteran Orc Marauders",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Feral Orc Marauders",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 385,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 385,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 20,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orc Chariots",
+                "cost": 200,
+                "options": [],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orc Chariots",
+                "cost": 200,
+                "options": [],
+                "index": 1,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Goblin Artillery",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Splatterer",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Gnasher Dashers",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1490,
+            "Core": 1010,
+            "Special": 1500,
+            "Total": 4000
+        },
+        "magicalness": 5
+    }
+}

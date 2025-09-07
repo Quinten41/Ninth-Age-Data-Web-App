@@ -1,0 +1,485 @@
+{
+    "id_match": "67ab6063fb57afe25da96bbc",
+    "firstTurn": -1,
+    "type": 1,
+    "id": "67ab6063fb57afe25da96bbc",
+    "scoreOne": 0,
+    "scoreTwo": 20,
+    "armyOne": "SA",
+    "armyTwo": "DE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Tegu Veteran",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Saurian Raptor",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Enclave Wizard",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Druidism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Vital Essence",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Veteran",
+                "cost": 450,
+                "options": [
+                    {
+                        "name": "Saurian Raptor",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Enclave Wizard",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Death Cheater",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Eldritch Inscriptions",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Veteran",
+                "cost": 355,
+                "options": [
+                    {
+                        "name": "Saurian Raptor",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Dusk Forged",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "King Slayer",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Skink Veteran",
+                "cost": 285,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Serpent's Nest Charm",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Pouakai Sky Tyrant",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Magnetic Short Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 365,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 315,
+                "options": [
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 18,
+                "category": "Core"
+            },
+            {
+                "name": "Raptor Pack",
+                "cost": 160,
+                "options": [],
+                "index": 0,
+                "models": 6,
+                "category": "Core"
+            },
+            {
+                "name": "Raptor Pack",
+                "cost": 160,
+                "options": [],
+                "index": 1,
+                "models": 6,
+                "category": "Core"
+            },
+            {
+                "name": "Raptor Riders",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Koru Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Raptor Riders",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Pteradon Riders",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Taurosaur",
+                "cost": 485,
+                "options": [
+                    {
+                        "name": "Lodestone Shield",
+                        "type": "Howdah"
+                    }
+                ],
+                "index": 0,
+                "category": "Magna Sauria"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1585,
+            "Core": 1000,
+            "Special": 930,
+            "Total": 4000
+        },
+        "magicalness": "2[object Object][object Object]"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Sanctioned Warlock",
+                "cost": 485,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Ceinran's Scales",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Silent Assassin",
+                "cost": 130,
+                "options": [],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Silexian Spears",
+                "cost": 395,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Corsairs",
+                "cost": 215,
+                "options": [],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Corsairs",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Repeater Handbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Corsairs",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Repeater Handbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 2,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Temple Militants",
+                "cost": 588,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Sheltering Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Dancers of Yema",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 24,
+                "category": "Special"
+            },
+            {
+                "name": "Temple Militants",
+                "cost": 588,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Sheltering Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Dancers of Yema",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 24,
+                "category": "Special"
+            },
+            {
+                "name": "Obsidian Guard",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Banner of Urlain",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 13,
+                "category": "Special"
+            },
+            {
+                "name": "Dread Acolytes",
+                "cost": 289,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Temple Acolytes",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 7,
+                "category": "Special"
+            },
+            {
+                "name": "Divine Altar",
+                "cost": 260,
+                "options": [
+                    {
+                        "name": "Altar of Yema",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Black Cloaks",
+                "cost": 165,
+                "options": [
+                    {
+                        "name": "Repeater Handbow and Poison Attacks",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Covert Operatives",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Black Cloaks",
+                "cost": 165,
+                "options": [
+                    {
+                        "name": "Repeater Handbow and Poison Attacks",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Covert Operatives",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 5,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 615,
+            "Core": 1000,
+            "Special": 2385,
+            "Total": 4000
+        },
+        "magicalness": 8
+    }
+}

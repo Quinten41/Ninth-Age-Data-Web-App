@@ -1,0 +1,422 @@
+{
+    "id_match": "682c27f49ab3fba1adb5519e",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "682c27f49ab3fba1adb5519e",
+    "scoreOne": 12,
+    "scoreTwo": 8,
+    "armyOne": "EoS",
+    "armyTwo": "UD",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Marshal",
+                "cost": 550,
+                "options": [
+                    {
+                        "name": "General, Imperial Authority, and +1 Cou",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Imperial Prince",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Battleline Hero",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Commanding Dragon",
+                        "type": "Mount"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 355,
+                "options": [
+                    {
+                        "name": "Battle Standard Bearer and Imperial Authority",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Great Griffon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Winter Cloak",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Battlefield Wizard",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spell Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Arcane Engine",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Cosmology",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Artificer",
+                "cost": 110,
+                "options": [
+                    {
+                        "name": "Horse",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Repeater Gun",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "State Infantry",
+                "cost": 540,
+                "options": [
+                    {
+                        "name": "Rending Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 47,
+                "category": "Core"
+            },
+            {
+                "name": "State Infantry",
+                "cost": 520,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 47,
+                "category": "Core"
+            },
+            {
+                "name": "Knights of the Sun Griffon",
+                "cost": 440,
+                "options": [
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Reiters",
+                "cost": 310,
+                "options": [
+                    {
+                        "name": "Brace of Pistols and Fire on Impact",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Reiters",
+                "cost": 310,
+                "options": [
+                    {
+                        "name": "Brace of Pistols and Fire on Impact",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Reiters",
+                "cost": 284,
+                "options": [
+                    {
+                        "name": "Repeater Gun",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 2,
+                "models": 9,
+                "category": "Special"
+            },
+            {
+                "name": "Imperial Rangers",
+                "cost": 110,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1485,
+            "Core": 1060,
+            "Special": 1454,
+            "Total": 3999
+        },
+        "magicalness": 6
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Death Cult Hierarch",
+                "cost": 530,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Cosmology",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Scroll of Power",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Soul Conduit",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Nomarch",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Crown of the Pharaohs",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Deathless Noble",
+                        "type": "Occupation"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skeleton Warriors",
+                "cost": 545,
+                "options": [
+                    {
+                        "name": "Sheltering Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 55,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Archers",
+                "cost": 285,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 30,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Cavalry",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Shabti Archers",
+                "cost": 445,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Shabti Archers",
+                "cost": 265,
+                "options": [],
+                "index": 1,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Sand Stalkers",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Casket of Phatep",
+                "cost": 230,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Great Vultures",
+                "cost": 130,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Colossus",
+                "cost": 415,
+                "options": [
+                    {
+                        "name": "Giant Aspis Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Mason's Menagerie"
+            },
+            {
+                "name": "Colossus",
+                "cost": 415,
+                "options": [
+                    {
+                        "name": "Giant Aspis Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Mason's Menagerie"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 710,
+            "Core": 1000,
+            "Special": 1460,
+            "Total": 4000
+        },
+        "magicalness": 7
+    }
+}

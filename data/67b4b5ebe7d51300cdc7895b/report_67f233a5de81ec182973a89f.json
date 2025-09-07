@@ -1,0 +1,376 @@
+{
+    "id_match": "67f233a5de81ec182973a89f",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67f233a5de81ec182973a89f",
+    "scoreOne": 9,
+    "scoreTwo": 11,
+    "armyOne": "VC",
+    "armyTwo": "DL",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Vampire Count",
+                "cost": 650,
+                "options": [
+                    {
+                        "name": "Vetala",
+                        "type": "Ancestral Blood Power"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Zombie Dragon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Apprentice",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Gates of the Netherworld",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vampire Courtier",
+                "cost": 640,
+                "options": [
+                    {
+                        "name": "Vetala",
+                        "type": "Ancestral Blood Power"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mysteries of the Night",
+                        "type": "Blood Powers"
+                    },
+                    {
+                        "name": "Court of the Damned",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Gates of the Netherworld",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "General and The Dead Arise",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skeletons",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Banner of Eldritch Might",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 55,
+                "category": "Core"
+            },
+            {
+                "name": "Skeletons",
+                "cost": 310,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 35,
+                "category": "Core"
+            },
+            {
+                "name": "Dire Wolves",
+                "cost": 180,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Ghasts",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Spectral Hunters",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "The Suffering"
+            },
+            {
+                "name": "Spectral Hunters",
+                "cost": 270,
+                "options": [],
+                "index": 1,
+                "models": 8,
+                "category": "The Suffering"
+            },
+            {
+                "name": "Winged Reapers",
+                "cost": 440,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Swift Death"
+            },
+            {
+                "name": "Vampire Knights",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Swift Death"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1290,
+            "Core": 1000,
+            "Special": 180,
+            "Total": 4000
+        },
+        "magicalness": "5[object Object]"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Miser of Sugulag",
+                "cost": 900,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Unnatural Roots",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Mirrored Scales",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Segmented Shell",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 392,
+                "options": [
+                    {
+                        "name": "Horrifying Visage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 18,
+                "category": "Core"
+            },
+            {
+                "name": "Succubi",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Lemures",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Clawed Fiends",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Clawed Fiends",
+                "cost": 249,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Incendiary Ichor",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Clawed Fiends",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 430,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Titanslayer Chariot",
+                "cost": 225,
+                "options": [
+                    {
+                        "name": "Segmented Shell",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Titanslayer Chariot",
+                "cost": 225,
+                "options": [
+                    {
+                        "name": "Segmented Shell",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Succubi Tempters",
+                "cost": 220,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 900,
+            "Core": 1012,
+            "Special": 2084,
+            "Total": 3996
+        },
+        "magicalness": 7
+    }
+}

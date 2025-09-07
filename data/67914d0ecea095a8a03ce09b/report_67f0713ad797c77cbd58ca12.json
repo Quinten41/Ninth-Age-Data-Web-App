@@ -1,0 +1,573 @@
+{
+    "id_match": "67f0713ad797c77cbd58ca12",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67f0713ad797c77cbd58ca12",
+    "scoreOne": 0,
+    "scoreTwo": 20,
+    "armyOne": "EoS",
+    "armyTwo": "EoS",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Battlefield Wizard",
+                "cost": 440,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Cosmology",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Battleline Hero",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Great Griffon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Winter Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "General, Imperial Authority, and +1 Cou",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Repeater Pistol",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 315,
+                "options": [
+                    {
+                        "name": "Great Griffon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer and Imperial Authority",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Repeater Pistol",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Inquisitor",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Blacksteel",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Hero's Heart",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hidden",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "State Infantry",
+                "cost": 450,
+                "options": [
+                    {
+                        "name": "Banner of Unity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 39,
+                "category": "Core"
+            },
+            {
+                "name": "State Marksmen",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Handgun",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Local Militia",
+                "cost": 180,
+                "options": [],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Local Militia",
+                "cost": 180,
+                "options": [],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Imperial Guard",
+                "cost": 475,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rending Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 30,
+                "category": "Special"
+            },
+            {
+                "name": "Imperial Detachment",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Imperial Detachment",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Blackpowder Artillery",
+                "cost": 150,
+                "options": [
+                    {
+                        "name": "Imperial Rocketeer",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Blackpowder Artillery",
+                "cost": 150,
+                "options": [
+                    {
+                        "name": "Imperial Rocketeer",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Imperial Rangers",
+                "cost": 110,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Steam Tank",
+                "cost": 420,
+                "options": [],
+                "index": 0,
+                "category": "Sunna's Fury"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1275,
+            "Core": 1000,
+            "Special": 1305,
+            "Total": 4000
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Prelate",
+                "cost": 440,
+                "options": [
+                    {
+                        "name": "Altar of Battle",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Battlefield Wizard",
+                "cost": 435,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Scroll of Power",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Death Warrant",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Great Griffon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "General, Imperial Authority, and +1 Cou",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 215,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Blacksteel",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer and Imperial Authority",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Repeater Pistol",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 60,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Brace of Pistols",
+                        "type": "Other"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Inquisitor",
+                "cost": 95,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Ullor's Horn",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Brace of Pistols",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "State Infantry",
+                "cost": 560,
+                "options": [
+                    {
+                        "name": "Rending Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 48,
+                "category": "Core"
+            },
+            {
+                "name": "Electoral Cavalry",
+                "cost": 242,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "State Marksmen",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Handgun",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Local Militia",
+                "cost": 180,
+                "options": [],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Imperial Guard",
+                "cost": 465,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 30,
+                "category": "Special"
+            },
+            {
+                "name": "Blackpowder Artillery",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Cannon",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Blackpowder Artillery",
+                "cost": 175,
+                "options": [
+                    {
+                        "name": "Volley Gun",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Reiters",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Brace of Pistols and Fire on Impact",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Imperial Rangers",
+                "cost": 110,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Flagellants",
+                "cost": 160,
+                "options": [],
+                "index": 0,
+                "models": 15,
+                "category": "Sunna's Fury"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1485,
+            "Core": 1182,
+            "Special": 1170,
+            "Total": 3997
+        },
+        "magicalness": 9
+    }
+}

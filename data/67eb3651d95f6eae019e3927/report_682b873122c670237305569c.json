@@ -1,0 +1,197 @@
+{
+    "id_match": "682b873122c670237305569c",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "682b873122c670237305569c",
+    "scoreOne": 13,
+    "scoreTwo": 7,
+    "armyOne": "WDG",
+    "armyTwo": "OnG",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Chosen Lord",
+                "cost": 780,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wasteland Dragon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Trophy Rack",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Immortal Gauntlets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wyrd Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sorcerer",
+                "cost": 480,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Occultism",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 550,
+                "options": [
+                    {
+                        "name": "Zealots' Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 24,
+                "category": "Core"
+            },
+            {
+                "name": "Barbarian Horsemen",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 9,
+                "category": "Core"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Damnation",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Feldrak Elder",
+                "cost": 460,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Feldrak Elder",
+                "cost": 460,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Chosen Knights",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Wasteland Torch",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Envy",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Warhounds",
+                "cost": 100,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1260,
+            "Core": 1000,
+            "Special": 1940,
+            "Total": 4000
+        },
+        "magicalness": 7
+    }
+}

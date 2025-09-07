@@ -1,0 +1,198 @@
+{
+    "id_match": "67e9245e46923866f91206ec",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "67e9245e46923866f91206ec",
+    "scoreOne": 12,
+    "scoreTwo": 8,
+    "armyOne": "VS",
+    "armyTwo": "DL",
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Miser of Sugulag",
+                "cost": 785,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Thaumaturgy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Unnatural Roots",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Mark of the Eternal Champion",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Smothering Coils",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Segmented Shell",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vanadra's Scourge",
+                "cost": 715,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Brimstone Secretions",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Incendiary Ichor",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 585,
+                "options": [
+                    {
+                        "name": "Torporous Tendrils",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Myrmidons",
+                "cost": 515,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Hot Blood",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Brazen Beasts",
+                "cost": 410,
+                "options": [
+                    {
+                        "name": "Whipcrack Tail",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Eidolons",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "All-Seeing Eye",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Blazing Glory",
+                "cost": 335,
+                "options": [
+                    {
+                        "name": "Horns of Hubris",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Hoarders",
+                "cost": 314,
+                "options": [
+                    {
+                        "name": "Mirrored Scales",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Segmented Shell",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Favoured of Greed",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1500,
+            "Core": 1100,
+            "Special": 1399,
+            "Total": 3999
+        },
+        "magicalness": "5[object Object]"
+    }
+}

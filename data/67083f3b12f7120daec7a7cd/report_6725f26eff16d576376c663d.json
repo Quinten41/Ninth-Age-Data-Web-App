@@ -1,0 +1,460 @@
+{
+    "id_match": "6725f26eff16d576376c663d",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "6725f26eff16d576376c663d",
+    "scoreOne": 16,
+    "scoreTwo": 4,
+    "armyOne": "DH",
+    "armyTwo": "HE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Dragon Seeker",
+                "cost": 365,
+                "options": [
+                    {
+                        "name": "Rune of Quickening",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Might",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Anger",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Grim Resolve",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Runic Smith",
+                "cost": 275,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Storms",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Rune",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Reckoning",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Resilience",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Greybeards",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Clan Marksmen",
+                "cost": 255,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Steadiness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Guild-Crafted Handgun",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Clan Marksmen",
+                "cost": 255,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Steadiness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Guild-Crafted Handgun",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Seekers",
+                "cost": 535,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Grudge Buster",
+                "cost": 280,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Grudge Buster",
+                "cost": 280,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Anvil of Power",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Rune of Reckoning",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Forge Wardens",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Dismay",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Steam Copters",
+                "cost": 185,
+                "options": [
+                    {
+                        "name": "Shrapnel Grenades",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Field Artillery",
+                "cost": 245,
+                "options": [
+                    {
+                        "name": "Dwarf Cannon",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Field Artillery",
+                "cost": 245,
+                "options": [
+                    {
+                        "name": "Dwarf Cannon",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Field Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Flame Cannon",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 2,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 640,
+            "Core": 1000,
+            "Special": 2360,
+            "Total": 4000
+        },
+        "magicalness": 0
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "High Prince",
+                "cost": 660,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Griffon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Dragonforged Armour",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Nova Flare",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Diadem of Protection",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Commander",
+                "cost": 455,
+                "options": [
+                    {
+                        "name": "Griffon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Dragonforged Armour",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Supernatural Dexterity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon and Elven Finesse",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Commander",
+                "cost": 285,
+                "options": [
+                    {
+                        "name": "Master of Canreig Tower",
+                        "type": "Honour"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Sea Guard",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 30,
+                "category": "Core"
+            },
+            {
+                "name": "Sea Guard",
+                "cost": 245,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Sea Guard",
+                "cost": 245,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Knights of Rymâ",
+                "cost": 550,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Knights of Rymâ",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Initiate of the Fiery Heart",
+                "cost": 380,
+                "options": [
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Lion Chariot",
+                "cost": 200,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1400,
+            "Core": 1000,
+            "Special": 1600,
+            "Total": 4000
+        },
+        "magicalness": "4[object Object]"
+    }
+}

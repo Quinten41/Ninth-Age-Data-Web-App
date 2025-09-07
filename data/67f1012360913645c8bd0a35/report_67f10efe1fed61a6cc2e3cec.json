@@ -1,0 +1,175 @@
+{
+    "id_match": "67f10efe1fed61a6cc2e3cec",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "67f10efe1fed61a6cc2e3cec",
+    "scoreOne": 20,
+    "scoreTwo": 0,
+    "armyOne": "UD",
+    "armyTwo": "WDG",
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Exalted Herald",
+                "cost": 700,
+                "options": [],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sorcerer",
+                "cost": 435,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Gladiator's Spirit",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Veilgate Orb",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 524,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 21,
+                "category": "Core"
+            },
+            {
+                "name": "Fallen",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Warhounds",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Warrior Knights",
+                "cost": 600,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Chosen",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Envy",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 530,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Icon of the Infinite",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Damnation",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Hellmaw",
+                "cost": 340,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1135,
+            "Core": 1030,
+            "Special": 2040,
+            "Total": 3999
+        },
+        "magicalness": 5
+    }
+}

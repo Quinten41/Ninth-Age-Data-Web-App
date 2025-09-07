@@ -1,0 +1,473 @@
+{
+    "id_match": "68138b24eb8c3e4839ab183c",
+    "firstTurn": -1,
+    "type": 1,
+    "id": "68138b24eb8c3e4839ab183c",
+    "scoreOne": 13,
+    "scoreTwo": 7,
+    "armyOne": "ID",
+    "armyTwo": "EoS",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Prophet",
+                "cost": 590,
+                "options": [
+                    {
+                        "name": "Prophet of Lugar",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Flame of the East",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Breath of the Brass Bull",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vizier",
+                "cost": 295,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Wild Warding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Warding of Unity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Infernal Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Infernal Warriors",
+                "cost": 556,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Banner of the Twice-Branded",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 24,
+                "category": "Core"
+            },
+            {
+                "name": "Infernal Warriors",
+                "cost": 556,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Banner of the Twice-Branded",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 24,
+                "category": "Core"
+            },
+            {
+                "name": "Disciples of Lugar",
+                "cost": 560,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Immortals",
+                "cost": 555,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Vassal Cavalry",
+                "cost": 218,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 7,
+                "category": "Special"
+            },
+            {
+                "name": "Infernal Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Naphtha Thrower",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Kadim Titan",
+                "cost": 500,
+                "options": [
+                    {
+                        "name": "Naphtha Thrower",
+                        "type": "Artillery Weapons"
+                    },
+                    {
+                        "name": "Walking Volcano",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Instruments of Destruction"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 885,
+            "Core": 1112,
+            "Special": 1503,
+            "Total": 4000
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Prelate",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Altar of Battle",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hero's Heart",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Dragon's Brew",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Battlefield Wizard",
+                "cost": 450,
+                "options": [
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Arcane Engine",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Cosmology",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Winter Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Griffon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Battle Standard Bearer and Imperial Authority",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Distortion Emblem",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Marshal",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Battleline Hero",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Shield of Volund",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Blacksteel",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "General, Imperial Authority, and +1 Cou",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "State Infantry",
+                "cost": 450,
+                "options": [
+                    {
+                        "name": "Banner of Unity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "State Infantry",
+                "cost": 410,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "State Detachment",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Blackpowder Artillery",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Cannon",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Imperial Detachment",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Imperial Detachment",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Steam Tank",
+                "cost": 420,
+                "options": [],
+                "index": 0,
+                "category": "Sunna's Fury"
+            },
+            {
+                "name": "Flagellants",
+                "cost": 173,
+                "options": [],
+                "index": 0,
+                "models": 16,
+                "category": "Sunna's Fury"
+            },
+            {
+                "name": "Flagellants",
+                "cost": 173,
+                "options": [],
+                "index": 1,
+                "models": 16,
+                "category": "Sunna's Fury"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1500,
+            "Core": 1070,
+            "Special": 660,
+            "Total": 3996
+        },
+        "magicalness": 8
+    }
+}

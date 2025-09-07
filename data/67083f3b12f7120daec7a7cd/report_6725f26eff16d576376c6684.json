@@ -1,0 +1,454 @@
+{
+    "id_match": "6725f26eff16d576376c6684",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "6725f26eff16d576376c6684",
+    "scoreOne": 7,
+    "scoreTwo": 13,
+    "armyOne": "BH",
+    "armyTwo": "WDG",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Soothsayer",
+                "cost": 500,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Wild Shape",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Wild Form",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Ancestral Carvings",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Beast Lord",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Aaghor's Affliction",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Supernatural Dexterity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Hunting Call",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Beast Chieftain",
+                "cost": 335,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Death Cheater",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Beast Axe",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Greater Totem Bearer",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Beast Chieftain",
+                "cost": 90,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Wildhorn Herd",
+                "cost": 366,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Totem Bearer",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Gnarled Hide Totem",
+                        "type": "Totems"
+                    }
+                ],
+                "index": 0,
+                "models": 34,
+                "category": "Core"
+            },
+            {
+                "name": "Wildhorn Herd",
+                "cost": 323,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Banner of Discipline",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Totem Bearer",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Gnarled Hide Totem",
+                        "type": "Totems"
+                    }
+                ],
+                "index": 1,
+                "models": 27,
+                "category": "Core"
+            },
+            {
+                "name": "Mongrel Herd",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Centaurs",
+                "cost": 360,
+                "options": [
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Centaurs",
+                "cost": 291,
+                "options": [
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Longhorn Herd",
+                "cost": 175,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Longhorn Herd",
+                "cost": 175,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Cyclops",
+                "cost": 330,
+                "options": [],
+                "index": 0,
+                "category": "Terrors of the Wild"
+            },
+            {
+                "name": "Cyclops",
+                "cost": 330,
+                "options": [],
+                "index": 1,
+                "category": "Terrors of the Wild"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1295,
+            "Core": 1298.75,
+            "Special": 1001,
+            "Total": 3995
+        },
+        "magicalness": 12
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Exalted Herald",
+                "cost": 700,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Exalted Herald",
+                "cost": 700,
+                "options": [],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 335,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Warriors",
+                "cost": 335,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Barbarian Horsemen",
+                "cost": 275,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Chosen",
+                "cost": 525,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Gluttony",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Hellmaw",
+                "cost": 310,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Chosen Chariot",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Envy",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Chosen Chariot",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Envy",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Chimera",
+                "cost": 240,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1400,
+            "Core": 1181.25,
+            "Special": 1655,
+            "Total": 4000
+        },
+        "magicalness": 0
+    }
+}

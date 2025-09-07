@@ -1,0 +1,431 @@
+{
+    "id_match": "6829cf5c0f5ebd99c75c55e5",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "6829cf5c0f5ebd99c75c55e5",
+    "scoreOne": 8,
+    "scoreTwo": 12,
+    "armyOne": "SA",
+    "armyTwo": "WDG",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Anurarch Archmage",
+                "cost": 645,
+                "options": [
+                    {
+                        "name": "Light Troops and Closely Guarded",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Forbidden Mastery",
+                        "type": "Arcane Mastery"
+                    },
+                    {
+                        "name": "Mystifying Mastery",
+                        "type": "Telepathic Mastery"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Caiman Mentor",
+                "cost": 395,
+                "options": [
+                    {
+                        "name": "Vital Essence",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Combat Legend",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skink Veteran",
+                "cost": 135,
+                "options": [
+                    {
+                        "name": "Light Troops and Strider",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Magnetic Short Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Alchemical Arrows",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Master Strategist",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 539,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 27,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Warriors",
+                "cost": 231,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 23,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Hunters",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Magnetic Short Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 18,
+                "category": "Core"
+            },
+            {
+                "name": "Tegu Guards",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "Koru Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Raptor Riders",
+                "cost": 460,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Weapon Beasts",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Spearback",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Pteradon Riders",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Carnosaur",
+                "cost": 345,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Magna Sauria"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1175,
+            "Core": 1000,
+            "Special": 1480,
+            "Total": 4000
+        },
+        "magicalness": "2[object Object]"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Chosen Lord",
+                "cost": 850,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Battleline Hero",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Wasteland Dragon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Immortal Gauntlets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wyrd Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Dark Prelate",
+                        "type": "Gifts of the Dark Gods"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sorcerer",
+                "cost": 550,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Dark Familiar",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Zealots' Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Warriors",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Warrior Knights",
+                "cost": 600,
+                "options": [
+                    {
+                        "name": "Banner of Speed",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Damnation",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Feldraks",
+                "cost": 310,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Warrior Chariot",
+                "cost": 200,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Warhounds",
+                "cost": 100,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Warhounds",
+                "cost": 100,
+                "options": [],
+                "index": 1,
+                "models": 5,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1400,
+            "Core": 1000,
+            "Special": 1800,
+            "Total": 4000
+        },
+        "magicalness": 9
+    }
+}

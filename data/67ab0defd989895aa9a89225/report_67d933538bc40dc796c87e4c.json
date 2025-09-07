@@ -1,0 +1,449 @@
+{
+    "id_match": "67d933538bc40dc796c87e4c",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "67d933538bc40dc796c87e4c",
+    "scoreOne": 12,
+    "scoreTwo": 8,
+    "armyOne": "SE",
+    "armyTwo": "OnG",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Druid",
+                "cost": 375,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Druidism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Gravel Storm",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Sylvan Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Chieftain",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hunter's Honour",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Forest Guardian",
+                        "type": "Kindred"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sylvan Archers",
+                "cost": 454,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 22,
+                "category": "Core"
+            },
+            {
+                "name": "Sylvan Archers",
+                "cost": 318,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 14,
+                "category": "Core"
+            },
+            {
+                "name": "Heath Riders",
+                "cost": 229,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Heath Hunters",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Core"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Vanguard",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 410,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 21,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 14,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 3,
+                "models": 14,
+                "category": "Special"
+            },
+            {
+                "name": "Thicket Beasts",
+                "cost": 300,
+                "options": [],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Thicket Beasts",
+                "cost": 300,
+                "options": [],
+                "index": 1,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Briar Maidens",
+                "cost": 310,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Unseen Arrows"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 705,
+            "Core": 1001,
+            "Special": 1980,
+            "Total": 3996
+        },
+        "magicalness": "4[object Object]"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Orc Shaman",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Orc Warlord",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Omen of the Apocalypse",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Destiny's Call",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Tribe Leader and Orc Horde",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Brood Alpha",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Grunter",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Basalt Infusion",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Veteran Orc Marauders",
+                "cost": 408,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 11,
+                "category": "Core"
+            },
+            {
+                "name": "Goblin Rabble",
+                "cost": 395,
+                "options": [
+                    {
+                        "name": "Goga Cauldron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Poisoned Spear and Shield",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 45,
+                "category": "Core"
+            },
+            {
+                "name": "Feral Orc Marauders",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 583,
+                "options": [
+                    {
+                        "name": "Headbashers",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 28,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 280,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 280,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Giant",
+                "cost": 305,
+                "options": [
+                    {
+                        "name": "Armed to the Teeth",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Gnasher Dashers",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Gnasher Dashers",
+                "cost": 150,
+                "options": [],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Grotling Scrap Wagon",
+                "cost": 110,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1095,
+            "Core": 1043,
+            "Special": 1858,
+            "Total": 3996
+        },
+        "magicalness": 7
+    }
+}

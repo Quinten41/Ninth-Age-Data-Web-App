@@ -1,0 +1,441 @@
+{
+    "id_match": "67e030750d59d14784fe0509",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "67e030750d59d14784fe0509",
+    "scoreOne": 14,
+    "scoreTwo": 6,
+    "armyOne": "SA",
+    "armyTwo": "OK",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Anurarch Archmage",
+                "cost": 555,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops and Closely Guarded",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Carved Tablet",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Invasive Mastery",
+                        "type": "Telepathic Mastery"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Veteran",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Saurian Raptor",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Enclave Wizard",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Dusk Forged",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Glory of the Dawn Age",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skink Veteran",
+                "cost": 280,
+                "options": [
+                    {
+                        "name": "Serpent's Nest Charm",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Pouakai Sky Tyrant",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Obelisk of Collaboration",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Warriors",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Rending Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 35,
+                "category": "Core"
+            },
+            {
+                "name": "Raptor Pack",
+                "cost": 160,
+                "options": [],
+                "index": 0,
+                "models": 6,
+                "category": "Core"
+            },
+            {
+                "name": "Raptor Riders",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 14,
+                "category": "Special"
+            },
+            {
+                "name": "Tegu Guards",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "Koru Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Thyroscutus Herd",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Lodestone Shield",
+                        "type": "Howdah"
+                    },
+                    {
+                        "name": "Great Protector",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Venomous Fortress",
+                        "type": "Howdah"
+                    }
+                ],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Rhamphodon Riders",
+                "cost": 220,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1325,
+            "Core": 1005,
+            "Special": 1670,
+            "Total": 4000
+        },
+        "magicalness": "2[object Object]"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Shaman",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Iron Fist",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Rod of Battle",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Firebrand",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Khan",
+                "cost": 315,
+                "options": [
+                    {
+                        "name": "Warding of Unity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Iron Fist",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Godspeaker",
+                        "type": "Big Name"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tribesmen",
+                "cost": 530,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Iron Fist",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Bruisers",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Mercenary Veterans",
+                "cost": 600,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Pennant of the Great Grass Sky",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Devastating Charge",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Mercenary Veterans",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Banner of the Gyengget",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "First Strike",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Sabretooth Tigers",
+                "cost": 110,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Scrapling Trappers",
+                "cost": 100,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Frost Mammoth",
+                "cost": 380,
+                "options": [
+                    {
+                        "name": "Hunting Spear",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Chained Beasts"
+            },
+            {
+                "name": "Mercenary Giant",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Iron Fist",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "First Strike",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Chained Beasts"
+            },
+            {
+                "name": "Mercenary Giant",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Iron Fist",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "First Strike",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Chained Beasts"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 665,
+            "Core": 1000,
+            "Special": 1380,
+            "Total": 3965
+        },
+        "magicalness": 5
+    }
+}

@@ -1,0 +1,237 @@
+{
+    "id_match": "67f0713ad797c77cbd58ca11",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67f0713ad797c77cbd58ca11",
+    "scoreOne": 6,
+    "scoreTwo": 14,
+    "armyOne": "HE",
+    "armyTwo": "KoE",
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Damsel",
+                "cost": 530,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Battleline Hero",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Destrier",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Sainted",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Duke",
+                "cost": 405,
+                "options": [
+                    {
+                        "name": "Destrier",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield Breaker",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Sacred Chalice",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Bastard Sword",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Generosity",
+                        "type": "Knightly Principle"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Knights of the Realm",
+                "cost": 530,
+                "options": [
+                    {
+                        "name": "Solemn Oath",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Knight Banneret",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Mounted Serjeants",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Relic Shroud",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Knights of the Court",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Knights of the Court",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Men-at-Arms",
+                "cost": 302,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Castle Guard",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 21,
+                "category": "Special"
+            },
+            {
+                "name": "Men-at-Arms",
+                "cost": 302,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Castle Guard",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 21,
+                "category": "Special"
+            },
+            {
+                "name": "Sky Heralds",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Sky Heralds",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Fey Knight",
+                "cost": 360,
+                "options": [
+                    {
+                        "name": "Champion of the Green Knight",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Fey"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 935,
+            "Core": 1000,
+            "Special": 1704,
+            "Total": 3999
+        },
+        "magicalness": 8
+    }
+}

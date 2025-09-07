@@ -1,0 +1,415 @@
+{
+    "id_match": "681643971a10000e2f47594f",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "681643971a10000e2f47594f",
+    "scoreOne": 0,
+    "scoreTwo": 20,
+    "armyOne": "VC",
+    "armyTwo": "WDG",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Vampire Count",
+                "cost": 875,
+                "options": [
+                    {
+                        "name": "General, Disciplined, and The Dead Arise",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Strigoi",
+                        "type": "Ancestral Blood Power"
+                    },
+                    {
+                        "name": "Strigoi General",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Monster Hunter",
+                        "type": "Blood Powers"
+                    },
+                    {
+                        "name": "Shrieking Horror",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Apprentice",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "True Thirst",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Necromantic Staff",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Gates of the Netherworld",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vampire Count",
+                "cost": 725,
+                "options": [
+                    {
+                        "name": "Lahmia",
+                        "type": "Ancestral Blood Power"
+                    },
+                    {
+                        "name": "Monster Hunter",
+                        "type": "Blood Powers"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Monstrous Revenant",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Apprentice",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Legend of the Black King",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Eldritch Inscriptions",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Eternity Gem",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Gates of the Netherworld",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Ghouls",
+                "cost": 475,
+                "options": [
+                    {
+                        "name": "Vanguard",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 30,
+                "category": "Core"
+            },
+            {
+                "name": "Skeletons",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Dire Wolves",
+                "cost": 180,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Dire Wolves",
+                "cost": 180,
+                "options": [],
+                "index": 1,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Dark Coach",
+                "cost": 380,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Dark Coach",
+                "cost": 380,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Barrow Knights",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Shrieking Horror",
+                "cost": 420,
+                "options": [],
+                "index": 0,
+                "category": "Swift Death"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1600,
+            "Core": 1015,
+            "Special": 960,
+            "Total": 3995
+        },
+        "magicalness": 4
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Chosen Lord",
+                "cost": 830,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wasteland Dragon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Trophy Rack",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Immortal Gauntlets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wyrd Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Dark Prelate",
+                        "type": "Gifts of the Dark Gods"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sorcerer",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Occultism",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Zealots' Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Gluttony",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Barbarian Horsemen",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Warhounds",
+                "cost": 130,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Chosen Knights",
+                "cost": 530,
+                "options": [
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Damnation",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Battleshrine",
+                "cost": 320,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Warrior Chariot",
+                "cost": 220,
+                "options": [
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Warrior Chariot",
+                "cost": 220,
+                "options": [
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Warrior Chariot",
+                "cost": 220,
+                "options": [
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 2,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1340,
+            "Core": 1025,
+            "Special": 1840,
+            "Total": 4000
+        },
+        "magicalness": 9
+    }
+}

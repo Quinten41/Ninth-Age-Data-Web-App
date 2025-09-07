@@ -1,0 +1,445 @@
+{
+    "id_match": "687258b3ca081c4530be31c5",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "687258b3ca081c4530be31c5",
+    "scoreOne": 3,
+    "scoreTwo": 17,
+    "armyOne": "DE",
+    "armyTwo": "HE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Sanctioned Warlock",
+                "cost": 355,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Spell Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Silexian Officer",
+                "cost": 155,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Mastery of Slaughter",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Silexian Spears",
+                "cost": 446,
+                "options": [
+                    {
+                        "name": "Caedhren's Pennon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 29,
+                "category": "Core"
+            },
+            {
+                "name": "Shadow Riders",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Corsairs",
+                "cost": 185,
+                "options": [
+                    {
+                        "name": "Repeater Handbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Corsairs",
+                "cost": 185,
+                "options": [
+                    {
+                        "name": "Repeater Handbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Judicators",
+                "cost": 272,
+                "options": [
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Special"
+            },
+            {
+                "name": "Judicators",
+                "cost": 272,
+                "options": [
+                    {
+                        "name": "Aether Icon",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 12,
+                "category": "Special"
+            },
+            {
+                "name": "Divine Altar",
+                "cost": 260,
+                "options": [
+                    {
+                        "name": "Altar of Yema",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Obsidian Guard",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Hunting Chariot",
+                "cost": 210,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Hunting Chariot",
+                "cost": 210,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Mist Leviathan",
+                "cost": 230,
+                "options": [],
+                "index": 0,
+                "category": "The Menagerie"
+            },
+            {
+                "name": "Hydra",
+                "cost": 400,
+                "options": [],
+                "index": 0,
+                "category": "The Menagerie"
+            },
+            {
+                "name": "Hydra",
+                "cost": 400,
+                "options": [],
+                "index": 1,
+                "category": "The Menagerie"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 510,
+            "Core": 1006,
+            "Special": 1454,
+            "Total": 4000
+        },
+        "magicalness": 4
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Mage",
+                "cost": 645,
+                "options": [
+                    {
+                        "name": "Order of the Fiery Heart",
+                        "type": "Honour"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Dragonforged Armour",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Star Metal Alloy",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Dragon's Brew",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "High Prince",
+                "cost": 440,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Protection of Dorac",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Scroll of the Pearl Throne",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Royal Huntsman",
+                        "type": "Honour"
+                    },
+                    {
+                        "name": "Elemental Blade",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon and Elven Finesse",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Commander",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Elven Horse",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Basalt Infusion",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Banner of Becalming",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Highborn Lancers",
+                "cost": 504,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 14,
+                "category": "Core"
+            },
+            {
+                "name": "Citizen Spears",
+                "cost": 498,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 39,
+                "category": "Core"
+            },
+            {
+                "name": "Flame Wardens",
+                "cost": 590,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Lion Guard",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Navigator's Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Queen's Guard",
+                "cost": 280,
+                "options": [],
+                "index": 0,
+                "models": 12,
+                "category": "Special"
+            },
+            {
+                "name": "Lion Chariot",
+                "cost": 200,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1355,
+            "Core": 1002,
+            "Special": 1640,
+            "Total": 3997
+        },
+        "magicalness": 7
+    }
+}

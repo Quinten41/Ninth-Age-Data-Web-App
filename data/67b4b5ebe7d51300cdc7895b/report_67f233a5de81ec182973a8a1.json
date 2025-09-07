@@ -1,0 +1,466 @@
+{
+    "id_match": "67f233a5de81ec182973a8a1",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67f233a5de81ec182973a8a1",
+    "scoreOne": 6,
+    "scoreTwo": 14,
+    "armyOne": "SA",
+    "armyTwo": "OnG",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Anurarch Archmage",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "Light Troops and Closely Guarded",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Eternal Mastery",
+                        "type": "Arcane Mastery"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skink Veteran",
+                "cost": 155,
+                "options": [
+                    {
+                        "name": "Carved Tablet",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Light Troops and Strider",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Magnetic Short Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Alchemical Arrows",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Chameleon and Hard Target",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 521,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 28,
+                "category": "Core"
+            },
+            {
+                "name": "Caiman Warriors",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Tooth and Claw",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Hunters",
+                "cost": 184,
+                "options": [
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 14,
+                "category": "Core"
+            },
+            {
+                "name": "Tegu Guards",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Koru Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Caiman Elders",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Skink Guerrillas",
+                "cost": 259,
+                "options": [
+                    {
+                        "name": "Magnetic Short Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Chameleon",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Skink Guerrillas",
+                "cost": 184,
+                "options": [
+                    {
+                        "name": "Blowpipe",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Chameleon",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Pteradon Riders",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Saurian Swarms",
+                "cost": 170,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Stygiosaur Pack",
+                "cost": 310,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 2,
+                "category": "Magna Sauria"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 735,
+            "Core": 1035,
+            "Special": 1918,
+            "Total": 3998
+        },
+        "magicalness": "1[object Object]"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Orc Warlord",
+                "cost": 335,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Tribe Leader and Orc Horde",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Destiny's Call",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Eldritch Inscriptions",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Potion of Swiftness",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Orc Shaman",
+                "cost": 310,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Brood Alpha",
+                "cost": 205,
+                "options": [
+                    {
+                        "name": "Grunter",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Rabble",
+                "cost": 395,
+                "options": [
+                    {
+                        "name": "Goga Cauldron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Poisoned Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 45,
+                "category": "Core"
+            },
+            {
+                "name": "Feral Orc Marauders",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 14,
+                "category": "Core"
+            },
+            {
+                "name": "Feral Orc Marauders",
+                "cost": 280,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 593,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Headbashers",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 28,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orc Chariots",
+                "cost": 360,
+                "options": [],
+                "index": 0,
+                "models": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Iron Orc Chariots",
+                "cost": 200,
+                "options": [],
+                "index": 1,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Gnasher Dashers",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Gnasher Dashers",
+                "cost": 150,
+                "options": [],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Grotling Scrap Wagon",
+                "cost": 110,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 850,
+            "Core": 1005,
+            "Special": 2143,
+            "Total": 3998
+        },
+        "magicalness": 4
+    }
+}

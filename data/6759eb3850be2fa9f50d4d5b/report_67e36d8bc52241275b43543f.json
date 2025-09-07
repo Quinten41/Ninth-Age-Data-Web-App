@@ -1,0 +1,453 @@
+{
+    "id_match": "67e36d8bc52241275b43543f",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67e36d8bc52241275b43543f",
+    "scoreOne": 9,
+    "scoreTwo": 11,
+    "armyOne": "ID",
+    "armyTwo": "DL",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Prophet",
+                "cost": 535,
+                "options": [
+                    {
+                        "name": "Prophet of Nezibkesh",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Overlord",
+                "cost": 388,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Blaze of Protection",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Vorpal Binding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Shield Breaker",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Ring of Desiccation",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vizier",
+                "cost": 295,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Sigil of Protection",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Basalt Infusion",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Flame of the East",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Infernal Warriors",
+                "cost": 514,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Blunderbuss",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Banner of the Twice-Branded",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 23,
+                "category": "Core"
+            },
+            {
+                "name": "Citadel Guard",
+                "cost": 523,
+                "options": [
+                    {
+                        "name": "Banner of the Twice-Branded",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Pistol and Spear",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 22,
+                "category": "Core"
+            },
+            {
+                "name": "Immortals",
+                "cost": 465,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Special"
+            },
+            {
+                "name": "Immortals",
+                "cost": 325,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Disciples of Lugar",
+                "cost": 409,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Banner of Courage",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 18,
+                "category": "Special"
+            },
+            {
+                "name": "Gunnery Team",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Titan Mortar",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Gunnery Team",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Rocket Battery",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Gunnery Team",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Rocket Battery",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 2,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1218,
+            "Core": 1037,
+            "Special": 1799,
+            "Total": 4054
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Miser of Sugulag",
+                "cost": 880,
+                "options": [
+                    {
+                        "name": "Recruiting Officer",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Unnatural Roots",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Mirrored Scales",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Mesmerising Plumage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 19,
+                "category": "Core"
+            },
+            {
+                "name": "Succubi",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Horrifying Visage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Myrmidons",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Unhinging Jaw",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Clawed Fiends",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Clawed Fiends",
+                "cost": 445,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Unholy Appetite",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 1,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Blazing Glory",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Brimstone Secretions",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 260,
+                "options": [
+                    {
+                        "name": "Horde Thresher",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Mark of the Eternal Champion",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 1,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Bloat Flies",
+                "cost": 400,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Aves"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 880,
+            "Core": 1000,
+            "Special": 1720,
+            "Total": 4000
+        },
+        "magicalness": 8
+    }
+}

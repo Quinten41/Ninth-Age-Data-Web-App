@@ -1,0 +1,377 @@
+{
+    "id_match": "68289b0f91dc0590e44a9cb2",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "68289b0f91dc0590e44a9cb2",
+    "scoreOne": 11,
+    "scoreTwo": 9,
+    "armyOne": "DL",
+    "armyTwo": "OK",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Miser of Sugulag",
+                "cost": 900,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Unnatural Roots",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Mirrored Scales",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Segmented Shell",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Lemures",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Centipede Legs",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 24,
+                "category": "Core"
+            },
+            {
+                "name": "Succubi",
+                "cost": 491,
+                "options": [
+                    {
+                        "name": "Torporous Tendrils",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 21,
+                "category": "Core"
+            },
+            {
+                "name": "Brazen Beasts",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Whipcrack Tail",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Whipcrack Tail",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Whipcrack Tail",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Succubi Tempters",
+                "cost": 272,
+                "options": [
+                    {
+                        "name": "Hammer Hand",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Furies",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Kaleidoscopic Flesh",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Aves"
+            },
+            {
+                "name": "Furies",
+                "cost": 185,
+                "options": [
+                    {
+                        "name": "Venom Sacs",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 1,
+                "models": 5,
+                "category": "Aves"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 900,
+            "Core": 1001,
+            "Special": 1722,
+            "Total": 3998
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Shaman",
+                "cost": 550,
+                "options": [
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Scroll of Power",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Godspeaker",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Great Khan",
+                "cost": 535,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Battleline Hero",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Destiny's Call",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Khagadai's Legacy",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rod of Battle",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spinesplitter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tribesmen",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 14,
+                "category": "Core"
+            },
+            {
+                "name": "Sabretooth Tigers",
+                "cost": 260,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Bruisers",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Core"
+            },
+            {
+                "name": "Mercenary Veterans",
+                "cost": 594,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Banner of the Gyengget",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "First Strike",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Magic Resistance",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Tusker Cavalry",
+                "cost": 515,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Yetis",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Scrapling Trappers",
+                "cost": 135,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Frost Mammoth",
+                "cost": 380,
+                "options": [
+                    {
+                        "name": "Hunting Spear",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Chained Beasts"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1085,
+            "Core": 1000,
+            "Special": 1534,
+            "Total": 3999
+        },
+        "magicalness": 7
+    }
+}

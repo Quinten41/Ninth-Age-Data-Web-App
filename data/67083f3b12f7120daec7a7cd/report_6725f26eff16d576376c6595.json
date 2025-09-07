@@ -1,0 +1,393 @@
+{
+    "id_match": "6725f26eff16d576376c6595",
+    "firstTurn": -1,
+    "type": 1,
+    "id": "6725f26eff16d576376c6595",
+    "scoreOne": 0,
+    "scoreTwo": 20,
+    "armyOne": "SA",
+    "armyTwo": "HE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Anurarch Archmage",
+                "cost": 615,
+                "options": [
+                    {
+                        "name": "Light Troops and Closely Guarded",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Veil Mastery",
+                        "type": "Arcane Mastery"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 505,
+                "options": [
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 30,
+                "category": "Core"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 21,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Hunters",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Tegu Guards",
+                "cost": 588,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Koru Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 24,
+                "category": "Special"
+            },
+            {
+                "name": "Raptor Riders",
+                "cost": 588,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Obelisk of Collaboration",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 14,
+                "category": "Special"
+            },
+            {
+                "name": "Rhamphodon Riders",
+                "cost": 400,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Weapon Beasts",
+                "cost": 460,
+                "options": [
+                    {
+                        "name": "Spearback",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Carnosaur",
+                "cost": 340,
+                "options": [
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Magna Sauria"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 615,
+            "Core": 1005,
+            "Special": 2036,
+            "Total": 3996
+        },
+        "magicalness": "2[object Object]"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "High Prince",
+                "cost": 610,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Lion Chariot",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Dragonforged Armour",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Ghostly Guard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Elemental Blade",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon and Elven Finesse",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Diadem of Protection",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Scroll of the Pearl Throne",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Royal Huntsman",
+                        "type": "Honour"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Commander",
+                "cost": 400,
+                "options": [
+                    {
+                        "name": "Griffon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Longbow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Elu's Heartwood",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Dragonforged Armour",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Great Weapon and Elven Finesse",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Commander",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Longbow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Queen's Companion",
+                        "type": "Honour"
+                    },
+                    {
+                        "name": "Moonlight Arrows",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Mage",
+                "cost": 315,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Rod of Battle",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Divination",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Citizen Archers",
+                "cost": 412,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 29,
+                "category": "Core"
+            },
+            {
+                "name": "Citizen Archers",
+                "cost": 399,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 28,
+                "category": "Core"
+            },
+            {
+                "name": "Erlein Reavers",
+                "cost": 194,
+                "options": [],
+                "index": 0,
+                "models": 6,
+                "category": "Core"
+            },
+            {
+                "name": "Flame Wardens",
+                "cost": 545,
+                "options": [
+                    {
+                        "name": "Banner of Becalming",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Sword Masters",
+                "cost": 485,
+                "options": [
+                    {
+                        "name": "Navigator's Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 21,
+                "category": "Special"
+            },
+            {
+                "name": "Sky Sloop",
+                "cost": 220,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Sky Sloop",
+                "cost": 220,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1505,
+            "Core": 1005,
+            "Special": 1470,
+            "Total": 3980
+        },
+        "magicalness": 4
+    }
+}

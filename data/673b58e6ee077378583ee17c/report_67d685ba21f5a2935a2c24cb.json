@@ -1,0 +1,192 @@
+{
+    "id_match": "67d685ba21f5a2935a2c24cb",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67d685ba21f5a2935a2c24cb",
+    "scoreOne": 14,
+    "scoreTwo": 6,
+    "armyOne": "OnG",
+    "armyTwo": "WDG",
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Feldrak Ancestor",
+                "cost": 630,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Chosen Lord",
+                "cost": 595,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Shield Breaker",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Chimera",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Gluttony",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Luck of the Dark Gods",
+                        "type": "Gifts of the Dark Gods"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sorcerer",
+                "cost": 360,
+                "options": [
+                    {
+                        "name": "Giant Slayer",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "War Dais",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Occultism",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 546,
+                "options": [
+                    {
+                        "name": "Zealots' Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Greed",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 17,
+                "category": "Core"
+            },
+            {
+                "name": "Fallen",
+                "cost": 225,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Warhounds",
+                "cost": 130,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Chosen Knights",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Banner of Speed",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Feldraks",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Battleshrine",
+                "cost": 320,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Flayers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Skinning Lash",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1585,
+            "Core": 1126.25,
+            "Special": 1510,
+            "Total": 3996
+        },
+        "magicalness": 4
+    }
+}

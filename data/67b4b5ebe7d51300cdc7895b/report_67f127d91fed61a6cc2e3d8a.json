@@ -1,0 +1,469 @@
+{
+    "id_match": "67f127d91fed61a6cc2e3d8a",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67f127d91fed61a6cc2e3d8a",
+    "scoreOne": 16,
+    "scoreTwo": 4,
+    "armyOne": "DE",
+    "armyTwo": "SE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Sanctioned Warlock",
+                "cost": 480,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Ring of the Obsidian Thrones",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Dread Prince",
+                "cost": 380,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Lacerating Touch",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Seal of the Republic",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Moithir's Mirror",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Academy Commander",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Silexian Spears",
+                "cost": 471,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 34,
+                "category": "Core"
+            },
+            {
+                "name": "Silexian Auxiliaries",
+                "cost": 304,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 16,
+                "category": "Core"
+            },
+            {
+                "name": "Corsairs",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Repeater Handbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 13,
+                "category": "Core"
+            },
+            {
+                "name": "Temple Militants",
+                "cost": 566,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Dancers of Yema",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 23,
+                "category": "Special"
+            },
+            {
+                "name": "Judicators",
+                "cost": 344,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Banner of Urlain",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 14,
+                "category": "Special"
+            },
+            {
+                "name": "Dread Acolytes",
+                "cost": 316,
+                "options": [
+                    {
+                        "name": "Temple Acolytes",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Dread Acolytes",
+                "cost": 279,
+                "options": [
+                    {
+                        "name": "Temple Acolytes",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 7,
+                "category": "Special"
+            },
+            {
+                "name": "Repeater Battery",
+                "cost": 210,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Repeater Battery",
+                "cost": 210,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Hunting Chariot",
+                "cost": 210,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 860,
+            "Core": 1005,
+            "Special": 2135,
+            "Total": 4000
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Druid",
+                "cost": 505,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Cosmology",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Sylvan Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spell Scroll",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Chieftain",
+                "cost": 335,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Glyph of Amryl",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hunter's Honour",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Forest Guardian",
+                        "type": "Kindred"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Chieftain",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Sylvan Blades",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Spirit of the Whirlwind",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Horn of the Wild Hunt",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Song of Cenyrn",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Blade Dancer",
+                        "type": "Kindred"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Sylvan Archers",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Sylvan Archers",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Heath Riders",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Heath Hunters",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Forest Guard",
+                "cost": 165,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Forest Guard",
+                "cost": 165,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 452,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Vanguard",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 21,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 298,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Vanguard",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 14,
+                "category": "Special"
+            },
+            {
+                "name": "Blade Dancers",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 14,
+                "category": "Special"
+            },
+            {
+                "name": "Blade Dancers",
+                "cost": 180,
+                "options": [],
+                "index": 1,
+                "models": 7,
+                "category": "Special"
+            },
+            {
+                "name": "Kestrel Knights",
+                "cost": 240,
+                "options": [
+                    {
+                        "name": "Skirmisher, Light Lance and Sylvan Bow",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Pathfinders",
+                "cost": 200,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Unseen Arrows"
+            },
+            {
+                "name": "Pathfinders",
+                "cost": 200,
+                "options": [],
+                "index": 1,
+                "models": 5,
+                "category": "Unseen Arrows"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1080,
+            "Core": 1020,
+            "Special": 1500,
+            "Total": 4000
+        },
+        "magicalness": 7
+    }
+}

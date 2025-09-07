@@ -1,0 +1,445 @@
+{
+    "id_match": "67eef0d816ae51cb7c84e8ec",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67eef0d816ae51cb7c84e8ec",
+    "scoreOne": 18,
+    "scoreTwo": 2,
+    "armyOne": "DL",
+    "armyTwo": "OK",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Myrmidons",
+                "cost": 355,
+                "options": [
+                    {
+                        "name": "Bronze Backbone",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Myrmidons",
+                "cost": 355,
+                "options": [
+                    {
+                        "name": "Bronze Backbone",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Imps",
+                "cost": 295,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Sorcerous Antennae",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Firestarter - Spear of Infinity",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Brazen Beasts",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Brazen Beasts",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 290,
+                "options": [],
+                "index": 0,
+                "models": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Hellhounds",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Incendiary Ichor",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Eidolons",
+                "cost": 205,
+                "options": [
+                    {
+                        "name": "Scout",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Eidolons",
+                "cost": 205,
+                "options": [
+                    {
+                        "name": "Scout",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Veil Serpents",
+                "cost": 440,
+                "options": [
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Aves"
+            },
+            {
+                "name": "Veil Serpents",
+                "cost": 440,
+                "options": [
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 1,
+                "models": 5,
+                "category": "Aves"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 0,
+            "Core": 1005,
+            "Special": 2110,
+            "Total": 3995
+        },
+        "magicalness": "2[object Object][object Object]"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Shaman",
+                "cost": 525,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Rod of Battle",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Gut Roarer",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Mammoth Hunter",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Banner of the Gyengget",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Hunting Spear",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Mammoth Hunter",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Iron Fist",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "General, Disciplined and Wildheart",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Hunting Spear",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Mammoth Hunter",
+                "cost": 265,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Heart-Ripper",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Godspeaker",
+                        "type": "Big Name"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Hunting Spear",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Mammoth Hunter",
+                "cost": 215,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Hunting Spear",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 3,
+                "category": "Characters"
+            },
+            {
+                "name": "Tribesmen",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Iron Fist",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 7,
+                "category": "Core"
+            },
+            {
+                "name": "Tribesmen",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Iron Fist",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 7,
+                "category": "Core"
+            },
+            {
+                "name": "Scraplings",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Mercenary Gunners",
+                "cost": 480,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Hunting Spear , Iron Fist and Poison Attacks",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Swiftstride",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Yetis",
+                "cost": 240,
+                "options": [],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Yetis",
+                "cost": 160,
+                "options": [],
+                "index": 1,
+                "models": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Kin-Eater",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Sabretooth Tigers",
+                "cost": 110,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Rock Aurochs",
+                "cost": 465,
+                "options": [
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Chained Beasts"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1595,
+            "Core": 1000,
+            "Special": 1140,
+            "Total": 4000
+        },
+        "magicalness": 8
+    }
+}

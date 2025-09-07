@@ -1,0 +1,424 @@
+{
+    "id_match": "68222cadda89bf3e9f2850f8",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "68222cadda89bf3e9f2850f8",
+    "scoreOne": 11,
+    "scoreTwo": 9,
+    "armyOne": "VS",
+    "armyTwo": "VC",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Swarm Priest",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Witchcraft",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Caelysian Pantheon",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Bloodfur Legate",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Praetorian Brute",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Sacred Aquila",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Pistol",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Rodentium Bullets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vermin Senator",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Dragon's Brew",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Storm Rocket",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "House Prefect",
+                "cost": 135,
+                "options": [
+                    {
+                        "name": "Praetorian Brute",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Rodentium Bullets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Fetthis Fleshmaster",
+                        "type": "House"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Blackfur Veterans",
+                "cost": 438,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 38,
+                "category": "Core"
+            },
+            {
+                "name": "Blackfur Veterans",
+                "cost": 438,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 38,
+                "category": "Core"
+            },
+            {
+                "name": "Vermin Brutes",
+                "cost": 540,
+                "options": [],
+                "index": 0,
+                "models": 11,
+                "category": "Special"
+            },
+            {
+                "name": "Experimental Weapon Teams",
+                "cost": 214,
+                "options": [
+                    {
+                        "name": "Deepfire Thrower",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Experimental Weapon Teams",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Rotary Gun",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Shadowfur Stalkers",
+                "cost": 140,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Shadowfur Stalkers",
+                "cost": 140,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Giant Rats",
+                "cost": 90,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Dreadmill Chariots",
+                "cost": 100,
+                "options": [],
+                "index": 0,
+                "models": 1,
+                "category": "Bread and Games"
+            },
+            {
+                "name": "Dreadmill Chariots",
+                "cost": 100,
+                "options": [],
+                "index": 1,
+                "models": 1,
+                "category": "Bread and Games"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1105,
+            "Core": 966,
+            "Special": 1229,
+            "Total": 3500
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Vampire Count",
+                "cost": 685,
+                "options": [
+                    {
+                        "name": "General, Disciplined, and The Dead Arise",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Lahmia",
+                        "type": "Ancestral Blood Power"
+                    },
+                    {
+                        "name": "Commandment",
+                        "type": "Blood Powers"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Destiny's Call",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Eldritch Inscriptions",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Necromancer",
+                "cost": 460,
+                "options": [
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skeletons",
+                "cost": 392,
+                "options": [
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Banner of Eldritch Might",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 39,
+                "category": "Core"
+            },
+            {
+                "name": "Bat Swarms",
+                "cost": 270,
+                "options": [],
+                "index": 0,
+                "models": 6,
+                "category": "Core"
+            },
+            {
+                "name": "Dire Wolves",
+                "cost": 220,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Barrow Guard",
+                "cost": 526,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Black Standard of Zagvozd",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 29,
+                "category": "Special"
+            },
+            {
+                "name": "Court of the Damned",
+                "cost": 300,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Great Bats",
+                "cost": 95,
+                "options": [],
+                "index": 0,
+                "models": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Vampire Knights",
+                "cost": 545,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Banner of Speed",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Swift Death"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1145,
+            "Core": 882,
+            "Special": 921,
+            "Total": 3493
+        },
+        "magicalness": 11
+    }
+}

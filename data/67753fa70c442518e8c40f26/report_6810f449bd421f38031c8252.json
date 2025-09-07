@@ -1,0 +1,652 @@
+{
+    "id_match": "6810f449bd421f38031c8252",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "6810f449bd421f38031c8252",
+    "scoreOne": 13,
+    "scoreTwo": 7,
+    "armyOne": "OnG",
+    "armyTwo": "UD",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Goblin Witch",
+                "cost": 420,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Pyromancy",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Witch",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Witchcraft",
+                        "type": "Path"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Demagogue",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Demagogue",
+                "cost": 140,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Battleline Hero",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Darrmu and Goblin Gardens",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 3,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 4,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Mauler",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Mauler",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 45,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Netter",
+                        "type": "Other"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 45,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Netter",
+                        "type": "Other"
+                    }
+                ],
+                "index": 3,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 45,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Netter",
+                        "type": "Other"
+                    }
+                ],
+                "index": 4,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Rabble",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 58,
+                "category": "Core"
+            },
+            {
+                "name": "Goblin Rabble",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 58,
+                "category": "Core"
+            },
+            {
+                "name": "Goblin Rabble",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 59,
+                "category": "Core"
+            },
+            {
+                "name": "Great Green Idol",
+                "cost": 380,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Goblin Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Git Launcher",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Goblin Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Git Launcher",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Gogtuk Neophytes",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Creepers",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Gogtuk Neophytes",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Gnasher Dashers",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Grotling Scrap Wagon",
+                "cost": 110,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Grotling Scrap Wagon",
+                "cost": 110,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1500,
+            "Core": 1090,
+            "Special": 1410,
+            "Total": 4000
+        },
+        "magicalness": 11
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Death Cult Hierarch",
+                "cost": 500,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Scroll of Power",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Barrow Legion",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Pharaoh",
+                "cost": 325,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Scourge of Kings",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Sun's Embrace",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Aspis Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Lord of the Barrow Legion",
+                        "type": "Lord of Undeath"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Nomarch",
+                "cost": 155,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Sandstorm Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Book of the Dead",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Barrow Legion",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Solitary",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Tomb Harbinger",
+                        "type": "Occupation"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skeleton Warriors",
+                "cost": 440,
+                "options": [
+                    {
+                        "name": "Barrow Legion",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 42,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Chariots",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Barrow Legion",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Banner of the Entombed",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Aspis Arrows and Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Legion Charioteers",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Chariots",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Barrow Legion",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Banner of the Entombed",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Aspis Arrows and Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Legion Charioteers",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Core"
+            },
+            {
+                "name": "Scarab Swarms",
+                "cost": 335,
+                "options": [
+                    {
+                        "name": "Barrow Legion and Ghastly Swarm",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Scarab Swarms",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Barrow Legion and Ghastly Swarm",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Shabti Archers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Barrow Legion",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Shabti Archers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Barrow Legion",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Colossus",
+                "cost": 415,
+                "options": [
+                    {
+                        "name": "Giant Aspis Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Mason's Menagerie"
+            },
+            {
+                "name": "Colossus",
+                "cost": 415,
+                "options": [
+                    {
+                        "name": "Giant Aspis Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Mason's Menagerie"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 980,
+            "Core": 1140,
+            "Special": 985,
+            "Total": 3935
+        },
+        "magicalness": 8
+    }
+}

@@ -1,0 +1,438 @@
+{
+    "id_match": "6725fc8e93589436a6d8736e",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "6725fc8e93589436a6d8736e",
+    "scoreOne": 17,
+    "scoreTwo": 3,
+    "armyOne": "DE",
+    "armyTwo": "DH",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Silexian Officer",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Manticore",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Supernatural Dexterity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon and Elven Finesse",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Talisman of Shielding",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Dread Prince",
+                "cost": 400,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Seal of the Republic",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Lacerating Touch",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Moithir's Mirror",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Beastmaster",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sanctioned Warlock",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Ceinran's Scales",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Witchcraft",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Silexian Auxiliaries",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Silexian Auxiliaries",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Silexian Spears",
+                "cost": 257,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 18,
+                "category": "Core"
+            },
+            {
+                "name": "Corsairs",
+                "cost": 185,
+                "options": [
+                    {
+                        "name": "Repeater Handbow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Thunder Pack",
+                "cost": 490,
+                "options": [],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Dread Acolytes",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Temple Acolytes",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Divine Altar",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Altar of Tila",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Repeater Battery",
+                "cost": 210,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Repeater Battery",
+                "cost": 210,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Repeater Battery",
+                "cost": 210,
+                "options": [],
+                "index": 2,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1200,
+            "Core": 1022,
+            "Special": 1740,
+            "Total": 3962
+        },
+        "magicalness": 5
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Dragon Seeker",
+                "cost": 355,
+                "options": [
+                    {
+                        "name": "Rune of Quickening",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Might",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Anger",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Grim Resolve",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Runic Smith",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Storms",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Rune",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Reckoning",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Resilience",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Greybeards",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Clan Marksmen",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Steadiness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Guild-Crafted Handgun",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Clan Marksmen",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Steadiness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Guild-Crafted Handgun",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Seekers",
+                "cost": 520,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Grudge Buster",
+                "cost": 280,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Grudge Buster",
+                "cost": 280,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Anvil of Power",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Rune of Reckoning",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Forge Wardens",
+                "cost": 235,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Dismay",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Steam Copters",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Shrapnel Grenades",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 625,
+            "Core": 1030,
+            "Special": 1705,
+            "Total": 3360
+        },
+        "magicalness": 0
+    }
+}

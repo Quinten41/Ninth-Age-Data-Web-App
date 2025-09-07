@@ -1,0 +1,347 @@
+{
+    "id_match": "67c4d34059be7742f3b2b761",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "67c4d34059be7742f3b2b761",
+    "scoreOne": 13,
+    "scoreTwo": 7,
+    "armyOne": "VC",
+    "armyTwo": "ID",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Vampire Count",
+                "cost": 865,
+                "options": [
+                    {
+                        "name": "General, Disciplined, and The Dead Arise",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Vetala",
+                        "type": "Ancestral Blood Power"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Storm Caller",
+                        "type": "Blood Powers"
+                    },
+                    {
+                        "name": "Colossal Zombie Dragon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Apprentice",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Eldritch Inscriptions",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Obsidian Rock",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Necromancer",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Ghouls",
+                "cost": 575,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Skeletons",
+                "cost": 324,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Sheltering Standard",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 33,
+                "category": "Core"
+            },
+            {
+                "name": "Dire Wolves",
+                "cost": 200,
+                "options": [],
+                "index": 0,
+                "models": 9,
+                "category": "Core"
+            },
+            {
+                "name": "Spectral Hunters",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Sweeping Attack",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "The Suffering"
+            },
+            {
+                "name": "Spectral Hunters",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Sweeping Attack",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 8,
+                "category": "The Suffering"
+            },
+            {
+                "name": "Vampire Knights",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Swift Death"
+            },
+            {
+                "name": "Vampire Spawn",
+                "cost": 230,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Swift Death"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1375,
+            "Core": 1099,
+            "Special": 0,
+            "Total": 3994
+        },
+        "magicalness": 8
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Infernal Warriors",
+                "cost": 550,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Infernal Warriors",
+                "cost": 538,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 39,
+                "category": "Core"
+            },
+            {
+                "name": "Infernal Warriors",
+                "cost": 538,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 39,
+                "category": "Core"
+            },
+            {
+                "name": "Immortals",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Immortals",
+                "cost": 555,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Immortals",
+                "cost": 555,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 2,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Immortals",
+                "cost": 532,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 3,
+                "models": 24,
+                "category": "Special"
+            },
+            {
+                "name": "Infernal Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Naphtha Thrower",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Vassal Slingshot",
+                "cost": 80,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 0,
+            "Core": 1626,
+            "Special": 2472,
+            "Total": 4098
+        },
+        "magicalness": 0
+    }
+}

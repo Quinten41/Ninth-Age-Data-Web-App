@@ -1,0 +1,214 @@
+{
+    "id_match": "68053a6c8e73cb7717d7ef65",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "68053a6c8e73cb7717d7ef65",
+    "scoreOne": 0,
+    "scoreTwo": 20,
+    "armyOne": "KoE",
+    "armyTwo": "ID",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Paladin",
+                "cost": 530,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Fey Steed",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Uther's Mettle",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Percival's Panoply",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Fortress of Faith",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Sainted and Gallantry",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Duke",
+                "cost": 525,
+                "options": [
+                    {
+                        "name": "Hippogriff",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Sacred Chalice",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Faith",
+                        "type": "Knightly Principle"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Damsel",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Heraldic Steed",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Knights of the Realm",
+                "cost": 425,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Mounted Serjeants",
+                "cost": 300,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Mounted Serjeants",
+                "cost": 300,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Knights of the Quest",
+                "cost": 595,
+                "options": [
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 9,
+                "category": "Special"
+            },
+            {
+                "name": "Knights Penitent",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "The Lady's Courtier",
+                "cost": 425,
+                "options": [
+                    {
+                        "name": "Courtier of the Dusk",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Fey"
+            },
+            {
+                "name": "Fey Knight",
+                "cost": 360,
+                "options": [
+                    {
+                        "name": "Champion of the Green Knight",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Fey"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1345,
+            "Core": 1025,
+            "Special": 845,
+            "Total": 4000
+        },
+        "magicalness": 7
+    }
+}

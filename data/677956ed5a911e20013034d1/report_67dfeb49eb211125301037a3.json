@@ -1,0 +1,494 @@
+{
+    "id_match": "67dfeb49eb211125301037a3",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67dfeb49eb211125301037a3",
+    "scoreOne": 0,
+    "scoreTwo": 20,
+    "armyOne": "DH",
+    "armyTwo": "UD",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Engineer",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Forge Repeater",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Rune of Iron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Shielding",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Engineer",
+                "cost": 145,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Forge Repeater",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Greybeards",
+                "cost": 515,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of the Hold",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Greybeards",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Dismay",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Grudge Buster",
+                "cost": 280,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Field Artillery",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Organ Gun",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Field Artillery",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Organ Gun",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Field Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Flame Cannon",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Field Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Flame Cannon",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Steam Copters",
+                "cost": 225,
+                "options": [
+                    {
+                        "name": "Shrapnel Bombs",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Steam Copters",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Shrapnel Grenades",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Steam Copters",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Shrapnel Grenades",
+                        "type": "Other"
+                    }
+                ],
+                "index": 2,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Forge Wardens",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Forge Wardens",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Forge Wardens",
+                "cost": 210,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Vengeance Seeker",
+                "cost": 120,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Vengeance Seeker",
+                "cost": 120,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 395,
+            "Core": 1005,
+            "Special": 2595,
+            "Total": 3995
+        },
+        "magicalness": 0
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Death Cult Hierarch",
+                "cost": 360,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Divination",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Sacred Hourglass",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Soul Conduit",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Pharaoh",
+                "cost": 295,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Scourge of Kings",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Book of the Dead",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Pharaoh",
+                "cost": 295,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Scroll of Desiccation",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Nomarch",
+                "cost": 125,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Tomb Harbinger",
+                        "type": "Occupation"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skeleton Archers",
+                "cost": 285,
+                "options": [
+                    {
+                        "name": "Longbow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Archers",
+                "cost": 285,
+                "options": [
+                    {
+                        "name": "Longbow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Chariots",
+                "cost": 250,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Chariots",
+                "cost": 250,
+                "options": [],
+                "index": 1,
+                "models": 3,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Warriors",
+                "cost": 245,
+                "options": [
+                    {
+                        "name": "Banner of the Entombed",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Warriors",
+                "cost": 225,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Banner of the Entombed",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Battle Sphinx",
+                "cost": 460,
+                "options": [],
+                "index": 0,
+                "category": "Mason's Menagerie"
+            },
+            {
+                "name": "Battle Sphinx",
+                "cost": 460,
+                "options": [],
+                "index": 1,
+                "category": "Mason's Menagerie"
+            },
+            {
+                "name": "Battle Sphinx",
+                "cost": 460,
+                "options": [],
+                "index": 2,
+                "category": "Mason's Menagerie"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1075,
+            "Core": 1540,
+            "Special": 0,
+            "Total": 3995
+        },
+        "magicalness": 6
+    }
+}

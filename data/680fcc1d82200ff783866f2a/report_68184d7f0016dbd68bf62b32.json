@@ -1,0 +1,252 @@
+{
+    "id_match": "68184d7f0016dbd68bf62b32",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "68184d7f0016dbd68bf62b32",
+    "scoreOne": 9,
+    "scoreTwo": 11,
+    "armyOne": "SE",
+    "armyTwo": "SE",
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Avatar of Nature",
+                "cost": 610,
+                "options": [
+                    {
+                        "name": "Scarred Bark",
+                        "type": "Aspect of Nature"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Druid",
+                "cost": 420,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Forest Prince",
+                "cost": 315,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Sylvan Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Elven Cloak",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Pathfinder",
+                        "type": "Kindred"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Chieftain",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Sylvan Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Elven Cloak",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Pathfinder",
+                        "type": "Kindred"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Forest Guard",
+                "cost": 310,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Forest Guard",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Heath Riders",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Heath Lancers",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Heath Riders",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Heath Hunters",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Heath Riders",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Heath Hunters",
+                        "type": "Other"
+                    }
+                ],
+                "index": 2,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Blade Dancers",
+                "cost": 180,
+                "options": [],
+                "index": 0,
+                "models": 7,
+                "category": "Special"
+            },
+            {
+                "name": "Blade Dancers",
+                "cost": 180,
+                "options": [],
+                "index": 1,
+                "models": 7,
+                "category": "Special"
+            },
+            {
+                "name": "Pathfinders",
+                "cost": 320,
+                "options": [],
+                "index": 0,
+                "models": 8,
+                "category": "Unseen Arrows"
+            },
+            {
+                "name": "Pathfinders",
+                "cost": 280,
+                "options": [],
+                "index": 1,
+                "models": 7,
+                "category": "Unseen Arrows"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1595,
+            "Core": 1065,
+            "Special": 740,
+            "Total": 4000
+        },
+        "magicalness": 7
+    }
+}

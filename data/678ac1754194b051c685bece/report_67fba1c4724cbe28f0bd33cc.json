@@ -1,0 +1,505 @@
+{
+    "id_match": "67fba1c4724cbe28f0bd33cc",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "67fba1c4724cbe28f0bd33cc",
+    "scoreOne": 16,
+    "scoreTwo": 4,
+    "armyOne": "BH",
+    "armyTwo": "SE",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Wildhorn Lord",
+                "cost": 425,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Hunting Call",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Aaghor's Affliction",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "King Slayer",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Horn of Bragh",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Dragon's Brew",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Soothsayer",
+                "cost": 395,
+                "options": [
+                    {
+                        "name": "Curse of Lycanthropy",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Magical Heirloom",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rain Augur Brew",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Wildhorn Herd",
+                "cost": 220,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Paired Weapons and Throwing Weapons",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Wildhorn Herd",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Mongrel Herd",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Mongrel Herd",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Ambush",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Longhorn Herd",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Distortion Emblem",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Totem Bearer",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Blooded Horn Totem",
+                        "type": "Totems"
+                    }
+                ],
+                "index": 0,
+                "models": 30,
+                "category": "Special"
+            },
+            {
+                "name": "Razortusk Chariot",
+                "cost": 230,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Razortusk Chariot",
+                "cost": 230,
+                "options": [],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Jabberwock",
+                "cost": 270,
+                "options": [],
+                "index": 0,
+                "category": "Terrors of the Wild"
+            },
+            {
+                "name": "Jabberwock",
+                "cost": 270,
+                "options": [],
+                "index": 1,
+                "category": "Terrors of the Wild"
+            },
+            {
+                "name": "Beast Giant",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Uprooted Tree",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Terrors of the Wild"
+            },
+            {
+                "name": "Beast Giant",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Uprooted Tree",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Terrors of the Wild"
+            },
+            {
+                "name": "Beast Giant",
+                "cost": 270,
+                "options": [
+                    {
+                        "name": "Uprooted Tree",
+                        "type": "Other"
+                    }
+                ],
+                "index": 2,
+                "category": "Terrors of the Wild"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 820,
+            "Core": 1000,
+            "Special": 1030,
+            "Total": 4000
+        },
+        "magicalness": 5
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Druid",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Cosmology",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spell Scroll",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Thicket Shepherd",
+                "cost": 300,
+                "options": [
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Scarred Bark",
+                        "type": "Aspect of Nature"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Chieftain",
+                "cost": 265,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Glyph of Amryl",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Song of Cenyrn",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hunter's Honour",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Forest Guardian",
+                        "type": "Kindred"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Chieftain",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Sylvan Blades",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hail Shot",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Chieftain",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Sylvan Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Bough Of Wyscan",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Oaken Might",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Chieftain",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Sylvan Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Pathfinder",
+                        "type": "Kindred"
+                    }
+                ],
+                "index": 3,
+                "category": "Characters"
+            },
+            {
+                "name": "Sylvan Archers",
+                "cost": 555,
+                "options": [
+                    {
+                        "name": "Banner of Deception",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Forest Guard",
+                "cost": 450,
+                "options": [
+                    {
+                        "name": "Predator Pennant",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 35,
+                "category": "Core"
+            },
+            {
+                "name": "Thicket Beasts",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 480,
+                "options": [
+                    {
+                        "name": "Sheltering Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 23,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Eagles",
+                "cost": 410,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1595,
+            "Core": 1005,
+            "Special": 1400,
+            "Total": 4000
+        },
+        "magicalness": 7
+    }
+}

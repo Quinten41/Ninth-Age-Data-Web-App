@@ -1,0 +1,199 @@
+{
+    "id_match": "68177c26d608a70e63a1e79f",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "68177c26d608a70e63a1e79f",
+    "scoreOne": 10,
+    "scoreTwo": 10,
+    "armyOne": "UD",
+    "armyTwo": "VS",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Death Cult Hierarch",
+                "cost": 515,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Skeletal Horse",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Soul Conduit",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Nomarch",
+                "cost": 90,
+                "options": [
+                    {
+                        "name": "Skeletal Horse",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Solitary",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Tomb Harbinger",
+                        "type": "Occupation"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skeleton Chariots",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Chariots",
+                "cost": 275,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Legion Charioteers",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Chariots",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 2,
+                "models": 3,
+                "category": "Core"
+            },
+            {
+                "name": "Skeleton Cavalry",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Shabti Archers",
+                "cost": 445,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Shabti Archers",
+                "cost": 445,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Sand Stalkers",
+                "cost": 330,
+                "options": [],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Sand Stalkers",
+                "cost": 330,
+                "options": [],
+                "index": 1,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Colossus",
+                "cost": 415,
+                "options": [
+                    {
+                        "name": "Giant Aspis Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Mason's Menagerie"
+            },
+            {
+                "name": "Colossus",
+                "cost": 415,
+                "options": [
+                    {
+                        "name": "Giant Aspis Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Mason's Menagerie"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 605,
+            "Core": 1015,
+            "Special": 1550,
+            "Total": 4000
+        },
+        "magicalness": 7
+    }
+}

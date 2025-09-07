@@ -1,0 +1,491 @@
+{
+    "id_match": "6821080509f2b36aaef2d828",
+    "firstTurn": 0,
+    "type": 1,
+    "id": "6821080509f2b36aaef2d828",
+    "scoreOne": 6,
+    "scoreTwo": 14,
+    "armyOne": "VS",
+    "armyTwo": "DH",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Swarm Priest",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Witchcraft",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Caelysian Pantheon",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Bloodfur Legate",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Praetorian Brute",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Sacred Aquila",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Pistol",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Rodentium Bullets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Vermin Senator",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Dragon's Brew",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Storm Rocket",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "House Prefect",
+                "cost": 135,
+                "options": [
+                    {
+                        "name": "Praetorian Brute",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Rodentium Bullets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Captain and Attached",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Fetthis Fleshmaster",
+                        "type": "House"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Blackfur Veterans",
+                "cost": 438,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 38,
+                "category": "Core"
+            },
+            {
+                "name": "Blackfur Veterans",
+                "cost": 438,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 38,
+                "category": "Core"
+            },
+            {
+                "name": "Vermin Brutes",
+                "cost": 540,
+                "options": [],
+                "index": 0,
+                "models": 11,
+                "category": "Special"
+            },
+            {
+                "name": "Experimental Weapon Teams",
+                "cost": 214,
+                "options": [
+                    {
+                        "name": "Deepfire Thrower",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Experimental Weapon Teams",
+                "cost": 195,
+                "options": [
+                    {
+                        "name": "Rotary Gun",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Shadowfur Stalkers",
+                "cost": 140,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Shadowfur Stalkers",
+                "cost": 140,
+                "options": [
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Giant Rats",
+                "cost": 90,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Dreadmill Chariots",
+                "cost": 100,
+                "options": [],
+                "index": 0,
+                "models": 1,
+                "category": "Bread and Games"
+            },
+            {
+                "name": "Dreadmill Chariots",
+                "cost": 100,
+                "options": [],
+                "index": 1,
+                "models": 1,
+                "category": "Bread and Games"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1105,
+            "Core": 966,
+            "Special": 1229,
+            "Total": 3500
+        },
+        "magicalness": 7
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "King",
+                "cost": 540,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Ancient Grudge",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Iron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Retribution",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Destruction",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Smashing",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Anger",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Mining",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Rune",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Thane",
+                "cost": 255,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Iron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Lightning",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Runic Standard of Wisdom",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Clan Warriors",
+                "cost": 560,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Runic Standard of the Anvil",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 40,
+                "category": "Core"
+            },
+            {
+                "name": "Clan Warriors",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Runic Standard of the Anvil",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "King's Guard",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Rune of Resilience",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Runic Standard of Wisdom",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "King's Guard",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Rune of Resilience",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Runic Standard of Wisdom",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Field Artillery",
+                "cost": 285,
+                "options": [
+                    {
+                        "name": "Dwarf Cannon",
+                        "type": "Artillery Weapons"
+                    },
+                    {
+                        "name": "Rune Crafted towards Height 5)",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Forge Wardens",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Runic Standard of Grudges",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Anvil of Power",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Rune of Oaths",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Resilience",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 795,
+            "Core": 950,
+            "Special": 1755,
+            "Total": 3500
+        },
+        "magicalness": 0
+    }
+}

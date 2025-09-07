@@ -1,0 +1,659 @@
+{
+    "id_match": "6846cb141f25ee351fdaad0c",
+    "firstTurn": 1,
+    "type": 1,
+    "id": "6846cb141f25ee351fdaad0c",
+    "scoreOne": 20,
+    "scoreTwo": 0,
+    "armyOne": "OnG",
+    "armyTwo": "SA",
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Goblin Witch",
+                "cost": 445,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Witchcraft",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Demagogue",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Monster Munch",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Gnasher Bait",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Standard Bearer",
+                        "type": "Leadership"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Demagogue",
+                "cost": 65,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Darrmu and Goblin Gardens",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 3,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 4,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 5,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 6,
+                "category": "Characters"
+            },
+            {
+                "name": "Mad Git",
+                "cost": 55,
+                "options": [],
+                "index": 7,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 2,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 3,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 4,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 50,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Headhunter",
+                        "type": "Big Name"
+                    }
+                ],
+                "index": 5,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 45,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Netter",
+                        "type": "Other"
+                    }
+                ],
+                "index": 6,
+                "category": "Characters"
+            },
+            {
+                "name": "Gogtuk Initiate",
+                "cost": 45,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Netter",
+                        "type": "Other"
+                    }
+                ],
+                "index": 7,
+                "category": "Characters"
+            },
+            {
+                "name": "Goblin Rabble",
+                "cost": 409,
+                "options": [
+                    {
+                        "name": "Goga Cauldron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Poisoned Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 47,
+                "category": "Core"
+            },
+            {
+                "name": "Goblin Rabble",
+                "cost": 402,
+                "options": [
+                    {
+                        "name": "Goga Cauldron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Poisoned Spear and Shield",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 46,
+                "category": "Core"
+            },
+            {
+                "name": "Goblin Rabble",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 27,
+                "category": "Core"
+            },
+            {
+                "name": "Iron Orcs",
+                "cost": 318,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 17,
+                "category": "Special"
+            },
+            {
+                "name": "Goblin Artillery",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Splatterer",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Goblin Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Git Launcher",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Goblin Artillery",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Git Launcher",
+                        "type": "Artillery Weapons"
+                    }
+                ],
+                "index": 2,
+                "category": "Special"
+            },
+            {
+                "name": "Gogtuk Neophytes",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Gogtuk Neophytes",
+                "cost": 160,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Gnasher Dashers",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Gnasher Dashers",
+                "cost": 150,
+                "options": [],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1540,
+            "Core": 1001,
+            "Special": 1458,
+            "Total": 3999
+        },
+        "magicalness": 8
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Anurarch Archmage",
+                "cost": 705,
+                "options": [
+                    {
+                        "name": "Recruiting Officer",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops and Closely Guarded",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Stampede Resonator Crystal",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Eternal Mastery",
+                        "type": "Arcane Mastery"
+                    },
+                    {
+                        "name": "Mystifying Mastery",
+                        "type": "Telepathic Mastery"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 520,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 255,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 16,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Hunters",
+                "cost": 232,
+                "options": [
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Magnetic Short Bow",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Caiman Elders",
+                "cost": 405,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Koru Stone",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Raptor Riders",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Weapon Beasts",
+                "cost": 355,
+                "options": [
+                    {
+                        "name": "Spearback",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Rhamphodon Riders",
+                "cost": 285,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Pteradon Riders",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Thyroscutus Herd",
+                "cost": 225,
+                "options": [
+                    {
+                        "name": "Magnetic Great Bow",
+                        "type": "Howdah"
+                    }
+                ],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Carnosaur",
+                "cost": 375,
+                "options": [
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hunt Leader",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Magna Sauria"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 705,
+            "Core": 1007,
+            "Special": 1910,
+            "Total": 3997
+        },
+        "magicalness": "0[object Object][object Object]"
+    }
+}

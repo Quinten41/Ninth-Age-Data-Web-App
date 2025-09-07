@@ -1,0 +1,10 @@
+streamlit
+orjson
+polars
+pandas
+numpy
+scipy
+seaborn
+numba
+textalloc
+statsmodels

@@ -1,0 +1,29 @@
+[theme]
+# The preset Streamlit theme that your custom theme inherits from.
+#
+# This can be one of the following: "light" or "dark".
+base = 'light'
+
+# Primary accent color.
+primaryColor = "#DEAA46"
+
+# Background color of the app.
+backgroundColor = "#f2f2f2"
+
+# Background color used for most interactive widgets.
+secondaryBackgroundColor = "#254C73"
+
+# Color used for almost all text.
+#textColor =
+
+# Color used for all links.
+#linkColor =
+
+# Whether or not links should be displayed with an underline.
+#linkUnderline =
+
+# The default font
+font="sans serif"
+
+[runner]
+magicEnabled = false
