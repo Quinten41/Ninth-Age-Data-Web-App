@@ -92,6 +92,9 @@ def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data,
         other_cats = [cat for cat in melt_vars if cat not in desired_order]
         category_order = desired_order + other_cats
 
+        # Build sorted list of category keys
+        sorted_cats = [cat for cat in category_order if cat in cat_data['Category'].unique()]
+
         # Create a mapping from category to its order index
         category_order_map = {cat: i for i, cat in enumerate(category_order)}
 
@@ -119,7 +122,7 @@ def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data,
                 return np.nan, np.nan
 
         pearson_results = []
-        for cat in cat_data_grouped['Category'].to_list():
+        for cat in sorted_cats: #cat_data_grouped['Category'].to_list():
             subdf = cat_data.filter(pl.col('Category') == cat)
             r, p = pearsonr_safe_polars(subdf)
             pearson_results.append({'Category': cat, 'r': r, 'p': p})
@@ -146,7 +149,7 @@ def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data,
         data_table_cat_pd = data_table_cat_pd.set_index('Category')[display_cols].T.reset_index(drop=True)
         data_table_cat_pd.columns.name = None
         data_table_cat_pd.insert(0, '', display_cols)
-        df_html_cat = data_table_cat_pd.to_html(index=False, escape=False, border=1)
+        df_html_cat = data_table_cat_pd[category_order].to_html(index=False, escape=False, border=1)
 
         st.markdown(f'''
             <p>The table below summarises the performance and popularity of different categories in {faction_name}. \
@@ -171,9 +174,6 @@ def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data,
 
         palette = sns.color_palette(n_colors=len(cat_data['Category'].unique()))
         legend_lines = []
-
-        # Build sorted list of category keys
-        sorted_cats = [cat for cat in category_order if cat in cat_data['Category'].unique()]
 
         for i, cat in enumerate(sorted_cats):
             group = cat_data.filter(pl.col('Category') == cat).to_pandas()
@@ -238,7 +238,7 @@ def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data,
         st.markdown(f'<p>The plot below shows the performance and popularity of units in {faction_name}. Each point represents a unit, with its popularity (number of games played) on the x-axis and its average score on the y-axis. \
         The heatmap the points are superimposed upon shows the |z|-score of a unit taken in that percentage of games with that mean score. \
         The red region indicates very unlikely performances, whereas the green region indicates more statistically typical performances; \
-        about 67% of the points should be in the green region and 95% within the bounds of the yellow/red region. Points being well into \
+        about 67% of the points should be in the green region and 95% within the bounds of the yellow/red region. Points well into \
         the red/yellow region may indicate a balance problem.</p>', unsafe_allow_html=True)
 
         st.pyplot(fig)
@@ -301,7 +301,8 @@ def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data,
  # Helper function to make an option plot to avoid rewriting code
 
 # Helper function to make an option plot to avoid rewriting code
-def make_option_plot(group, group_types, num_lists, var_score, mean_score, plot_num=None):
+@st.cache_data
+def make_option_plot(group, num_lists, var_score, mean_score, plot_num=None):
     option_stats = (
         group.groupby('Option Name')
         .agg(
@@ -320,10 +321,8 @@ def make_option_plot(group, group_types, num_lists, var_score, mean_score, plot_
         xlim=(15,30),
         ylim=(8,12)
     )
-    if plot_num == 1:
-        plt.title(f'Option Performance and Popularity I')
-    if plot_num == 2:
-        plt.title(f'Option Performance and Popularity II')
+    if plot_num != None:
+        plt.title(f'Option Performance and Popularity ({plot_num})')
     else:
         plt.title(f'Option Performance and Popularity')
 
@@ -364,10 +363,12 @@ def unit_specific_report(faction_name, unit_name, uoption_data, uunit_data, uniq
         unique_option_data = uoption_data_pd.drop_duplicates(subset=['Option Name', 'list_id'])
         # Count number of options per Option Type
         option_type_counts = unique_option_data.groupby('Option Type')['Option Name'].nunique().sort_values(ascending=False)
+        total_count = option_type_counts.sum()
+        num_plots = (total_count - 1) // 25 + 1  # Number of graphs needed if we limit to 25 options each
         unique_types = list(option_type_counts.index)
 
-        if len(unique_types) == 1:
-            fig,_ = make_option_plot(unique_option_data, unique_types, num_lists, var_score, mean_score)
+        if len(unique_types) == 1 or num_plots == 1:
+            fig,_ = make_option_plot(unique_option_data, num_lists, var_score, mean_score)
             st.markdown(f'''
             <p>The scatter plot below shows the performance and popularity of options for the unit {unit_name}. 
             The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated 
@@ -378,39 +379,32 @@ def unit_specific_report(faction_name, unit_name, uoption_data, uunit_data, uniq
             one would expect 95% of them to have a z-score of |z|<2.</p>''', unsafe_allow_html=True)
             st.pyplot(fig)
         else:
-            # Greedily assign types to two groups to balance total number of options
-            group1_types, group2_types = [], []
-            group1_count, group2_count = 0, 0
+            # Greedily assign types to num_plots groups to balance total number of options
+            group_types = [[] for _ in range(num_plots)]
+            group_counts = [0] * num_plots
             for opt_type, count in option_type_counts.items():
-                if group1_count <= group2_count:
-                    group1_types.append(opt_type)
-                    group1_count += count
-                else:
-                    group2_types.append(opt_type)
-                    group2_count += count
-
-            group1 = unique_option_data[unique_option_data['Option Type'].isin(group1_types)]
-            group2 = unique_option_data[unique_option_data['Option Type'].isin(group2_types)]
-
-            fig1,_ = make_option_plot(group1, group1_types, num_lists, var_score, mean_score, plot_num=1)
-            fig2,_ = make_option_plot(group2, group2_types, num_lists, var_score, mean_score, plot_num=2)
+                # Assign to group with current minimum count
+                min_idx = group_counts.index(min(group_counts))
+                group_types[min_idx].append(opt_type)
+                group_counts[min_idx] += count
 
             st.markdown(f'''
-            <p>The two scatter plots below shows the performance and popularity of options for the unit {unit_name}. \
-            The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated \
-            with respect to all the games {faction_name} has played, but just the games in which {unit_name} was included. \
-            The y-axis shows the average score of the games in which one or more choices of the given option was taken. \
-            Finally, the heatmap displays the z-score for the mean; options in the green region score similarily to a random \
-            sample with the same mean, whereas options in the red region do not. If the scores were randomly assigned, one would expect \
-            95% of them to have a z-score of |z|<2.</p>
-            <p>The first scatterplot shows options of the following types:</p>
-            <ul>
-            {''.join([f'<li>{opt_type}</li>' for opt_type in group1_types])}
-            </ul>
-            <p>The second scatterplot shows options of the following types:</p>
-            <ul>
-            {''.join([f'<li>{opt_type}</li>' for opt_type in group2_types])}
-            </ul>''', unsafe_allow_html=True)
-
-            st.pyplot(fig1)
-            st.pyplot(fig2)
+                <p>The scatter plots below show the performance and popularity of options for the unit {unit_name}. 
+                The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated 
+                with respect to all the games {faction_name} has played, but just the games in which {unit_name} was included. 
+                The y-axis shows the average score of the games in which one or more choices of the given option was taken. 
+                Finally, the heatmap displays the z-score for the mean; options in the green region score similarily to a random sample 
+                with the same mean, whereas options in the red region do not. If the scores were randomly assigned, 
+                one would expect 95% of them to have a z-score of |z|<2. Before each scatterplot there is a list of the 
+                option types the scatterplot shows.</p>''', unsafe_allow_html=True)
+            
+            # Create and display each plot
+            for i in range(num_plots):
+                group = unique_option_data[unique_option_data['Option Type'].isin(group_types[i])]
+                fig,_ = make_option_plot(group, num_lists, var_score, mean_score, plot_num=i+1)
+                st.markdown(f'''
+                <p>This scatterplot shows options of the following types:</p>
+                <ul>
+                {''.join([f'<li>{opt_type}</li>' for opt_type in group_types[i]])}
+                </ul>''', unsafe_allow_html=True)
+                st.pyplot(fig)

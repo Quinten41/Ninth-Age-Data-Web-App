@@ -43,156 +43,137 @@ def correct_cap(key):
     return lower_to_correct[key.lower()]
 
 # First load the data into three polars dataframes
-# This function excepts the data to be in a file labelled data
-def load_data(root_folder="data"):
-    # Get the absolute path to the data folder relative to the script
+
+# Cached function to load and organise the data
+@st.cache_data
+def load_and_organise_data(root_folder="data"):
     script_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(script_dir, root_folder)
-
     if not os.path.exists(data_dir):
         raise FileNotFoundError(f'The specified path does not exist: {data_dir}')
 
-    all_data = []
+    list_rows = []
+    unit_rows = []
+    option_rows = []
+    g_ind = 0  # Game index
+    l_ind = 0  # List index
+    u_ind = 0  # Unit index
+
+    # Loop through all folders and files, process as we read
     for folder_name in sorted(os.listdir(data_dir)):
         folder_path = os.path.join(data_dir, folder_name)
         if os.path.isdir(folder_path):
-            folder_data = []
+            tourn_data = []
             for file_name in sorted(os.listdir(folder_path)):
                 if file_name.endswith('.json'):
                     file_path = os.path.join(folder_path, file_name)
                     with open(file_path, 'r', encoding='utf-8') as f:
                         try:
                             data = orjson.loads(f.read())
-                            folder_data.append(data)
+                            tourn_data.append(data)
                         except orjson.JSONDecodeError:
                             print(f'Skipping invalid JSON: {file_path}')
-            all_data.append(folder_data)
-    return all_data
-
-def organise_data(all_data):
-    # Lists to store rows that will form our DataFrames
-    list_rows = []
-    unit_rows = []
-    option_rows = []
-    # Indices to keep track of the current row
-    g_ind = 0  # Game index
-    l_ind = 0  # List index
-    u_ind = 0  # Unit index
-    for tourn in all_data: 
-        # Get the type and date of the tournament
-        if tourn[0]['type'] == 0:
-            tourn_type = 'Teams'
-        elif tourn[0]['type'] == 1:
-            tourn_type = 'Singles'
-        else:
-            tourn_type = 'Unknown'
-
-        # If we reach here the tournament is valid and we can process it
-        # Now we add the data contained in this tournaments games to our dataset
-
-        for game in tourn[1:]:
-            army = [correct_cap(game['armyOne']), correct_cap(game['armyTwo'])]
-            arm_key = ('armyListOne', 'armyListTwo')
-            scores = (game['scoreOne'], game['scoreTwo'])
-            if game['firstTurn'] == 0:
-                turn = ('First', 'Second')
-            elif game['firstTurn'] == 1:
-                turn = ('Second', 'First')
+            if not tourn_data:
+                continue
+            # Process tournament data
+            tourn = tourn_data
+            if tourn[0]['type'] == 0:
+                tourn_type = 'Teams'
+            elif tourn[0]['type'] == 1:
+                tourn_type = 'Singles'
             else:
-                turn = ('Unknown', 'Unknown')
+                tourn_type = 'Unknown'
 
-            for i in range(2):
-                if arm_key[i] in game:
-                    is_list = True
-                    alist = game[arm_key[i]]
-                    list_points = 0 # Total points for this army list
-                    magicalness = game[arm_key[i]]['magicalness'] if not isinstance(game[arm_key[i]]['magicalness'], str) else None
-                    # --- UNIT DATA ---
-                    for unit in alist['units']:
-                        num_models = unit.get('models', None)
-                        unit_rows.append({
-                            'list_id': l_ind,
-                            'unit_id': u_ind,
-                            'Name': unit['name'],
-                            'Category': unit['category'],
-                            'Cost': unit['cost'],
-                            'Models': num_models,
-                            'Score': scores[i],
-                        })
-
-                        list_points += unit['cost'] # Add the points for this unit
-                        u_ind += 1
-
-                        # --- OPTION DATA ---
-                        for option in unit['options']:
-                            option_rows.append({
-                                'list_id': l_ind,
-                                'unit_id': u_ind,
-                                'Unit Name': unit['name'],
-                                'Option Name': option['name'],
-                                'Option Type': option['type'],
-                                'Score': scores[i],
-                            })
-                        # Add data about unit size to options
-                        if num_models:
-                            # This assumes no unit can be taken with more than 80 models
-                            for model_count in range(5, 85, 5):
-                                if num_models <= model_count:
-                                    model_count = f'{model_count-4}-{model_count} Models'
-                                    break
-                            option_rows.append({
-                                'list_id': l_ind,
-                                'unit_id': u_ind,
-                                'Unit Name': unit['name'],
-                                'Option Name': model_count,
-                                'Option Type': 'Model Count',
-                                'Score': scores[i],
-                            })
+            for game in tourn[1:]:
+                army = [correct_cap(game['armyOne']), correct_cap(game['armyTwo'])]
+                arm_key = ('armyListOne', 'armyListTwo')
+                scores = (game['scoreOne'], game['scoreTwo'])
+                if game['firstTurn'] == 0:
+                    turn = ('First', 'Second')
+                elif game['firstTurn'] == 1:
+                    turn = ('Second', 'First')
                 else:
-                    list_points = None
-                    magicalness = None
-                    is_list = False
+                    turn = ('Unknown', 'Unknown')
 
-                # --- GAME DATA ---
-                list_rows.append({
-                    'game_id': g_ind,
-                    'list_id': l_ind,
-                    'List': is_list,
-                    'Faction': army[i],
-                    'Opponent': army[1-i],
-                    'Score': scores[i],
-                    'Turn': turn[i],
-                    'Total Points': list_points,
-                    'Magicalness': magicalness,
-                    'Type': tourn_type,
-                    'Tournament Size': tourn[0]['size'],
-                    'Start Date': datetime.strptime(tourn[0]['start'], "%Y-%m-%d"),
-                    'End Date': datetime.strptime(tourn[0]['end'], "%Y-%m-%d"),
-                })
+                for i in range(2):
+                    if arm_key[i] in game:
+                        is_list = True
+                        alist = game[arm_key[i]]
+                        list_points = 0
+                        magicalness = game[arm_key[i]]['magicalness'] if not isinstance(game[arm_key[i]]['magicalness'], str) else None
+                        for unit in alist['units']:
+                            num_models = unit.get('models', None)
+                            unit_rows.append({
+                                'list_id': l_ind,
+                                'unit_id': u_ind,
+                                'Name': unit['name'],
+                                'Category': unit['category'],
+                                'Cost': unit['cost'],
+                                'Models': num_models,
+                                'Score': scores[i],
+                            })
+                            list_points += unit['cost']
+                            u_ind += 1
+                            for option in unit['options']:
+                                option_rows.append({
+                                    'list_id': l_ind,
+                                    'unit_id': u_ind,
+                                    'Unit Name': unit['name'],
+                                    'Option Name': option['name'],
+                                    'Option Type': option['type'],
+                                    'Score': scores[i],
+                                })
+                            if num_models:
+                                for model_count in range(5, 85, 5):
+                                    if num_models <= model_count:
+                                        model_count = f'{model_count-4}-{model_count} Models'
+                                        break
+                                option_rows.append({
+                                    'list_id': l_ind,
+                                    'unit_id': u_ind,
+                                    'Unit Name': unit['name'],
+                                    'Option Name': model_count,
+                                    'Option Type': 'Model Count',
+                                    'Score': scores[i],
+                                })
+                    else:
+                        list_points = None
+                        magicalness = None
+                        is_list = False
 
-                l_ind += 1
-            g_ind += 1
-            # Add information about game size to the last two entries
-            points = [row['Total Points'] for row in list_rows[-2:] if row['Total Points'] is not None]
-            if points:
-                max_points = ceil( max(points) / 100)*100
-                list_rows[-1]['Game Size'] = max_points
-                list_rows[-2]['Game Size'] = max_points
-            else:
-                list_rows[-1]['Game Size'] = None
-                list_rows[-2]['Game Size'] = None
+                    list_rows.append({
+                        'game_id': g_ind,
+                        'list_id': l_ind,
+                        'List': is_list,
+                        'Faction': army[i],
+                        'Opponent': army[1-i],
+                        'Score': scores[i],
+                        'Turn': turn[i],
+                        'Total Points': list_points,
+                        'Magicalness': magicalness,
+                        'Type': tourn_type,
+                        'Tournament Size': tourn[0]['size'],
+                        'Start Date': datetime.strptime(tourn[0]['start'], "%Y-%m-%d"),
+                        'End Date': datetime.strptime(tourn[0]['end'], "%Y-%m-%d"),
+                    })
+                    l_ind += 1
+                g_ind += 1
+                points = [row['Total Points'] for row in list_rows[-2:] if row['Total Points'] is not None]
+                if points:
+                    max_points = ceil( max(points) / 100)*100
+                    list_rows[-1]['Game Size'] = max_points
+                    list_rows[-2]['Game Size'] = max_points
+                else:
+                    list_rows[-1]['Game Size'] = None
+                    list_rows[-2]['Game Size'] = None
 
-    # Set the total number of games to the actual number of games
-    num_games = g_ind 
-    # Convert to DataFrames
+    num_games = g_ind
     raw_list_data = pl.DataFrame(list_rows).with_columns([
         pl.col("Faction").cast(pl.Categorical),
         pl.col("Turn").cast(pl.Categorical)
     ])
     raw_unit_data = pl.DataFrame(unit_rows)
     raw_option_data = pl.DataFrame(option_rows)
-
-    # Get a list of magic paths
     magic_paths = (
         raw_option_data
         .filter(pl.col("Option Type") == "Path")
@@ -201,18 +182,11 @@ def organise_data(all_data):
         .to_series()
         .to_list()
     )
-
     return raw_list_data, raw_unit_data, raw_option_data, num_games, magic_paths
-
-# Cached function to load and organise the data
-@st.cache_data
-def get_dataframes():
-    all_data = load_data()
-    return organise_data(all_data)
 
 # get the dataframes
 with st.spinner('Loading data...'):
-    raw_list_data, raw_unit_data, raw_option_data, tnum_games, magic_paths = get_dataframes()
+    raw_list_data, raw_unit_data, raw_option_data, tnum_games, magic_paths = load_and_organise_data()
 
 # Add a sidebar for filtering and page selection
 with st.sidebar:

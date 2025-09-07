@@ -5,9 +5,6 @@ venv/
 __pycache__/
 *.pyc
 
-# Data folders (add if you don’t want to track raw data)
-data/
-
 # OS files
 .DS_Store
 

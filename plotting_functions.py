@@ -1,3 +1,4 @@
+import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
@@ -9,8 +10,9 @@ from numba import jit
 
 
 # Function to draw a heatmap
+@st.cache_data
 @jit(nopython=True)
-def compute_heatmap(grid_res, xlim, ylim, num_games, mean, variance):
+def compute_heatmap(grid_res: float, xlim: tuple, ylim: tuple, num_games: int, mean: float, variance: float):
     '''
     Function to compute a heatmap.
     Outside the class so it can be compiled.
@@ -30,6 +32,7 @@ def compute_heatmap(grid_res, xlim, ylim, num_games, mean, variance):
                 zz[i, j] = min(4, abs(y - mean) * np.sqrt(x * num_games / 100) / np.sqrt(variance * (1 - (x * num_games / 100 - 1) / (num_games - 1))))
     return zz
 
+@st.cache_data
 def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid_res=500, xlim=None, ylim=None, x_error=None, y_error=None, figsize=(8, 6), **kwargs):
         '''
         Generates a seaborn scatterplot with non-overlapping text labels,
@@ -89,9 +92,9 @@ def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid
             textsize=10,
             linecolor='#333333', #rgb(.2,.2,.2)
             linewidth=0.5,
-            min_distance=0.0025, # Adjust min_distance based on number of labels
-            max_distance=0.01*len(labels),
-            nbr_candidates = 10*len(labels) # Adjust the number of candidates to the expected difficulty
+            min_distance=0.005,
+            max_distance=0.0125*len(labels),
+            nbr_candidates = 11*len(labels) # Adjust the number of candidates to the expected difficulty
         )
 
         # Adjust foratting
@@ -104,6 +107,7 @@ def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid
 
         return fig, ax
 
+@st.cache_data
 def scatterplot_with_errors(points, labels, xerr=None, yerr=None, figsize=(8, 6), xlabel='', ylabel='', title=''):
         """
         Scatterplot with labels and error bars, no region shading.
