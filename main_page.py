@@ -192,6 +192,14 @@ with st.spinner('Loading data...'):
 with st.sidebar:
     st.title('Filters & Navigation')
     st.header('Data Filters')
+
+    # Get the maximum and minimums for sliders
+    @st.cache_data
+    def get_max_min(raw_list_data):
+        return raw_list_data['Tournament Size'].max(), raw_list_data['Game Size'].max(), raw_list_data['Game Size'].min()
+    max_tournament_size, max_game_size, min_game_size = get_max_min(raw_list_data)
+
+
     # Date range slider
     start_date, end_date = st.slider(
         "Select Date Range",
@@ -239,20 +247,15 @@ with st.sidebar:
         # Minimum and maximum list size slider
         min_list_size, max_list_size = st.slider(
             "Select List Size Range (in points)",
-            min_value=3000,
-            max_value=6000,
-            value=(3000, 6000),
+            min_value=min_game_size,
+            max_value=max_game_size,
+            value=(min_game_size, max_game_size),
             step=1
         )
     else:
         min_list_size, max_list_size = None, None
 
     # Minimum and maximum tournament size slider
-    # Get the maximum tournament size first
-    @st.cache_data
-    def get_max_tournament_size(raw_list_data):
-        return raw_list_data['Tournament Size'].max()
-    max_tournament_size = get_max_tournament_size(raw_list_data)
     min_size, max_size = st.slider(
         "Select Tournament Size Range (# of players)",
         min_value=0,
