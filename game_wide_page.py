@@ -404,12 +404,12 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
             # Total number of games
             All = faction_totals['All'].sum()
 
-            st.markdown(f'The heatmap below shows the percentage of games where each pair of factions were paired against each other in team tournaments. \
-                        The rows indicate the faction, while the columns indicate the percentage of games played against each opponent. \
-                        The colour indicates the percentage of games played out of all games played by that faction, with darker colours indicating more games. \
-                        The numbers in each cell indicate the percentage of games played between that pairing. \
-                        The "All" column is the percentage of games played by that faction in team tournaments. \
-                        Given the current selections, the total number of games played in team tournaments is {All//2}.</p>',
+            st.markdown(f'The heatmap below shows the percentage of games each faction has been paired against an opponent in a team tournament \
+                        out of all games played by that faction. \
+                        The rows indicate the faction, while the columns indicate the opponent. \
+                        The colour provides a visual cue of the percentage, with darker colours indicating a higher percentage. \
+                        The "All" column is the percentage of games played by that faction in team tournaments out of all games played in team tournaments; \
+                        given the current selections, the total number of games played in team tournaments is {All//2}.</p>',
                         unsafe_allow_html=True)
 
             # Calculate the percent for each (Opponent, Faction) entry
