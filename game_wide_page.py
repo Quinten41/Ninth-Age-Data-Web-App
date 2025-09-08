@@ -66,7 +66,8 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
             standard deviations of the mean, even if balance is theoretically "perfect".</p>', unsafe_allow_html=True)
 
     fig,ax = plt.subplots()
-    sns.pointplot(data=list_data.to_pandas(), x='Faction', order=faction_keys, y='Score', linestyle = 'none', ax=ax)
+    no_mirror_list_data = list_data.filter(pl.col('Faction') != pl.col('Opponent'))
+    sns.pointplot(data=no_mirror_list_data.to_pandas(), x='Faction', order=faction_keys, y='Score', linestyle = 'none', ax=ax)
     plt.axhline(y=10, linestyle='--')
     plt.title('Average Score of Each Faction')
     plt.xlabel('Faction')
@@ -148,7 +149,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
         # All row
         all_row = []
         for fac in factions:
-            scores = list_data.filter(pl.col('Faction') == fac)['Score'].to_list()
+            scores = no_mirror_list_data.filter(pl.col('Faction') == fac)['Score'].to_list()
             if len(scores) == 0:
                 cell = ''
             else:
@@ -227,15 +228,14 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
 
     # Section for additional data
     st.subheader('Additional Data')
-    st.markdown(f'<p>Please use the selectbox below to choose additional data to display.</p>', unsafe_allow_html=True)
-    additional_data = st.selectbox('Additional Data',
+    additional_data = st.selectbox('Select Additional Data',
                  options=['None', 'Magic & Magicalness', 'Faction Popularity & Pairings', 'Raw Data']
                  )
     
     # Display the specified additional data
 
     if additional_data == 'None':
-        st.caption('No additional data has been selected. Please use the selector above to choose additional data to display.')
+        st.caption('No additional data has been selected. Please use the selectbox above to choose additional data to display.')
 
     elif additional_data == 'Magic & Magicalness':
         st.markdown('##### Magic Path Performance and Popularity')
@@ -404,9 +404,9 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
             # Total number of games
             All = faction_totals['All'].sum()
 
-            st.markdown(f'The heatmap below shows the percentage of games played between each pair of factions. \
-                        The rows indicate the faction going first, while the columns indicate the faction going second. \
-                        The colour indicates the percentage of games played between that pairing, with darker colours indicating more games. \
+            st.markdown(f'The heatmap below shows the percentage of games where each pair of factions were paired against each other in team tournaments. \
+                        The rows indicate the faction, while the columns indicate the percentage of games played against each opponent. \
+                        The colour indicates the percentage of games played out of all games played by that faction, with darker colours indicating more games. \
                         The numbers in each cell indicate the percentage of games played between that pairing. \
                         The "All" column is the percentage of games played by that faction in team tournaments. \
                         Given the current selections, the total number of games played in team tournaments is {All//2}.</p>',

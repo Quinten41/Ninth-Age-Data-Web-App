@@ -281,16 +281,16 @@ def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data,
         # Add a section on options for individual units
         st.subheader('Unit Options')
 
-        st.markdown('<p>Please use the selector below to choose a unit to display its options.</p>', unsafe_allow_html=True)
-        unit_name = st.selectbox('Please Select a Unit', ['None'] + sorted(unit_names))
+        st.markdown('<p>Use the selectbox below to choose a unit to display its options.</p>', unsafe_allow_html=True)
+        unit_name = st.selectbox('Select a Unit', ['None'] + sorted(unit_names))
         if unit_name == 'None':
-            st.caption('Please select a unit using the selector above to display data.')
+            st.caption('Please select a unit using the selectbox above to display data.')
         else:
             # Filter option data to only include the selected unit
             uunit_data = funit_data.filter(pl.col('Name') == unit_name)
             unique_uunit_data = uunit_data.unique(subset=['list_id'])
             num_lists = unique_uunit_data.shape[0]
-            if num_lists <= 10:
+            if num_lists < 5:
                 st.markdown(f'<p>There is insufficient data on {unit_name} in the current dataset \
                             to show any further analysis.</p>', unsafe_allow_html=True)
             else:
@@ -298,9 +298,8 @@ def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data,
                 unit_specific_report(faction_name, unit_name, uoption_data, uunit_data, unique_uunit_data, num_lists)
 
 
- # Helper function to make an option plot to avoid rewriting code
 
-# Helper function to make an option plot to avoid rewriting code
+# Helper function to make an option plot
 @st.cache_data
 def make_option_plot(group, num_lists, var_score, mean_score, plot_num=None):
     option_stats = (
@@ -370,9 +369,9 @@ def unit_specific_report(faction_name, unit_name, uoption_data, uunit_data, uniq
         if len(unique_types) == 1 or num_plots == 1:
             fig,_ = make_option_plot(unique_option_data, num_lists, var_score, mean_score)
             st.markdown(f'''
-            <p>The scatter plot below shows the performance and popularity of options for the unit {unit_name}. 
+            <p>The scatter plot below shows the performance and popularity of options for {'' if unit_name[-1]=='s' else 'a'} {unit_name}. 
             The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated 
-            with respect to all the games {faction_name} has played, but just the games in which {unit_name} was included. 
+            with respect to all the games played by {faction_name}, but just the games in which {'' if unit_name[-1]=='s' else 'a'} {unit_name} {'were' if unit_name[-1]=='s' else 'was'} taken. 
             The y-axis shows the average score of the games in which one or more choices of the given option was taken. 
             Finally, the heatmap displays the z-score for the mean; options in the green region score similarily to a random sample 
             with the same mean, whereas options in the red region do not. If the scores were randomly assigned, 
@@ -389,13 +388,14 @@ def unit_specific_report(faction_name, unit_name, uoption_data, uunit_data, uniq
                 group_counts[min_idx] += count
 
             st.markdown(f'''
-                <p>The scatter plots below show the performance and popularity of options for the unit {unit_name}. 
+                <p>The scatter plot below shows the performance and popularity of options for {'' if unit_name[-1]=='s' else 'a'} {unit_name}. 
                 The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated 
-                with respect to all the games {faction_name} has played, but just the games in which {unit_name} was included. 
+                with respect to all the games played by {faction_name}, but just the games in which {'' if unit_name[-1]=='s' else 'a'} {unit_name} {'were' if unit_name[-1]=='s' else 'was'} taken. 
                 The y-axis shows the average score of the games in which one or more choices of the given option was taken. 
                 Finally, the heatmap displays the z-score for the mean; options in the green region score similarily to a random sample 
                 with the same mean, whereas options in the red region do not. If the scores were randomly assigned, 
-                one would expect 95% of them to have a z-score of |z|<2. Before each scatterplot there is a list of the 
+                one would expect 95% of them to have a z-score of |z|<2. As {'' if unit_name[-1]=='s' else 'a'} {unit_name} has many options, 
+                for clarity the options have been split across {num_plots} scatterplots. Before each scatterplot there is a list of the 
                 option types the scatterplot shows.</p>''', unsafe_allow_html=True)
             
             # Create and display each plot

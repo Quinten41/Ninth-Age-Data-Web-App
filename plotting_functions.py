@@ -93,7 +93,7 @@ def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid
             linecolor='#333333', #rgb(.2,.2,.2)
             linewidth=0.5,
             min_distance=0.005,
-            max_distance=0.0125*len(labels),
+            max_distance=0.015*len(labels),
             nbr_candidates = 11*len(labels) # Adjust the number of candidates to the expected difficulty
         )
 
