@@ -14,6 +14,8 @@ from math import ceil
 # Other utilities
 from datetime import datetime
 from datetime import date
+import psutil
+import gc
 
 # Import functions to generate the different pages
 from welcome_page import welcome_page
@@ -21,10 +23,14 @@ from game_wide_page import game_wide_page
 from faction_specific_page import faction_specific_page
 
 # Set Streamlit page layout to wide
-#st.set_page_config(layout="wide")
+# st.set_page_config(layout="wide")
 
 # Display the Ninth Age Logo
 st.image('https://bedroombattlefields.com/wp-content/uploads/2021/11/the-ninth-age-1024x479.png')
+
+process = psutil.Process()
+st.write(f"Memory usage: {process.memory_info().rss / 1024 ** 2:.2f} MB")
+st.write(f"CPU usage: {process.cpu_percent()}%")
 
 # Define a list for the factions
 faction_keys = ['BH', 'DE', 'DH', 'DL', 'EoS', 'HE', 'ID', 'KoE', 'OK', 'OnG', 'SA', 'SE', 'UD', 'VC', 'VS', 'WDG']
@@ -184,21 +190,20 @@ def load_and_organise_data(root_folder="data"):
     )
     return raw_list_data, raw_unit_data, raw_option_data, num_games, magic_paths
 
-# get the dataframes
+# Cached function to get the minimum and maximums for sliders
+@st.cache_data
+def get_max_min(raw_list_data):
+    return raw_list_data['Tournament Size'].max(), raw_list_data['Game Size'].max(), raw_list_data['Game Size'].min()
+
+# Get the dataframes and minimum and maximums for sliders
 with st.spinner('Loading data...'):
     raw_list_data, raw_unit_data, raw_option_data, tnum_games, magic_paths = load_and_organise_data()
+    max_tournament_size, max_game_size, min_game_size = get_max_min(raw_list_data)
 
 # Add a sidebar for filtering and page selection
 with st.sidebar:
     st.title('Filters & Navigation')
     st.header('Data Filters')
-
-    # Get the maximum and minimums for sliders
-    @st.cache_data
-    def get_max_min(raw_list_data):
-        return raw_list_data['Tournament Size'].max(), raw_list_data['Game Size'].max(), raw_list_data['Game Size'].min()
-    max_tournament_size, max_game_size, min_game_size = get_max_min(raw_list_data)
-
 
     # Date range slider
     start_date, end_date = st.slider(
@@ -271,7 +276,6 @@ with st.sidebar:
     )
 
     # Now lets apply these filters to the raw data
-    @st.cache_data
     def filter_data(
         raw_list_data,
         raw_unit_data,
@@ -312,19 +316,21 @@ with st.sidebar:
         filtered_option_data = raw_option_data.filter(pl.col("list_id").is_in(valid_list_ids))
 
         return filtered_list_data, filtered_unit_data, filtered_option_data, filtered_list_data.height // 2
+
+    # Get the filtered data
     list_data, unit_data, option_data, num_games = filter_data(
-        raw_list_data,
-        raw_unit_data,
-        raw_option_data,
-        start_date,
-        end_date,
-        select_by_list_size,
-        min_list_size,
-        max_list_size,
-        min_size,
-        max_size,
-        tournament_type
-    )
+            raw_list_data,
+            raw_unit_data,
+            raw_option_data,
+            start_date,
+            end_date,
+            select_by_list_size,
+            min_list_size,
+            max_list_size,
+            min_size,
+            max_size,
+            tournament_type
+        )
 
     st.caption(f'After applying your filters, there are {num_games} games in the dataset out of a possible {tnum_games} games.')
 
@@ -336,6 +342,9 @@ with st.sidebar:
          'Faction specific',
          'Raw Data']
     )
+
+# Garbage collecting
+gc.collect()
 
 # Depending on the selected page, we show the appropriate content
 if page == 'Welcome':

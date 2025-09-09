@@ -300,7 +300,6 @@ def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data,
 
 
 # Helper function to make an option plot
-@st.cache_data
 def make_option_plot(group, num_lists, var_score, mean_score, plot_num=None):
     option_stats = (
         group.groupby('Option Name')

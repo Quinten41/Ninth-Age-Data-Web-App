@@ -22,7 +22,6 @@ from plotting_functions import labelled_scatterplot_regions
 from helper_functions import colourmap
 
 # Function to round a number and its error to correct number of significant digits
-@st.cache_data
 def round_sig(num, err):
     '''Round a number and its associated error to the appropriate significant digits.
 
@@ -56,6 +55,19 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
     # The title of the page
     st.title('Game-wide Statistics')
 
+    # Some basic filtering and computations; first about turn order then removing mirror matchups
+    first_data = list_data.filter(pl.col('Turn') == 'First')
+    second_data = list_data.filter(pl.col('Turn') == 'Second')
+    fa, fe = round_sig(first_data['Score'].mean(), first_data['Score'].std() / (first_data.height ** 0.5))
+    sa, se = round_sig(second_data['Score'].mean(), second_data['Score'].std() / (second_data.height ** 0.5))
+
+    scores = list(range(21))
+    first_counts = [first_data.filter((pl.col('Score') == i)).height for i in scores]
+    second_counts = [second_data.filter((pl.col('Score') == i)).height for i in scores]
+
+    no_mirror_list_data = list_data.filter(pl.col('Faction') != pl.col('Opponent'))
+
+
     # To start with, let's just show a basic scatter plot of faction performance
     st.subheader('Faction Performance')
 
@@ -66,7 +78,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
             standard deviations of the mean, even if balance is theoretically "perfect".</p>', unsafe_allow_html=True)
 
     fig,ax = plt.subplots()
-    no_mirror_list_data = list_data.filter(pl.col('Faction') != pl.col('Opponent'))
+    
     sns.pointplot(data=no_mirror_list_data.to_pandas(), x='Faction', order=faction_keys, y='Score', linestyle = 'none', ax=ax)
     plt.axhline(y=10, linestyle='--')
     plt.title('Average Score of Each Faction')
@@ -79,24 +91,13 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
     plt.close()
 
     # Now let's look at the distribution of scores when going first and second
-    # cached function to filter for first and second turn data
     st.subheader('Score Distribution')
 
-    @st.cache_data
-    def get_turn_stats(list_data):
-        return list_data.filter(pl.col('Turn') == 'First'), list_data.filter(pl.col('Turn') == 'Second')
-    first_data, second_data = get_turn_stats(list_data)
-    fa, fe = round_sig(first_data['Score'].mean(), first_data['Score'].std() / (first_data.height ** 0.5))
-    sa, se = round_sig(second_data['Score'].mean(), second_data['Score'].std() / (second_data.height ** 0.5))
     st.markdown(f'<p>The histogram below shows the distribution of scores across all games when going first and second.</p>', 
             unsafe_allow_html=True
             )
 
     # Plot using seaborn barplot with polars
-    scores = list(range(21))
-    first_counts = [first_data.filter((pl.col('Score') == i)).height for i in scores]
-    second_counts = [second_data.filter((pl.col('Score') == i)).height for i in scores]
-
     bar_data = pl.DataFrame({
         'Number of Games': first_counts + second_counts,
         'Score': scores * 2,
@@ -141,7 +142,6 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
 
     # Now we will generate a table with various performance data
     # Create a matchup table: columns = factions, rows = factions, entries = 'mean±standard error'
-    @st.cache_data
     def matchup_table_df(list_data, first_data, second_data, factions):
         # Build the table as a DataFrame
         rows = []
@@ -317,7 +317,8 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
         # Add text labels for each point showing the percentage value
         rgba = mcolors.to_hex(plt.get_cmap('Blues')(0.8))
         for x, y, pct in zip(x_vals, y_vals, percent_vals):
-            ax.text(x, y + 0.175, f"{pct:.1f}%", ha='center', va='bottom', fontsize=8, color=rgba)
+            if ax.get_ylim()[0] < y + 0.175 < ax.get_ylim()[1]:
+                ax.text(x, y + 0.175, f"{pct:.1f}%", ha='center', va='bottom', fontsize=8, color=rgba)
 
         ax.axhline(10, linestyle='--', color='gray', alpha=0.5)
         ax.set_xticks(range(int(summary['Magicalness'].max()) + 1))

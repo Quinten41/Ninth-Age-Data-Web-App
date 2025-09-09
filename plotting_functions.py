@@ -10,9 +10,8 @@ from numba import jit
 
 
 # Function to draw a heatmap
-@st.cache_data
 @jit(nopython=True)
-def compute_heatmap(grid_res: float, xlim: tuple, ylim: tuple, num_games: int, mean: float, variance: float):
+def compute_heatmap(grid_res: int, xlim: tuple, ylim: tuple, num_games: int, mean: float, variance: float):
     '''
     Function to compute a heatmap.
     Outside the class so it can be compiled.
@@ -32,8 +31,7 @@ def compute_heatmap(grid_res: float, xlim: tuple, ylim: tuple, num_games: int, m
                 zz[i, j] = min(4, abs(y - mean) * np.sqrt(x * num_games / 100) / np.sqrt(variance * (1 - (x * num_games / 100 - 1) / (num_games - 1))))
     return zz
 
-@st.cache_data
-def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid_res=500, xlim=None, ylim=None, x_error=None, y_error=None, figsize=(8, 6), **kwargs):
+def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid_res=250, xlim=None, ylim=None, x_error=None, y_error=None, figsize=(8, 6), **kwargs):
         '''
         Generates a seaborn scatterplot with non-overlapping text labels,
         superimposed on a heatmap generated from __compute_heatmap, and adds a z-score legend.
@@ -107,7 +105,6 @@ def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid
 
         return fig, ax
 
-@st.cache_data
 def scatterplot_with_errors(points, labels, xerr=None, yerr=None, figsize=(8, 6), xlabel='', ylabel='', title=''):
         """
         Scatterplot with labels and error bars, no region shading.
