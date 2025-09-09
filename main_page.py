@@ -14,7 +14,7 @@ from math import ceil
 # Other utilities
 from datetime import datetime
 from datetime import date
-import psutil
+#import psutil
 import gc
 
 # Import functions to generate the different pages
@@ -28,9 +28,9 @@ from faction_specific_page import faction_specific_page
 # Display the Ninth Age Logo
 st.image('https://bedroombattlefields.com/wp-content/uploads/2021/11/the-ninth-age-1024x479.png')
 
-process = psutil.Process()
-st.write(f"Memory usage: {process.memory_info().rss / 1024 ** 2:.2f} MB")
-st.write(f"CPU usage: {process.cpu_percent()}%")
+# process = psutil.Process()
+# st.write(f"Memory usage: {process.memory_info().rss / 1024 ** 2:.2f} MB")
+# st.write(f"CPU usage: {process.cpu_percent()}%")
 
 # Define a list for the factions
 faction_keys = ['BH', 'DE', 'DH', 'DL', 'EoS', 'HE', 'ID', 'KoE', 'OK', 'OnG', 'SA', 'SE', 'UD', 'VC', 'VS', 'WDG']
