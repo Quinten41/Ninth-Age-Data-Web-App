@@ -21,6 +21,7 @@ import gc
 from welcome_page import welcome_page
 from game_wide_page import game_wide_page
 from faction_specific_page import faction_specific_page
+from list_finder import list_finder_page
 
 # Set Streamlit page layout to wide
 # st.set_page_config(layout="wide")
@@ -119,7 +120,6 @@ def load_and_organise_data(root_folder="data"):
                                 'Score': scores[i],
                             })
                             list_points += unit['cost']
-                            u_ind += 1
                             for option in unit['options']:
                                 option_rows.append({
                                     'list_id': l_ind,
@@ -142,6 +142,7 @@ def load_and_organise_data(root_folder="data"):
                                     'Option Type': 'Model Count',
                                     'Score': scores[i],
                                 })
+                            u_ind += 1
                     else:
                         list_points = None
                         magicalness = None
@@ -340,11 +341,9 @@ with st.sidebar:
         ['Welcome',
          'Game-wide',
          'Faction specific',
+         'List Finder',
          'Raw Data']
     )
-
-# Garbage collecting
-gc.collect()
 
 # Depending on the selected page, we show the appropriate content
 if page == 'Welcome':
@@ -355,6 +354,9 @@ elif page == 'Game-wide':
 
 elif page == 'Faction specific':
     faction_specific_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games)
+
+elif page == 'List Finder':
+    list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_data, num_games)
 
 elif page == 'Raw Data':
     st.title('Raw Data')
@@ -384,3 +386,5 @@ elif page == 'Raw Data':
                 You can also download this data as a CSV file by mousing over the top right corner of the table.')
     st.write(option_data)
 
+# Garbage collecting
+gc.collect()

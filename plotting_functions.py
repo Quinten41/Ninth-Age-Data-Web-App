@@ -31,7 +31,7 @@ def compute_heatmap(grid_res: int, xlim: tuple, ylim: tuple, num_games: int, mea
                 zz[i, j] = min(4, abs(y - mean) * np.sqrt(x * num_games / 100) / np.sqrt(variance * (1 - (x * num_games / 100 - 1) / (num_games - 1))))
     return zz
 
-def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid_res=250, xlim=None, ylim=None, x_error=None, y_error=None, figsize=(8, 6), **kwargs):
+def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid_res=300, xlim=None, ylim=None, x_error=None, y_error=None, figsize=(8, 6), **kwargs):
         '''
         Generates a seaborn scatterplot with non-overlapping text labels,
         superimposed on a heatmap generated from __compute_heatmap, and adds a z-score legend.
@@ -56,7 +56,7 @@ def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid
         if ylim[1] <= y.max():
             ylim = (ylim[0], y.max()+.2)
 
-        fig, ax = plt.subplots(figsize=figsize)
+        fig, ax = plt.subplots(figsize=figsize, layout="constrained")
 
         # Define a green-yellow-red colormap
         cmap = mcolors.LinearSegmentedColormap.from_list(
@@ -117,10 +117,10 @@ def scatterplot_with_errors(points, labels, xerr=None, yerr=None, figsize=(8, 6)
             x, y = zip(*points)
             x = np.array(x)
             y = np.array(y)
-        fig, ax = plt.subplots(figsize=figsize)
+        fig, ax = plt.subplots(figsize=figsize, layout="constrained")
         # Scatter with error bars
-        ax.errorbar(x, y, xerr=xerr, yerr=yerr, fmt='o', color=(37/255,76/255,115/255), ecolor=(37/255,76/255,115/255), alpha=0.7, capsize=0, markersize=6, elinewidth=0.4)
-        
+        ax.errorbar(x, y, xerr=xerr, yerr=yerr, fmt='o', color='#DEAA46', ecolor='#DEAA46', alpha=0.8, capsize=0, markersize=6, elinewidth=0.5)
+
         # Set limits with some padding
         plt.xlim(min(x)-0.1*abs(max(x)-min(x)), max(x)+0.1*abs(max(x)-min(x)))
         plt.ylim(min(y)-0.1*abs(max(y)-min(y)), max(y)+0.1*abs(max(y)-min(y)))
@@ -130,7 +130,8 @@ def scatterplot_with_errors(points, labels, xerr=None, yerr=None, figsize=(8, 6)
             labels,
             x_scatter=x, y_scatter=y,
             textsize=10,
-            linecolor='#333333', #rgb(.2,.2,.2)
+            linecolor='#254C73',
+            textcolor='#254C73',
             linewidth=0.7,
             min_distance=0.0025,
             max_distance=0.3,

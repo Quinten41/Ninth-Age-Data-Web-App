@@ -12,38 +12,11 @@ import pandas as pd
 import numpy as np
 import scipy.stats as stats
 
-# Math functions
-from math import log, floor
-
 # Plotting functions
 from plotting_functions import labelled_scatterplot_regions
 
 # Import helper function
-from helper_functions import colourmap
-
-# Function to round a number and its error to correct number of significant digits
-def round_sig(num, err):
-    '''Round a number and its associated error to the appropriate significant digits.
-
-    Args:
-        num (float): The number to be rounded.
-        err (float): The associated error of the number.
-
-    Returns:
-        tuple: A tuple containing the rounded number and its rounded error.
-    '''
-    # Find the number of significant digits in the error
-    if err is None or np.isnan(err) or err == 0:
-        return (round(num, 2), 0)
-    sig_dig = -floor( log( err, 10 ) )
-    err = round( err, ndigits = sig_dig )
-    sig_dig = -floor( log( err, 10 ) ) # We repeate this in case the first rounding changed the signifigant digits
-    if sig_dig > 0:
-        return ( round( num, ndigits = sig_dig ), round( err, ndigits = sig_dig ) )
-    elif sig_dig == 0:
-        return ( int(round( num, ndigits = sig_dig )), int(round( err, ndigits = sig_dig )) )
-    else:
-        raise ValueError("The error must be a positive number to determine significant digits.")
+from helper_functions import colourmap, round_sig
 
 def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games):
     ''' The content of the game-wide statistics page '''
@@ -53,7 +26,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
     plt.style.use(['seaborn-v0_8','fast'])
 
     # The title of the page
-    st.title('Game-wide Statistics')
+    st.title('Game-Wide Statistics')
 
     # Some basic filtering and computations; first about turn order then removing mirror matchups
     first_data = list_data.filter(pl.col('Turn') == 'First')
@@ -72,12 +45,12 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
     st.subheader('Faction Performance')
 
     # Add an explanation of the plot
-    st.markdown(f'<p>The scatterplot below shows the average score of each faction along with error bars indicating \
+    st.markdown(f'<p>The scatterplot below shows the average score of each faction (excluding mirror matchups) along with error bars indicating \
             two standard deviations of the mean (95% confidence interval, assuming normally distributed means). Please keep in mind, \
             with {num_faction} different factions, it is not statistically unreasonable for 1-2 factions to fall outside two \
             standard deviations of the mean, even if balance is theoretically "perfect".</p>', unsafe_allow_html=True)
 
-    fig,ax = plt.subplots()
+    fig,ax = plt.subplots(layout="constrained")
     
     sns.pointplot(data=no_mirror_list_data.to_pandas(), x='Faction', order=faction_keys, y='Score', linestyle = 'none', ax=ax)
     plt.axhline(y=10, linestyle='--')
@@ -88,7 +61,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
     ax.patch.set_alpha(0.0)   # Axes background transparent
 
     st.pyplot(fig)
-    plt.close()
+    plt.close(fig)
 
     # Now let's look at the distribution of scores when going first and second
     st.subheader('Score Distribution')
@@ -104,7 +77,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
         'Turn': ['First'] * 21 + ['Second'] * 21
     })
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(layout="constrained")
     sns.barplot(data=bar_data.to_pandas(), x='Score', y='Number of Games', hue='Turn')
     plt.title('Distribution of Scores When Going First and Second')
     plt.xlabel('Score')
@@ -114,29 +87,24 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
     ax.patch.set_alpha(0.0)  # Axes background transparent
 
     st.pyplot(fig)
-    plt.close()
+    plt.close(fig)
 
     st.subheader('Matchup Performance Table')
 
     # Add an explanation of a table
     st.markdown(f'<p>The external performances of all the factions \
                 are displayed in a table. The columns indicate the various factions, and the rows display \
-                the scenarios in which the performance of the faction is being measured. Each entry is formatted as a mean ± an error. \
+                the scenarios in which the performance of the faction is being measured. Each entry is formatted as: mean ± standard error. \
                 The mean value indicates the average score of that faction over all the games indicated by the row label (e.g. the row \
                 "first" indicates all games where that faction went first whereas the row "VC" indicates all games played by \
-                the terrifying legions of the undead). The error is the standard deviation of the mean, and the size of the error is \
-                influenced by two factors:</p>\
-                <ol><li>The <em>number of games played</em> with that faction in the given scenario. \
-                The more games played, the smaller the error.</li>\
-                <li>The <em>variance of the scores</em> of that faction in the given scenario. \
-                The more consistent the scores, the smaller the error.</li></ol>\
-                <p>Assuming The Ninth Age has perfect balance, about 65% of the entries should lie within one error of \
+                the terrifying legions of the undead). Note that, unlike the plot at the begining of this page, the "All" row includes mirror matchups. \
+                <p>Assuming The Ninth Age has "perfect" balance, about 65% of the entries should lie within one error of \
                 10 points, the average score, 95% entries should be within two errors of 10 points, and essentially all of them should be \
                 within three errors of 10 points. The text is colour coded based on how many errors the mean is away from 10 points; green \
                 is very close, whereas red text is very far.</p> \
-                Across all games, the average score when going first is \
+                <p>Across all games, the average score when going first is \
                 <span style="color:{colourmap((fa - 10) / fe)}">{fa} ± {fe}</span>, whereas when going second it is \
-                <span style="color:{colourmap((sa - 10) / se)}">{sa} ± {se}</span>.', 
+                <span style="color:{colourmap((sa - 10) / se)}">{sa} ± {se}</span>.</p>', 
                 unsafe_allow_html=True
                 )
 
@@ -149,7 +117,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
         # All row
         all_row = []
         for fac in factions:
-            scores = no_mirror_list_data.filter(pl.col('Faction') == fac)['Score'].to_list()
+            scores = list_data.filter(pl.col('Faction') == fac)['Score'].to_list()
             if len(scores) == 0:
                 cell = ''
             else:
@@ -277,7 +245,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
         The means should be normally distributed so a z-score of 2 corresponds to a p-value of 0.05.</p>',
         unsafe_allow_html=True)
         st.pyplot(fig)
-        plt.close()
+        plt.close(fig)
 
         # Now add a plot about magicalness
         st.markdown('##### Magicalness Performance and Popularity')
@@ -300,7 +268,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
         sem_vals = summary['sem'].to_numpy()
         percent_vals = summary['percent'].to_numpy()
 
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(layout="constrained")
         ax.errorbar(
             x_vals, y_vals, yerr=sem_vals,
             fmt='none', ecolor='gray', capsize=4, alpha=0.7, zorder=1
@@ -338,7 +306,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
             The colour and size of the dot provides a quick visual indication of the popularity of that level of magicalness.</p>',
             unsafe_allow_html=True)
         st.pyplot(fig)
-        plt.close()
+        plt.close(fig)
 
     elif additional_data == 'Faction Popularity & Pairings':
         st.markdown('##### Faction Popularity')
@@ -365,7 +333,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
 
         ind = np.arange(len(faction_keys))
         width = 0.7
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(layout="constrained")
         p1 = ax.bar(ind, counts['First'], width, label='First')
         p2 = ax.bar(ind, counts['Second'], width, bottom=counts['First'], label='Second')
         ax.set_xticks(ind)
@@ -380,7 +348,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
         fig.patch.set_alpha(0.0)  # Figure background transparent
         ax.patch.set_alpha(0.0)  # Axes background transparent
         st.pyplot(fig)
-        plt.close()
+        plt.close(fig)
 
         st.markdown('##### Pairing Popularity')
         if tournament_type == 'Singles':
@@ -439,6 +407,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
                 linewidths=0.5,
                 linecolor='gray'
             )
+            plt.rcParams['figure.constrained_layout.use'] = True
             plt.xlabel('Faction')
             plt.ylabel('Opponent')
             plt.title('Matchup Popularity in Team Tournaments')
@@ -446,7 +415,7 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
             fig.patch.set_alpha(0.0)  # Figure background transparent
             ax.patch.set_alpha(0.0)  # Axes background transparent
             st.pyplot(fig)
-            plt.close()
+            plt.close(fig)
 
     elif additional_data == 'Raw Data':
         st.markdown('##### List Data')

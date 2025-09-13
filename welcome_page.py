@@ -17,10 +17,18 @@ def welcome_page():
     <h3>Pages</h3>
     <ul>
         <li><b>Welcome Page</b>: You are here! This page provides an overview of the app and some basic statistical concepts.</li>
-        <li><b>Game-wide Page</b>: This page provides an overview of the entire dataset, including win rates, popular factions,
-            and other general statistics.</li>
-        <li><b>Faction Specific Page</b>: This page allows you to dive deeper into specific factions, providing detailed statistics
-            and insights for each one.</li>
+        <li><b>Game-wide Page</b>: This page details general statistics about the game, such as the win rates of factions, 
+            the popularity of factions, the performance and popularity of magic paths, the game-wide distribution of score,
+            and favourable/unfavourable matchups between factions.</li>
+        <li><b>Faction Specific Page</b>: This page presents more specific insights for each faction; the performance of each category
+            (e.g., characters, core,  special, etc.) and the popularity and performance of units and unit options are all detailed here.</li>
+        <li><b>List Finder Page</b>: This page allows you to find lists that meet your specific criteria. You can filter lists by
+            faction, opponent's faction, turn order, number of units, points, and score. Once you have made your selections,
+            you can view the overall distribution of scores for the lists that meet your criteria, as well as data on each of the
+            individual lists. The full roster of units and options for each list is also provided.</li>
+        <li><b>Raw Data</b>: This page allows you to view the raw data tables that underpin the analysis shown on the other pages. You
+            can even download these tables as .csv files and start performing your own analysis. Please keep in mind that,
+            if you haven't applied many filters, these .csv files could be very, very large.</li>
     </ul>
     <h3>Statistical Concepts</h3>
     <ul>

@@ -1,0 +1,251 @@
+# Import Streamlit
+import streamlit as st
+
+# Plotting tools
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Data analysis tools
+import polars as pl
+import numpy as np
+from collections import Counter
+import itertools as itr
+
+# Math functions
+from math import sqrt
+
+# Full name list
+from faction_specific_page import faction_names
+
+# Helper functions
+from helper_functions import colourmap, round_sig
+
+def list_finder_page(faction_keys: list, magic_paths: list, list_data: pl.DataFrame, unit_data: pl.DataFrame, option_data: pl.DataFrame, num_games: int):
+    ''' The content of the list finder page '''
+    # Set styling for plots
+    sns.set_theme()
+    plt.style.use(['seaborn-v0_8','fast'])
+
+    # The title of the page
+    st.title('List Finder')
+
+    # Add a description of the page
+    st.markdown(f'''<p>This page allows you to select a faction and specify list and game details (units, options, opponents).
+                    Then, it will display data on all the lists meeting these criteria along with the option to
+                    display the lists themselves with the details of the game.</p>''', unsafe_allow_html=True)
+    
+    st.subheader('List Criteria')
+
+    st.markdown('''<h5>Select Faction</h5><p>Select the faction you want to examine.</p>''', unsafe_allow_html=True)
+    
+    faction_name = st.selectbox('Select a Faction',
+                 ['None'] + faction_names)
+    
+    if faction_name == 'None':
+        st.caption('Please select a faction using the selector above to display data.')
+        return
+    
+    # Get the faction key
+    fkey = faction_keys[ faction_names.index(faction_name) ]
+
+    # Filter the data for the selected faction
+    flist_data = list_data.filter(pl.col('Faction') == fkey)
+    funit_data = unit_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
+    foption_data = option_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
+
+    num_faction_lists = flist_data.height
+
+     # Get all units for the selected faction
+    available_units = ['None'] + sorted( funit_data['Name'].unique().to_list() )
+
+    st.markdown('''<h5>Select Units</h5><p>Select units that must be included in the lists shown below.
+                    Note that if the same unit is selected 'n' times only lists containing 'n' copies
+                    of that unit will be shown. Once you have selected a unit, you can then specify any options
+                    that unit must have. If you do not specify any options, all lists containing the selected unit
+                    will be shown.</p>''', unsafe_allow_html=True)
+
+    selected_units = []
+    selected_options = []
+    while True:
+        select_unit = st.selectbox(f'Select Unit {len(selected_units) + 1}', 
+                                available_units,
+                                key=f'unit_selectbox_{len(selected_units)}'
+                                )
+        if select_unit == 'None':
+            break
+        selected_units.append(select_unit)
+        select_options = set(st.multiselect(
+            f'Select Options for {select_unit}',
+            sorted( foption_data.filter(pl.col('Unit Name') == select_unit)['Option Name'].unique().to_list() ),
+            key=f'option_multiselect_{len(selected_units)}'
+        ))
+        selected_options.append(select_options)
+
+    st.markdown('''<h5>Select Opponents</h5><p>Check the box below if you wish to specify the possible faction of the 
+                opponents list. Otherwise, all opposing factions will be included.</p>''', unsafe_allow_html=True)
+
+    specify_opponents = st.checkbox('Specify Opponent Factions')
+    if specify_opponents:
+        selected_opponents = st.multiselect(
+            'Select Opponents',
+            faction_keys,
+            key=f'opponent_multiselect_{len(selected_units)}'
+        )
+
+    st.markdown('''<h5>Specify Turn Order</h5><p>Use the following selectbox to specify whether the lists should have gone
+                first or second in the game. If "Any" is selected, lists from games where the faction went
+                either first or second will be included.</p>''', unsafe_allow_html=True)
+    
+    turn_order = st.selectbox('Select Turn Order',
+                              ['Any', 'First', 'Second'],
+                              key='turn_order_selectbox')
+
+    # Now that all the criteria are selected the user is given the option to generate the data
+    st.subheader('Generate List Data')
+    st.markdown('''<p>Once you are happy with your selected criteria for the lists you wish to examine,
+                check the box below to generate the data. If you wish to change your selections,
+                it is recommended to uncheck this box so the data is not regenerated with every changed selection.</p>''', 
+                unsafe_allow_html=True)
+
+    if st.checkbox('Generate List Data'):
+        # First cut the size of the data down by filtering for turn order and selected opponents
+        if turn_order == 'First':
+            flist_data = flist_data.filter(pl.col('Turn') == 'First')
+        elif turn_order == 'Second':
+            flist_data = flist_data.filter(pl.col('Turn') == 'Second')
+        if specify_opponents:
+            flist_data = flist_data.filter(pl.col('Opponent').is_in(selected_opponents))
+            valid_list_ids = flist_data['list_id'].unique()
+        else:
+            valid_list_ids = flist_data['list_id'].unique()
+        # Now filter the unit and option data for these list ids
+        funit_data = funit_data.filter(pl.col('list_id').is_in(valid_list_ids))
+        foption_data = foption_data.filter(pl.col('list_id').is_in(valid_list_ids))
+
+        # Get required unit counts
+        unit_counts = Counter(selected_units)
+        # Get unit counts in the actual data
+        unit_mults = (
+            funit_data
+            .group_by(['list_id', 'Name'])
+            .agg(pl.count().alias('unit_count'))
+        )
+        valid_list_ids = funit_data['list_id'].unique()
+        for unit, count in unit_counts.items():
+            ids_with_enough = (
+                unit_mults
+                .filter((pl.col('Name') == unit) & (pl.col('unit_count') >= count))['list_id']
+                .unique()
+            )
+            valid_list_ids = pl.Series(valid_list_ids).filter(pl.Series(valid_list_ids).is_in(ids_with_enough)).to_list()
+
+        # Now filter the data for valid list ids
+        flist_data = flist_data.filter(pl.col('list_id').is_in(valid_list_ids))
+        funit_data = funit_data.filter(pl.col('list_id').is_in(valid_list_ids))
+        foption_data = foption_data.filter(pl.col('list_id').is_in(valid_list_ids))
+
+        # Next, filter for the selected options
+        valid_list_ids = []
+        for list_id in funit_data['list_id'].unique().to_list():
+            units_in_list = funit_data.filter(pl.col('list_id') == list_id)
+            # For each unit name, get all unit_ids
+            unit_id_groups = []
+            for unit in selected_units:
+                unit_ids = units_in_list.filter(pl.col('Name') == unit)['unit_id'].to_list()
+                unit_id_groups.append(unit_ids)
+            # Now, for all possible assignments (permutations) of unit_ids to selected_units
+            for unit_id_perm in set(itr.permutations([uid for group in unit_id_groups for uid in group], len(selected_units))):
+                # Check if each unit_id has the required options
+                match = True
+                for idx, unit_id in enumerate(unit_id_perm):
+                    required_options = selected_options[idx]
+                    unit_options = set(foption_data.filter(pl.col('unit_id') == unit_id)['Option Name'].to_list())
+                    if not required_options.issubset(unit_options):
+                        match = False
+                        break
+                if match:
+                    valid_list_ids.append(list_id)
+                    break  # Only need one valid assignment per list_id
+
+        # Filter the data for valid list ids
+        flist_data = flist_data.filter(pl.col('list_id').is_in(valid_list_ids))
+        # Check if any lists remain
+        if flist_data.is_empty():
+            st.warning('No lists found matching the specified criteria. Please adjust your selections and try again.')
+            return
+        # If lists remain filter the unit and option data as well
+        funit_data = funit_data.filter(pl.col('list_id').is_in(valid_list_ids))
+        foption_data = foption_data.filter(pl.col('list_id').is_in(valid_list_ids))
+
+        # Set the styles for the plots
+        sns.set_theme()
+        plt.style.use(['seaborn-v0_8','fast'])
+
+        num_found = flist_data.height
+        st.success(f'Found {num_found} lists matching the specified criteria from the {num_faction_lists} lists for {faction_name} in the dataset.')
+
+        avg = flist_data['Score'].mean()
+        std = flist_data['Score'].std() if num_found > 1 else 0
+        err = std / sqrt(num_found) 
+        avg, err = round_sig(avg, err)
+        colour = colourmap((avg - 10) / err if err != 0 else 4)
+        st.markdown(f'''<p>The average score of the lists was <span style="color:{colour};">{avg} ± {err}</span>. The exact distribution
+                    of scores is shown in the histogram below. The curvy horizontal line shows the kernel density estimate of the score distribution.
+                    Intuitively, this is like a smoothed version of the histogram, providing a clearer view of the score distribution.</p>''', unsafe_allow_html=True)
+
+        fig, ax = plt.subplots(layout='constrained')
+        fig.patch.set_alpha(0.0)  # Figure background transparent
+        ax.patch.set_alpha(0.0)   # Axes background transparent
+        sns.histplot(flist_data.to_pandas(), x='Score', bins=np.linspace(-0.5,20.5,num=22), kde=True, ax=ax, line_kws={'color':'black', 'linewidth':3})
+        ax.set_title(f'Score Distribution of {faction_name} Lists Matching Criteria')
+        ax.set_xlabel('Score')
+        ax.set_ylabel('Number of Lists')
+        ax.axvline(avg,label='Mean', linestyle='--', color='black')
+        ax.axvline(avg+std,label='+1 Standard Deviation', linestyle=':', color='green')
+        ax.axvline(avg-std,label='-1 Standard Deviation', linestyle=':', color='red')
+        ax.legend(loc='upper right')
+
+        st.pyplot(fig)
+        plt.close(fig)
+
+        st.markdown('''<p>You can see the details of the selected lists, by using the selectbox below to 
+                    choose a list. This will display the actual list, along with some details about the game in which
+                    it was played.</p>''', unsafe_allow_html=True)
+
+        # Create strings of the form "List {list_id}" for the selectbox
+        valid_list_strings = [f'List {lid}' for lid in sorted( valid_list_ids )]
+        selected_list_string = st.selectbox('Select a List to View Details', valid_list_strings, key='list_details_selectbox')
+        id = int(selected_list_string.split(' ')[1])
+        # Get the data for this list
+        this_list = flist_data.filter(pl.col('list_id') == id).to_dicts()[0]
+        these_units = funit_data.filter(pl.col('list_id') == id)
+        these_options = foption_data.filter(pl.col('list_id') == id)
+
+        # Print some overall stats
+        st.markdown(f'''<h4>Game Details</h4><ul>
+                    <li>Date: {this_list['Start Date']}</li>
+                    <li>Tournament Size: {this_list['Tournament Size']}</li>
+                    <li>Game Size: {this_list['Game Size']}</li>
+                    <li>Opponent's Faction: {faction_names[faction_keys.index(this_list['Opponent'])]}</li>
+                    <li>Turn: {this_list['Turn']}</li>
+                    <li>Score: {this_list['Score']}</li>
+                    <li>Number of Units: {these_units.height}</li>
+                    <li>List Points: {this_list['Total Points']}</li>
+                    ''', unsafe_allow_html=True)
+        
+        st.markdown('<h4>List Composition</h4>', unsafe_allow_html=True)
+
+        # Get and sort the categories to have Characters, Core, Special first
+        priority = ['Characters', 'Core', 'Special']
+        categories = these_units['Category'].unique().to_list()
+        categories = [cat for cat in priority if cat in categories] + [cat for cat in categories if cat not in priority]
+
+        # Display the list
+        for cat in categories:
+            st.markdown(f'''<h5>{cat}</h5><ul>''', unsafe_allow_html=True)
+            units = these_units.filter(pl.col('Category') == cat)
+            for unit in units.to_dicts():
+                st.markdown(f'''<li><b>{unit['Name']}</b>, {', '.join(these_options.filter(pl.col('unit_id') == unit['unit_id'])['Option Name'].to_list())} - {unit['Cost']}</li>''', unsafe_allow_html=True)
+            st.markdown('</ul>', unsafe_allow_html=True)
+
+        
