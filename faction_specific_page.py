@@ -264,21 +264,8 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
     # Add a section on options for individual units
     st.subheader('Unit Options')
 
-    st.markdown('<p>Use the selectbox below to choose a unit to display its options.</p>', unsafe_allow_html=True)
-    unit_name = st.selectbox('Select a Unit', sorted(unit_names), index=None)
-    if unit_name == None:
-        st.caption('Please select a unit using the widget above to display data.')
-    else:
-        # Filter option data to only include the selected unit
-        uunit_data = funit_data.filter(pl.col('Name') == unit_name)
-        unique_uunit_data = uunit_data.unique(subset=['list_id'])
-        num_lists = unique_uunit_data.shape[0]
-        if num_lists < 5:
-            st.markdown(f'<p>There is insufficient data on {unit_name} in the current dataset \
-                        to show any further analysis.</p>', unsafe_allow_html=True)
-        else:
-            uoption_data = foption_data.filter(pl.col('Unit Name') == unit_name).unique(subset=['Option Name', 'list_id'])
-            unit_specific_report(faction_name, unit_name, uoption_data, uunit_data, unique_uunit_data, num_lists)
+    # Show the unit specific report
+    unit_specific_report(faction_name, foption_data, funit_data, unit_names)
 
 
 
@@ -312,7 +299,27 @@ def make_option_plot(group, num_lists, var_score, mean_score, plot_num=None):
 
     return fig,ax
 
-def unit_specific_report(faction_name, unit_name, uoption_data, uunit_data, unique_uunit_data, num_lists):
+# Fragment so when the unit selection is changed, the whole page doesn't reload
+@st.fragment()
+def unit_specific_report(faction_name, foption_data, funit_data, unit_names):
+
+    st.markdown('<p>Use the selectbox below to choose a unit to display its options.</p>', unsafe_allow_html=True)
+    unit_name = st.selectbox('Select a Unit', sorted(unit_names), index=None)
+    if unit_name == None:
+        st.caption('Please select a unit using the widget above to display data.')
+        return
+    # Filter option data to only include the selected unit
+    uunit_data = funit_data.filter(pl.col('Name') == unit_name)
+    unique_uunit_data = uunit_data.unique(subset=['list_id'])
+    num_lists = unique_uunit_data.shape[0]
+    if num_lists < 5:
+        st.markdown(f'<p>There is insufficient data on {unit_name} in the current dataset \
+                    to show any further analysis.</p>', unsafe_allow_html=True)
+        return
+    
+    # Get the option data for this unit
+    uoption_data = foption_data.filter(pl.col('Unit Name') == unit_name).unique(subset=['Option Name', 'list_id'])
+
     # Add information about the number of units being taken to uoption_data using polars
     unit_counts = uunit_data.group_by('list_id').agg([
         pl.col('unit_id').count().alias('num_units'),
@@ -340,53 +347,102 @@ def unit_specific_report(faction_name, unit_name, uoption_data, uunit_data, uniq
 
     if uoption_data_pd.empty:
         st.markdown(f'<p>There are no options for {unit_name} taken in the current dataset.</p>', unsafe_allow_html=True)
-    else:
-        unique_option_data = uoption_data_pd.drop_duplicates(subset=['Option Name', 'list_id'])
-        # Count number of options per Option Type
-        option_type_counts = unique_option_data.groupby('Option Type')['Option Name'].nunique().sort_values(ascending=False)
-        total_count = option_type_counts.sum()
-        num_plots = (total_count - 1) // 25 + 1  # Number of graphs needed if we limit to 25 options each
-        unique_types = list(option_type_counts.index)
+        return
 
-        if len(unique_types) == 1 or num_plots == 1:
-            fig,_ = make_option_plot(unique_option_data, num_lists, var_score, mean_score)
-            st.markdown(f'''
+    unique_option_data = uoption_data_pd.drop_duplicates(subset=['Option Name', 'list_id'])
+    # Count number of options per Option Type
+    option_type_counts = unique_option_data.groupby('Option Type')['Option Name'].nunique().sort_values(ascending=False)
+    total_count = option_type_counts.sum()
+    num_plots = (total_count - 1) // 25 + 1  # Number of graphs needed if we limit to 25 options each
+    unique_types = list(option_type_counts.index)
+
+    if len(unique_types) == 1 or num_plots == 1:
+        fig,_ = make_option_plot(unique_option_data, num_lists, var_score, mean_score)
+        st.markdown(f'''
+        <p>The scatter plot below shows the performance and popularity of options for {'' if unit_name[-1]=='s' else 'a'} {unit_name}. 
+        The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated 
+        with respect to all the games played by {faction_name}, but just the games in which {'' if unit_name[-1]=='s' else 'a'} {unit_name} {'were' if unit_name[-1]=='s' else 'was'} taken. 
+        The y-axis shows the average score of the games in which one or more choices of the given option was taken. 
+        Finally, the heatmap displays the z-score for the mean; options in the green region score similarily to a random sample 
+        with the same mean, whereas options in the red region do not. If the scores were randomly assigned, 
+        one would expect 95% of them to have a z-score of |z|<2.</p>''', unsafe_allow_html=True)
+        st.pyplot(fig)
+    else:
+        # Greedily assign types to num_plots groups to balance total number of options
+        group_types = [[] for _ in range(num_plots)]
+        group_counts = [0] * num_plots
+        for opt_type, count in option_type_counts.items():
+            # Assign to group with current minimum count
+            min_idx = group_counts.index(min(group_counts))
+            group_types[min_idx].append(opt_type)
+            group_counts[min_idx] += count
+
+        st.markdown(f'''
             <p>The scatter plot below shows the performance and popularity of options for {'' if unit_name[-1]=='s' else 'a'} {unit_name}. 
             The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated 
             with respect to all the games played by {faction_name}, but just the games in which {'' if unit_name[-1]=='s' else 'a'} {unit_name} {'were' if unit_name[-1]=='s' else 'was'} taken. 
             The y-axis shows the average score of the games in which one or more choices of the given option was taken. 
             Finally, the heatmap displays the z-score for the mean; options in the green region score similarily to a random sample 
             with the same mean, whereas options in the red region do not. If the scores were randomly assigned, 
-            one would expect 95% of them to have a z-score of |z|<2.</p>''', unsafe_allow_html=True)
-            st.pyplot(fig)
-        else:
-            # Greedily assign types to num_plots groups to balance total number of options
-            group_types = [[] for _ in range(num_plots)]
-            group_counts = [0] * num_plots
-            for opt_type, count in option_type_counts.items():
-                # Assign to group with current minimum count
-                min_idx = group_counts.index(min(group_counts))
-                group_types[min_idx].append(opt_type)
-                group_counts[min_idx] += count
-
+            one would expect 95% of them to have a z-score of |z|<2. As {'' if unit_name[-1]=='s' else 'a'} {unit_name} has many options, 
+            for clarity the options have been split across {num_plots} scatterplots. Before each scatterplot there is a list of the 
+            option types the scatterplot shows.</p>''', unsafe_allow_html=True)
+        
+        # Create and display each plot
+        for i in range(num_plots):
+            group = unique_option_data[unique_option_data['Option Type'].isin(group_types[i])]
+            fig,_ = make_option_plot(group, num_lists, var_score, mean_score, plot_num=i+1)
             st.markdown(f'''
-                <p>The scatter plot below shows the performance and popularity of options for {'' if unit_name[-1]=='s' else 'a'} {unit_name}. 
-                The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated 
-                with respect to all the games played by {faction_name}, but just the games in which {'' if unit_name[-1]=='s' else 'a'} {unit_name} {'were' if unit_name[-1]=='s' else 'was'} taken. 
-                The y-axis shows the average score of the games in which one or more choices of the given option was taken. 
-                Finally, the heatmap displays the z-score for the mean; options in the green region score similarily to a random sample 
-                with the same mean, whereas options in the red region do not. If the scores were randomly assigned, 
-                one would expect 95% of them to have a z-score of |z|<2. As {'' if unit_name[-1]=='s' else 'a'} {unit_name} has many options, 
-                for clarity the options have been split across {num_plots} scatterplots. Before each scatterplot there is a list of the 
-                option types the scatterplot shows.</p>''', unsafe_allow_html=True)
-            
-            # Create and display each plot
-            for i in range(num_plots):
-                group = unique_option_data[unique_option_data['Option Type'].isin(group_types[i])]
-                fig,_ = make_option_plot(group, num_lists, var_score, mean_score, plot_num=i+1)
-                st.markdown(f'''
-                <p>This scatterplot shows options of the following types:</p>
-                <ul>
-                {''.join([f'<li>{opt_type}</li>' for opt_type in group_types[i]])}
-                </ul>''', unsafe_allow_html=True)
-                st.pyplot(fig)
+            <p>This scatterplot shows options of the following types:</p>
+            <ul>
+            {''.join([f'<li>{opt_type}</li>' for opt_type in group_types[i]])}
+            </ul>''', unsafe_allow_html=True)
+            st.pyplot(fig)
+            plt.close(fig)
+
+    # Now create a histogram of the unit's model count
+    # Provided, of course, it is not a single model unit
+    if 'Models' in uunit_data.columns:
+
+        st.markdown(f'''<p>The histogram below shows the distribution of model counts for {unit_name} in the current dataset.
+                The bars are stacked according to the score of the lists in which that model count was taken.
+                The mean and one standard deviation above and below the mean are indicated by the black and grey dashed lines, respectively.</p>''', unsafe_allow_html=True)
+
+        model_counts = uunit_data['Models']
+        mean_models = model_counts.mean()
+        std_models = model_counts.std()
+
+        # Add the 'Score' column
+        bins = [0, 6, 13, 20]
+        labels = ['0-6', '7-13', '14-20']
+        uunit_data = uunit_data.to_pandas().copy()  # Convert to pandas and avoid SettingWithCopyWarning
+        uunit_data['Score'] = pd.cut(
+            uunit_data['Score'],
+            bins=bins,
+            labels=labels,
+            right=False,
+            include_lowest=True
+        )
+
+        # Plot the histogram with stacks by Score
+        fig,ax = plt.subplots(layout='constrained')
+        fig.patch.set_alpha(0.0)  # Figure background transparent
+        ax.patch.set_alpha(0.0)   # Axes background transparent
+        sns.histplot(
+            data=uunit_data,
+            x='Models',
+            hue='Score',
+            multiple='stack',
+            bins=range(model_counts.min(), model_counts.max() + 2),
+        )
+
+        plt.axvline(mean_models, color='black', linestyle='--', label=f'Mean: {mean_models:.2f}')
+        plt.axvline(mean_models + std_models, color='grey', linestyle='--', label=f'Std Dev: {std_models:.2f}')
+        plt.axvline(mean_models - std_models, color='grey', linestyle='--')
+        ax.set_title(f'Model Count Distribution for {unit_name}')
+        ax.set_xlabel('Number of Models')
+        ax.set_ylabel('Frequency')
+
+        # Show plot
+        st.pyplot(fig)
+        plt.close(fig)

@@ -23,6 +23,9 @@ from game_wide_page import game_wide_page
 from faction_specific_page import faction_specific_page
 from list_finder import list_finder_page
 
+# Import helper functions
+from helper_functions import correct_cap
+
 # Import constants
 from constants import faction_keys, faction_names
 
@@ -36,20 +39,7 @@ st.image('https://bedroombattlefields.com/wp-content/uploads/2021/11/the-ninth-a
 # st.write(f"Memory usage: {process.memory_info().rss / 1024 ** 2:.2f} MB")
 # st.write(f"CPU usage: {process.cpu_percent()}%")
 
-lower_to_correct = {key.lower(): key for key in faction_keys} # Dictionary to map lowercase keys to the correct capitalization
-def correct_cap(key):
-    '''Convert a given key to the correct capitalization as used in faction_keys.
-
-    Args:
-        key (str): The key to be converted.
-
-    Returns:
-        str: The key in the correct capitalization.
-    '''
-    return lower_to_correct[key.lower()]
-
 # First load the data into three polars dataframes
-
 # Cached function to load and organise the data
 @st.cache_data
 def load_and_organise_data(root_folder="data"):
@@ -203,6 +193,18 @@ with st.spinner('Loading data...'):
 # Add a sidebar for filtering and page selection
 with st.sidebar:
     st.title('Filters & Navigation')
+
+    st.header('Page Selection')
+    page = st.pills(
+        'Select Page',
+        ['Welcome',
+         'Game-wide',
+         'Faction specific',
+         'List Finder',
+         'Raw Data'],
+         default='Welcome',
+    )
+
     st.header('Data Filters')
 
     # Date range slider
@@ -333,16 +335,6 @@ with st.sidebar:
         )
 
     st.caption(f'After applying your filters, there are {num_games} games in the dataset out of a possible {tnum_games} games.')
-
-    st.header('Page Selection')
-    page = st.selectbox(
-        'Select Page',
-        ['Welcome',
-         'Game-wide',
-         'Faction specific',
-         'List Finder',
-         'Raw Data']
-    )
 
 # Depending on the selected page, we show the appropriate content
 if page == 'Welcome':

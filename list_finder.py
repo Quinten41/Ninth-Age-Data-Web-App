@@ -8,6 +8,7 @@ import seaborn as sns
 # Data analysis tools
 import polars as pl
 import numpy as np
+from scipy.stats import norm
 from collections import Counter
 import itertools as itr
 
@@ -15,13 +16,13 @@ import itertools as itr
 from math import sqrt
 
 # Full name list
-from constants import faction_names, faction_keys, num_faction
+from constants import faction_names, faction_keys
 
 # Helper functions
 from helper_functions import colourmap, round_sig
 
 @st.fragment()
-def list_finder_page(faction_keys: list, magic_paths: list, list_data: pl.DataFrame, unit_data: pl.DataFrame, option_data: pl.DataFrame, num_games: int):
+def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_data, num_games):
     ''' The content of the list finder page '''
 
     # The title of the page
@@ -43,12 +44,14 @@ def list_finder_page(faction_keys: list, magic_paths: list, list_data: pl.DataFr
     # Get the faction key
     fkey = faction_keys[ faction_names.index(faction_name) ]
 
-    # Filter the data for the selected faction
-    flist_data = list_data.filter(pl.col('Faction') == fkey)
+    # Filter the data for the selected faction including only games that submitted lists
+    flist_data = list_data.filter((pl.col('Faction') == fkey) & pl.col('List'))
     funit_data = unit_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
     foption_data = option_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
 
     num_faction_lists = flist_data.height
+    avg_faction_lists = flist_data['Score'].mean()
+    var_faction_lists = flist_data['Score'].var() if num_faction_lists > 1 else 0
 
     # Get all units for the selected faction
     available_units = sorted( funit_data['Name'].unique().to_list() )
@@ -112,10 +115,10 @@ def list_finder_page(faction_keys: list, magic_paths: list, list_data: pl.DataFr
 
     # Now that all the criteria are selected the user is given the option to generate the data
     st.markdown('''<h5>Generate List Data</h5><p>Once you are happy with your selected criteria for the lists you wish to examine,
-                click on the button below to generate the data.</p>''',
+                click on the button below to find all the lists that meet the above specifications.</p>''',
                 unsafe_allow_html=True)
 
-    submit = st.button('Generate Data', disabled=(faction_name is None))
+    submit = st.button('Find Selected Lists', disabled=(faction_name is None))
 
     if submit:
         # First cut the size of the data down by filtering for turn order and selected opponents
@@ -196,10 +199,10 @@ def list_finder_page(faction_keys: list, magic_paths: list, list_data: pl.DataFr
         foption_data = foption_data.filter(pl.col('list_id').is_in(valid_list_ids))
 
         # Show the data on the filtered lists
-        show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, foption_data, num_faction_lists)
+        show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, foption_data, num_faction_lists, avg_faction_lists, var_faction_lists)
 
 @st.fragment()
-def show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, foption_data, num_faction_lists):
+def show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, foption_data, num_faction_lists, avg_faction_lists, var_faction_lists):
     ''' Show data on the filtered lists '''    
     # Set the styles for the plots
     sns.set_theme()
@@ -208,14 +211,31 @@ def show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, fop
     num_found = flist_data.height
     st.success(f'Found {num_found} lists matching the specified criteria from the {num_faction_lists} lists for {faction_name} in the dataset.')
 
+    # Compute the average score and its error
     avg = flist_data['Score'].mean()
     std = flist_data['Score'].std() if num_found > 1 else 0
     err = std / sqrt(num_found) if std is not None else 0
     avg, err = round_sig(avg, err)
     colour = colourmap((avg - 10) / err if err != 0 else 0)
-    st.markdown(f'''<p>The average score of the selected lists is <span style="color:{colour};">{avg} ± {err}</span>. The exact distribution
-                of scores is shown in the histogram below. The curvy horizontal line shows the kernel density estimate of the score distribution.
-                Intuitively, this is like a smoothed version of the histogram, providing a clearer view of the score distribution.</p>''', unsafe_allow_html=True)
+
+    # Now compute the descrepency from the internal results of the faction
+    if (var_faction_lists * (1 - (num_found - 1) / (num_faction_lists - 1))) != 0:
+        z_value = abs(avg - avg_faction_lists) * sqrt(num_found) / sqrt(var_faction_lists * (1 - (num_found - 1) / (num_faction_lists - 1)))
+        p_value = (2 * norm.sf(abs(z_value))).round(4)  # Two-tailed p-value
+        colour_p = colourmap(z_value)
+
+        # Display the average score and some text explaining the histogram
+        st.markdown(f'''<p>The average score of the selected lists is <span style="color:{colour};">{avg} ± {err}</span>. Comparing the average score of the selected lists
+                    to the distribution of scores in all {faction_name} lists, we find a p-value for the obtained average of <span style="color:{colour_p};">{p_value}</span>
+                    (recall that the average score for all {faction_name} lists is {avg_faction_lists:.1f}). The exact distribution of scores for
+                    the selected lists is shown in the histogram below. The curvy horizontal line shows the kernel density estimate of the score distribution.
+                    Intuitively, this is like a smoothed version of the histogram, providing a clearer view of the score distribution.</p>''', unsafe_allow_html=True)
+    else:
+        # Display the average score and some text explaining the histogram
+        st.markdown(f'''<p>The average score of the selected lists is <span style="color:{colour};">{avg} ± {err}</span>. The exact distribution of scores 
+                    for the selected lists is shown in the histogram below. The curvy horizontal line shows the kernel density estimate of the score distribution.
+                    Intuitively, this is like a smoothed version of the histogram, providing a clearer view of the score distribution.</p>''', unsafe_allow_html=True)
+
 
     fig, ax = plt.subplots(layout='constrained')
     fig.patch.set_alpha(0.0)  # Figure background transparent
@@ -235,7 +255,8 @@ def show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, fop
 
     st.markdown('''<p>You can see the details of the selected lists, by using the selectbox below to 
                 choose a list. This will display the actual list, along with some details about the game in which
-                it was played.</p>''', unsafe_allow_html=True)
+                it was played. The list number shown in the selectbox is the list ID in the whole dataset
+                (i.e., including all factions).</p>''', unsafe_allow_html=True)
 
     # Create strings of the form "List {list_id}" for the selectbox
     valid_list_strings = [f'List {lid}' for lid in sorted( valid_list_ids )]
@@ -270,10 +291,12 @@ def show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, fop
         st.markdown(f'''<h5>{cat}</h5><ul>''', unsafe_allow_html=True)
         units = these_units.filter(pl.col('Category') == cat)
         for unit in units.to_dicts():
+            uoptions = these_options.filter((pl.col('unit_id') == unit['unit_id'])&(pl.col('Option Type') != 'Model Count'))['Option Name'].to_list()
+            option_list = ', '+', '.join(uoptions) if uoptions else ''
             if 'Models' in unit and unit['Models'] is not None:
-                st.markdown(f'''<li><b>{unit['Models']} {unit['Name']}</b>, {', '.join(these_options.filter((pl.col('unit_id') == unit['unit_id'])&(pl.col('Option Type') != 'Model Count'))['Option Name'].to_list())} - {unit['Cost']}</li>''', unsafe_allow_html=True)
+                st.markdown(f'''<li><b>{unit['Models']} {unit['Name']}</b>{option_list} - {unit['Cost']}</li>''', unsafe_allow_html=True)
             else:
-                st.markdown(f'''<li><b>{unit['Name']}</b>, {', '.join(these_options.filter(pl.col('unit_id') == unit['unit_id'])['Option Name'].to_list())} - {unit['Cost']}</li>''', unsafe_allow_html=True)
+                st.markdown(f'''<li><b>{unit['Name']}</b>{option_list} - {unit['Cost']}</li>''', unsafe_allow_html=True)
         st.markdown('</ul>', unsafe_allow_html=True)
 
         

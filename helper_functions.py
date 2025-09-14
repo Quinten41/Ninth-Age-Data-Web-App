@@ -1,6 +1,21 @@
 import streamlit as st
 from math import log, floor
 
+from constants import faction_keys
+
+# Functions for handling faction names
+lower_to_correct = {key.lower(): key for key in faction_keys} # Dictionary to map lowercase keys to the correct capitalization
+def correct_cap(key):
+    '''Convert a given key to the correct capitalization as used in faction_keys.
+
+    Args:
+        key (str): The key to be converted.
+
+    Returns:
+        str: The key in the correct capitalization.
+    '''
+    return lower_to_correct[key.lower()]
+
 # Helper colourmap function for text
 def colourmap(value):
     '''

@@ -18,6 +18,9 @@ from plotting_functions import labelled_scatterplot_regions
 # Import helper function
 from helper_functions import colourmap, round_sig
 
+# Import constants
+from constants import faction_keys
+
 @st.fragment()
 def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games):
     ''' The content of the game-wide statistics page '''
@@ -197,14 +200,26 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
 
     # Section for additional data
     st.subheader('Additional Data')
+
+    # Function for additional data (fragment to avoid reloading the whole page)
+    display_additional_data(list_data, option_data, magic_paths, tournament_type)
+
+
+@st.fragment()
+def display_additional_data(list_data, option_data, magic_paths, tournament_type):
+    ''' A fragment to display additional data based on user selection '''
+
+    # Add a selectbox to choose additional data to display
     additional_data = st.selectbox('Select Additional Data',
-                 options=['None', 'Magic & Magicalness', 'Faction Popularity & Pairings', 'Raw Data']
+                 options=['Magic & Magicalness', 'Faction Popularity & Pairings'],
+                 index=None
                  )
     
     # Display the specified additional data
 
-    if additional_data == 'None':
+    if additional_data == None:
         st.caption('No additional data has been selected. Please use the selectbox above to choose additional data to display.')
+        return
 
     elif additional_data == 'Magic & Magicalness':
         st.markdown('##### Magic Path Performance and Popularity')
@@ -417,11 +432,4 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
             ax.patch.set_alpha(0.0)  # Axes background transparent
             st.pyplot(fig)
             plt.close(fig)
-
-    elif additional_data == 'Raw Data':
-        st.markdown('##### List Data')
-        st.markdown('The game wide data from all the uploaded lists is shown below. \
-                    As a reminder, you can use the filters in the sidebar to filter the data. \
-                    You can also download this data as a CSV file by mousing over the top right corner of the table.')
-        st.write(list_data)
 
