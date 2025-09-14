@@ -313,8 +313,7 @@ def unit_specific_report(faction_name, foption_data, funit_data, unit_names):
     unique_uunit_data = uunit_data.unique(subset=['list_id'])
     num_lists = unique_uunit_data.shape[0]
     if num_lists < 5:
-        st.markdown(f'<p>There is insufficient data on {unit_name} in the current dataset \
-                    to show any further analysis.</p>', unsafe_allow_html=True)
+        st.warning(f'There is insufficient data on {unit_name} in the current dataset to show any further analysis.')
         return
     
     # Get the option data for this unit
@@ -402,8 +401,7 @@ def unit_specific_report(faction_name, foption_data, funit_data, unit_names):
 
     # Now create a histogram of the unit's model count
     # Provided, of course, it is not a single model unit
-    if 'Models' in uunit_data.columns:
-
+    if 'Models' in uunit_data.columns and uunit_data['Models'].n_unique() > 1:
         st.markdown(f'''<p>The histogram below shows the distribution of model counts for {unit_name} in the current dataset.
                 The bars are stacked according to the score of the lists in which that model count was taken.
                 The mean and one standard deviation above and below the mean are indicated by the black and grey dashed lines, respectively.</p>''', unsafe_allow_html=True)

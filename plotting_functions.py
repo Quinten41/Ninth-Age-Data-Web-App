@@ -1,8 +1,8 @@
-import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import matplotlib.ticker as mticker
+from math import sqrt
 import numpy as np
 import textalloc as ta
 from numba import jit
@@ -28,7 +28,7 @@ def compute_heatmap(grid_res: int, xlim: tuple, ylim: tuple, num_games: int, mea
             elif x >= 100:
                 zz[i, j] = 4
             else:
-                zz[i, j] = min(4, abs(y - mean) * np.sqrt(x * num_games / 100) / np.sqrt(variance * (1 - (x * num_games / 100 - 1) / (num_games - 1))))
+                zz[i, j] = min(4, abs(y - mean) * sqrt(x * num_games / 100) / sqrt(variance * (1 - (x * num_games / 100 - 1) / (num_games - 1))))
     return zz
 
 def labelled_scatterplot_regions(points, labels, num_games, variance, mean, grid_res=300, xlim=None, ylim=None, x_error=None, y_error=None, figsize=(8, 6), **kwargs):

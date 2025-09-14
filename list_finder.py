@@ -161,32 +161,41 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
         valid_list_ids = []
         for list_id in funit_data['list_id'].unique().to_list():
             units_in_list = funit_data.filter(pl.col('list_id') == list_id)
-            # For each unit name, get all unit_ids
-            unit_id_groups = []
-            for unit in selected_units:
-                unit_ids = units_in_list.filter(pl.col('Name') == unit)['unit_id'].to_list()
-                unit_id_groups.append(unit_ids)
-            # Now, for all possible assignments (permutations) of unit_ids to selected_units
-            for unit_id_perm in set(itr.permutations([uid for group in unit_id_groups for uid in group], len(selected_units))):
-                # Check if each unit_id has the required options
+            # For each unique unit name, get all unit_ids
+            unit_name_counts = Counter(selected_units)
+            unit_id_assignments = []
+            for unit_name, count in unit_name_counts.items():
+                unit_ids = units_in_list.filter(pl.col('Name') == unit_name)['unit_id'].to_list()
+                # Generate all possible assignments of unit_ids to the selected units of this name
+                # Use permutations if unit_ids are unique, combinations if not
+                if len(unit_ids) >= count:
+                    unit_id_assignments.append(list(itr.permutations(unit_ids, count)))
+                else:
+                    unit_id_assignments.append([])  # Not enough units, will fail
+
+            # Now, for all possible combinations of assignments for all unit names
+            for assignment in itr.product(*unit_id_assignments):
+                # Flatten assignment to get the full unit_id list in the order of selected_units
+                flat_unit_ids = []
+                for group in assignment:
+                    flat_unit_ids.extend(group)
+                # Map flat_unit_ids to selected_units
                 match = True
-                for idx, unit_id in enumerate(unit_id_perm):
+                for idx, unit_id in enumerate(flat_unit_ids):
                     required_options = selected_options[idx]
                     unit_options = set(foption_data.filter(pl.col('unit_id') == unit_id)['Option Name'].to_list())
                     if not required_options.issubset(unit_options):
                         match = False
                         break
-                if match:
                     # Check model counts
-                    for idx, unit_id in enumerate(unit_id_perm):
-                        if selected_model_counts[idx] is not None:
-                            unit_size = funit_data.filter(pl.col('unit_id') == unit_id)['Models'][0]
-                            if not (selected_model_counts[idx][0] <= unit_size <= selected_model_counts[idx][1]):
-                                match = False
-                                break
-                    if match:
-                        valid_list_ids.append(list_id)
-                        break  # Only need one valid assignment per list_id
+                    if selected_model_counts[idx] is not None:
+                        unit_size = funit_data.filter(pl.col('unit_id') == unit_id)['Models'][0]
+                        if not (selected_model_counts[idx][0] <= unit_size <= selected_model_counts[idx][1]):
+                            match = False
+                            break
+                if match:
+                    valid_list_ids.append(list_id)
+                    break  # Only need one valid assignment per list_id
 
         # Filter the data for valid list ids
         flist_data = flist_data.filter(pl.col('list_id').is_in(valid_list_ids))

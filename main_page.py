@@ -1,10 +1,6 @@
 # Import Streamlit
 import streamlit as st
 
-# File handling and JSON parsing
-import os
-import orjson
-
 # Data analysis tools
 import polars as pl
 
@@ -23,8 +19,8 @@ from game_wide_page import game_wide_page
 from faction_specific_page import faction_specific_page
 from list_finder import list_finder_page
 
-# Import helper functions
-from helper_functions import correct_cap
+# Import function to organise and load data
+from load_and_organise_data import load_and_organise_data
 
 # Import constants
 from constants import faction_keys, faction_names
@@ -40,145 +36,7 @@ st.image('https://bedroombattlefields.com/wp-content/uploads/2021/11/the-ninth-a
 # st.write(f"CPU usage: {process.cpu_percent()}%")
 
 # First load the data into three polars dataframes
-# Cached function to load and organise the data
-@st.cache_data
-def load_and_organise_data(root_folder="data"):
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(script_dir, root_folder)
-    if not os.path.exists(data_dir):
-        raise FileNotFoundError(f'The specified path does not exist: {data_dir}')
 
-    list_rows = []
-    unit_rows = []
-    option_rows = []
-    g_ind = 0  # Game index
-    l_ind = 0  # List index
-    u_ind = 0  # Unit index
-
-    # Loop through all folders and files, process as we read
-    for folder_name in sorted(os.listdir(data_dir)):
-        folder_path = os.path.join(data_dir, folder_name)
-        if os.path.isdir(folder_path):
-            tourn_data = []
-            for file_name in sorted(os.listdir(folder_path)):
-                if file_name.endswith('.json'):
-                    file_path = os.path.join(folder_path, file_name)
-                    with open(file_path, 'r', encoding='utf-8') as f:
-                        try:
-                            data = orjson.loads(f.read())
-                            tourn_data.append(data)
-                        except orjson.JSONDecodeError:
-                            print(f'Skipping invalid JSON: {file_path}')
-            if not tourn_data:
-                continue
-            # Process tournament data
-            tourn = tourn_data
-            if tourn[0]['type'] == 0:
-                tourn_type = 'Teams'
-            elif tourn[0]['type'] == 1:
-                tourn_type = 'Singles'
-            else:
-                tourn_type = 'Unknown'
-
-            for game in tourn[1:]:
-                army = [correct_cap(game['armyOne']), correct_cap(game['armyTwo'])]
-                arm_key = ('armyListOne', 'armyListTwo')
-                scores = (game['scoreOne'], game['scoreTwo'])
-                if game['firstTurn'] == 0:
-                    turn = ('First', 'Second')
-                elif game['firstTurn'] == 1:
-                    turn = ('Second', 'First')
-                else:
-                    turn = ('Unknown', 'Unknown')
-
-                for i in range(2):
-                    if arm_key[i] in game:
-                        is_list = True
-                        alist = game[arm_key[i]]
-                        list_points = 0
-                        magicalness = game[arm_key[i]]['magicalness'] if not isinstance(game[arm_key[i]]['magicalness'], str) else None
-                        for unit in alist['units']:
-                            num_models = unit.get('models', None)
-                            unit_rows.append({
-                                'list_id': l_ind,
-                                'unit_id': u_ind,
-                                'Name': unit['name'],
-                                'Category': unit['category'],
-                                'Cost': unit['cost'],
-                                'Models': num_models,
-                                'Score': scores[i],
-                            })
-                            list_points += unit['cost']
-                            for option in unit['options']:
-                                option_rows.append({
-                                    'list_id': l_ind,
-                                    'unit_id': u_ind,
-                                    'Unit Name': unit['name'],
-                                    'Option Name': option['name'],
-                                    'Option Type': option['type'],
-                                    'Score': scores[i],
-                                })
-                            if num_models:
-                                for model_count in range(5, 85, 5):
-                                    if num_models <= model_count:
-                                        model_count = f'{model_count-4}-{model_count} Models'
-                                        break
-                                option_rows.append({
-                                    'list_id': l_ind,
-                                    'unit_id': u_ind,
-                                    'Unit Name': unit['name'],
-                                    'Option Name': model_count,
-                                    'Option Type': 'Model Count',
-                                    'Score': scores[i],
-                                })
-                            u_ind += 1
-                    else:
-                        list_points = None
-                        magicalness = None
-                        is_list = False
-
-                    list_rows.append({
-                        'game_id': g_ind,
-                        'list_id': l_ind,
-                        'List': is_list,
-                        'Faction': army[i],
-                        'Opponent': army[1-i],
-                        'Score': scores[i],
-                        'Turn': turn[i],
-                        'Total Points': list_points,
-                        'Magicalness': magicalness,
-                        'Type': tourn_type,
-                        'Tournament Size': tourn[0]['size'],
-                        'Start Date': datetime.strptime(tourn[0]['start'], "%Y-%m-%d"),
-                        'End Date': datetime.strptime(tourn[0]['end'], "%Y-%m-%d"),
-                    })
-                    l_ind += 1
-                g_ind += 1
-                points = [row['Total Points'] for row in list_rows[-2:] if row['Total Points'] is not None]
-                if points:
-                    max_points = ceil( max(points) / 100)*100
-                    list_rows[-1]['Game Size'] = max_points
-                    list_rows[-2]['Game Size'] = max_points
-                else:
-                    list_rows[-1]['Game Size'] = None
-                    list_rows[-2]['Game Size'] = None
-
-    num_games = g_ind
-    raw_list_data = pl.DataFrame(list_rows).with_columns([
-        pl.col("Faction").cast(pl.Categorical),
-        pl.col("Turn").cast(pl.Categorical)
-    ])
-    raw_unit_data = pl.DataFrame(unit_rows)
-    raw_option_data = pl.DataFrame(option_rows)
-    magic_paths = (
-        raw_option_data
-        .filter(pl.col("Option Type") == "Path")
-        .select("Option Name")
-        .unique()
-        .to_series()
-        .to_list()
-    )
-    return raw_list_data, raw_unit_data, raw_option_data, num_games, magic_paths
 
 # Cached function to get the minimum and maximums for sliders
 @st.cache_data
@@ -192,13 +50,13 @@ with st.spinner('Loading data...'):
 
 # Add a sidebar for filtering and page selection
 with st.sidebar:
-    st.title('Filters & Navigation')
+    st.title('Navigation & Filters')
 
     st.header('Page Selection')
     page = st.pills(
         'Select Page',
         ['Welcome',
-         'Game-wide',
+         'Game-Wide',
          'Faction specific',
          'List Finder',
          'Raw Data'],
@@ -340,7 +198,7 @@ with st.sidebar:
 if page == 'Welcome':
     welcome_page()
 
-elif page == 'Game-wide':
+elif page == 'Game-Wide':
     game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games)
 
 elif page == 'Faction specific':
@@ -352,8 +210,9 @@ elif page == 'Faction specific':
         # Filter data to only include the selected faction
         fkey = faction_keys[ faction_names.index(faction_name) ]
         flist_data = list_data.filter(pl.col('Faction') == fkey)
-        funit_data = unit_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
-        foption_data = option_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
+        valid_list_ids = flist_data.select(pl.col("list_id")).unique().to_series().implode()
+        funit_data = unit_data.filter(pl.col('list_id').is_in(valid_list_ids))
+        foption_data = option_data.filter(pl.col('list_id').is_in(valid_list_ids))
         # Display the faction specific page
         # This is a fragment so data won't be resorted on each interaction
         faction_specific_page(faction_name, flist_data, funit_data, foption_data)
