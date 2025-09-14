@@ -426,12 +426,14 @@ def unit_specific_report(faction_name, foption_data, funit_data, unit_names):
         fig,ax = plt.subplots(layout='constrained')
         fig.patch.set_alpha(0.0)  # Figure background transparent
         ax.patch.set_alpha(0.0)   # Axes background transparent
+        min_mc = model_counts.min()
+        max_mc = model_counts.max()
         sns.histplot(
             data=uunit_data,
             x='Models',
             hue='Score',
             multiple='stack',
-            bins=range(model_counts.min(), model_counts.max() + 2),
+            bins=np.linspace(min_mc-0.5, max_mc + 1.5, max_mc - min_mc + 3 ),
         )
 
         plt.axvline(mean_models, color='black', linestyle='--', label=f'Mean: {mean_models:.2f}')
