@@ -63,7 +63,7 @@ def list_finder_page(faction_keys: list, magic_paths: list, list_data: pl.DataFr
     selected_options = []
     selected_model_counts = []
     while True:
-        #st.markdown(f'<b>Selected Unit {len(selected_units) + 1}</b>', unsafe_allow_html=True)
+        st.markdown(f'<b>Selected Unit {len(selected_units) + 1}</b>', unsafe_allow_html=True)
         select_unit = st.selectbox(f'Select Unit Type', 
                                 available_units,
                                 key=f'unit_selectbox_{len(selected_units)}',
