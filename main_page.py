@@ -23,6 +23,9 @@ from game_wide_page import game_wide_page
 from faction_specific_page import faction_specific_page
 from list_finder import list_finder_page
 
+# Import constants
+from constants import faction_keys, faction_names
+
 # Set Streamlit page layout to wide
 # st.set_page_config(layout="wide")
 
@@ -32,10 +35,6 @@ st.image('https://bedroombattlefields.com/wp-content/uploads/2021/11/the-ninth-a
 # process = psutil.Process()
 # st.write(f"Memory usage: {process.memory_info().rss / 1024 ** 2:.2f} MB")
 # st.write(f"CPU usage: {process.cpu_percent()}%")
-
-# Define a list for the factions
-faction_keys = ['BH', 'DE', 'DH', 'DL', 'EoS', 'HE', 'ID', 'KoE', 'OK', 'OnG', 'SA', 'SE', 'UD', 'VC', 'VS', 'WDG']
-num_faction = len(faction_keys) # Should be 16
 
 lower_to_correct = {key.lower(): key for key in faction_keys} # Dictionary to map lowercase keys to the correct capitalization
 def correct_cap(key):
@@ -353,7 +352,19 @@ elif page == 'Game-wide':
     game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games)
 
 elif page == 'Faction specific':
-    faction_specific_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games)
+    faction_name = st.selectbox('Select a Faction', faction_names, index=None)
+
+    if faction_name == None:
+        st.caption('Please select a faction using the widget above to display data.')
+    else:
+        # Filter data to only include the selected faction
+        fkey = faction_keys[ faction_names.index(faction_name) ]
+        flist_data = list_data.filter(pl.col('Faction') == fkey)
+        funit_data = unit_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
+        foption_data = option_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
+        # Display the faction specific page
+        # This is a fragment so data won't be resorted on each interaction
+        faction_specific_page(faction_name, flist_data, funit_data, foption_data)
 
 elif page == 'List Finder':
     list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_data, num_games)

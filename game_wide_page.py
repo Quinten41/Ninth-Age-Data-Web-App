@@ -18,6 +18,7 @@ from plotting_functions import labelled_scatterplot_regions
 # Import helper function
 from helper_functions import colourmap, round_sig
 
+@st.fragment()
 def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games):
     ''' The content of the game-wide statistics page '''
     num_faction = len(faction_keys) # Should be 16

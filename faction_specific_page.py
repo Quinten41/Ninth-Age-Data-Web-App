@@ -19,37 +19,16 @@ from plotting_functions import labelled_scatterplot_regions, scatterplot_with_er
 # Import helper functions
 from helper_functions import colourmap
 
-# Full name list
-# This should be in the same order as faction_keys in main_page.py
-faction_names = ['Beast Herds', 'Dread Elves', 'Dwarven Holds',\
-            'Demon Legions', 'Empire of Sonnstahl', 'Highborn Elves',\
-            'Infernal Dwarves', 'Kingdom of Equitaine', 'Ogre Khans',\
-            'Orcs and Goblins', 'Saurian Ancients', 'Sylvan Elves',\
-            'Undying Dynasties', 'Vampire Covenant', 'Vermin Swarm',\
-            'Warriors of the Dark Gods']
-
-def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games):
+@st.fragment()
+def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
     '''Display the Faction Specific Page content.'''
 
-    faction_name = st.selectbox('Select a Faction',
-                 ['None'] + faction_names)
-    
-    if faction_name == 'None':
-        st.caption('Please select a faction using the selector above to display data.')
-        return
-
-    # Get the faction key
-    fkey = faction_keys[ faction_names.index(faction_name) ]
+    # Title
     st.title(faction_name)
 
     # Set styling for plots
     sns.set_theme()
     plt.style.use(['seaborn-v0_8','fast'])
-
-    # Filter data to only include the selected faction
-    flist_data = list_data.filter(pl.col('Faction') == fkey)
-    funit_data = unit_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
-    foption_data = option_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
 
     # First a section on the categories in the faction
     st.subheader('Categories')
@@ -286,9 +265,9 @@ def faction_specific_page(tournament_type, faction_keys, magic_paths, list_data,
     st.subheader('Unit Options')
 
     st.markdown('<p>Use the selectbox below to choose a unit to display its options.</p>', unsafe_allow_html=True)
-    unit_name = st.selectbox('Select a Unit', ['None'] + sorted(unit_names))
-    if unit_name == 'None':
-        st.caption('Please select a unit using the selectbox above to display data.')
+    unit_name = st.selectbox('Select a Unit', sorted(unit_names), index=None)
+    if unit_name == None:
+        st.caption('Please select a unit using the widget above to display data.')
     else:
         # Filter option data to only include the selected unit
         uunit_data = funit_data.filter(pl.col('Name') == unit_name)
