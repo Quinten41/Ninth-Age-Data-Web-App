@@ -212,6 +212,7 @@ def load_and_organise_data(root_folder="data"):
     unit_rows = correct_unit_names(unit_rows, list_rows)
     option_rows = correct_option_names(option_rows)
 
+    # Convert to Polars DataFrames
     raw_list_data = pl.DataFrame(list_rows).with_columns([
         pl.col('Faction').cast(pl.Categorical),
         pl.col('Turn').cast(pl.Categorical)
@@ -225,5 +226,7 @@ def load_and_organise_data(root_folder="data"):
         .unique()
         .to_series()
         .to_list()
-    )
+    ).sort()
+
+    # Return the data
     return raw_list_data, raw_unit_data, raw_option_data, num_games, magic_paths

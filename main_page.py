@@ -4,9 +4,6 @@ import streamlit as st
 # Data analysis tools
 import polars as pl
 
-# Math functions
-from math import ceil
-
 # Other utilities
 from datetime import datetime
 from datetime import date

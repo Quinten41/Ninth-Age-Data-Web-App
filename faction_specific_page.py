@@ -253,7 +253,7 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
     fig, ax = scatterplot_with_errors(
         points, unit_names, xerr=xerr, yerr=yerr,
         xlabel='Average Number per List',
-        ylabel='Average Points per List',
+        ylabel='Average Points per Unit Entry',
         title='Unit Usage: Average Number and Points per List'
     )
     fig.patch.set_alpha(0.0)  # Figure background transparent
