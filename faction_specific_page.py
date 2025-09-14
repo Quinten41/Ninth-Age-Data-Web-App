@@ -254,7 +254,7 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
         points, unit_names, xerr=xerr, yerr=yerr,
         xlabel='Average Number per List',
         ylabel='Average Points per Unit Entry',
-        title='Unit Usage: Average Number and Points per List'
+        title='Unit Usage: Average Number and Points per Unit Entry'
     )
     fig.patch.set_alpha(0.0)  # Figure background transparent
     ax.patch.set_alpha(0.0)   # Axes background transparent
