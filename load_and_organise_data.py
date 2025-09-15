@@ -226,7 +226,7 @@ def load_and_organise_data(root_folder="data"):
         .unique()
         .to_series()
         .to_list()
-    ).sort()
+    )
 
     # Return the data
-    return raw_list_data, raw_unit_data, raw_option_data, num_games, magic_paths
+    return raw_list_data, raw_unit_data, raw_option_data, num_games, sorted(magic_paths)
