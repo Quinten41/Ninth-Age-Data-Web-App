@@ -59,7 +59,7 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
     st.markdown('''<h5>Select Units</h5><p>Select units that must be included in the lists shown below.
                     Note that if the same unit is selected 'n' times only lists containing 'n' copies
                     of that unit will be shown. Once you have selected a unit, you can then specify any options
-                    that unit must have. If you do not specify any options, all lists containing the selected unit
+                    that unit must have, and/or any options that unit can not have. If you do not specify any options, all lists containing the selected unit
                     will be shown. To remove a selected unit, click the 'x' in the far right of the appropriate selectbox.</p>''', unsafe_allow_html=True)
 
     selected_units = []
