@@ -228,14 +228,14 @@ def display_additional_data(list_data, option_data, magic_paths, tournament_type
 
         # Polars version for magic points
         path_option_data = option_data.filter(pl.col('Option Type') == 'Path')
-        path_list_ids = path_option_data.select('list_id').unique().to_series().to_list()
+        path_list_ids = path_option_data.select('list_id').unique().to_series().implode()
         magic_scores = list_data.filter(pl.col('list_id').is_in(path_list_ids))['Score']
         mavg = magic_scores.mean()
 
         # For each path, find all unique list_ids where it was taken
         path_points = []
         for path in magic_paths:
-            spell_list_ids = path_option_data.filter(pl.col('Option Name') == path).select('list_id').unique().to_series().to_list()
+            spell_list_ids = path_option_data.filter(pl.col('Option Name') == path).select('list_id').unique().to_series().implode()
             scores = list_data.filter(pl.col('list_id').is_in(spell_list_ids))['Score']
             path_points.append((len(scores), scores.mean()))
 

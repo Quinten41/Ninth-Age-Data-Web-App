@@ -46,7 +46,7 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
 
     # Filter the data for the selected faction including only games that submitted lists
     flist_data = list_data.filter((pl.col('Faction') == fkey) & pl.col('List'))
-    funit_data = unit_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
+    funit_data = unit_data.filter(pl.col('list_id').is_in(flist_data['list_id'].implode()))
     foption_data = option_data.filter(pl.col('list_id').is_in(flist_data['list_id']))
 
     num_faction_lists = flist_data.height
@@ -64,6 +64,7 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
 
     selected_units = []
     selected_options = []
+    banned_options = []
     selected_model_counts = []
     while True:
         st.markdown(f'<b>Selected Unit {len(selected_units) + 1}</b>', unsafe_allow_html=True)
@@ -75,11 +76,8 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
         if select_unit == None:
             break
         selected_units.append(select_unit)
-        select_options = set(st.multiselect(
-            f'Select Options for {select_unit}',
-            sorted( foption_data.filter((pl.col('Unit Name') == select_unit) & (pl.col('Option Type') != 'Model Count'))['Option Name'].unique().to_list() ),
-            key=f'option_multiselect_{len(selected_units)}'
-        ))
+
+        # If the unit has multiple model counts, allow the user to select a range
         try:
             model_counts = funit_data.filter(pl.col('Name') == select_unit)['Models'].unique().to_list()
             selected_model_counts.append(st.slider('Select Unit Size Range',
@@ -88,10 +86,28 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
                                     value=(min(model_counts), max(model_counts)),
                                     key=f'size_slider_{len(selected_units)}'
                                     ))
+            plural = True
         except:
             selected_model_counts.append(None)
+            plural = False
+
+        select_options = set(st.multiselect(
+            f'Select Options {plural and "these" or "this"} {select_unit} MUST have',
+            sorted( foption_data.filter((pl.col('Unit Name') == select_unit) & (pl.col('Option Type') != 'Model Count'))['Option Name'].unique().to_list() ),
+            key=f'option_select_{len(selected_units)}'
+        ))
+
+        ban_options = set(st.multiselect(
+            f'Select Options {plural and "these" or "this"} {select_unit} CAN NOT have',
+            sorted( foption_data.filter((pl.col('Unit Name') == select_unit) & (pl.col('Option Type') != 'Model Count'))['Option Name'].unique().to_list() ),
+            key=f'option_ban_{len(selected_units)}'
+        ))
+
+        if select_options.intersection(ban_options):
+            st.error('You have selected the same option to be both required and banned. Please adjust your selections.')
 
         selected_options.append(select_options)
+        banned_options.append(ban_options)
 
     st.markdown('''<h5>Select Opponents</h5><p>Use the widget below to toggle whether or not you wish to specify the 
                 possible factions of the opponents. If you do, then use the multiselect to specify the factions.</p>''', unsafe_allow_html=True)
@@ -184,7 +200,7 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
                 for idx, unit_id in enumerate(flat_unit_ids):
                     required_options = selected_options[idx]
                     unit_options = set(foption_data.filter(pl.col('unit_id') == unit_id)['Option Name'].to_list())
-                    if not required_options.issubset(unit_options):
+                    if not required_options.issubset(unit_options) or unit_options.intersection(banned_options[idx]):
                         match = False
                         break
                     # Check model counts

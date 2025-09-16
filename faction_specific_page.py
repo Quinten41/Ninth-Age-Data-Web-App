@@ -13,6 +13,9 @@ import pandas as pd
 import numpy as np
 from scipy import stats
 
+# Math functions
+from math import sqrt
+
 # Import plotting functions
 from plotting_functions import labelled_scatterplot_regions, scatterplot_with_errors
 
@@ -102,7 +105,7 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
             return np.nan, np.nan
 
     pearson_results = []
-    for cat in sorted_cats: #cat_data_grouped['Category'].to_list():
+    for cat in sorted_cats:
         subdf = cat_data.filter(pl.col('Category') == cat)
         r, p = pearsonr_safe_polars(subdf)
         pearson_results.append({'Category': cat, 'r': r, 'p': p})
@@ -117,11 +120,11 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
     data_table_cat_pd['<b>Median Points Taken</b>'] = (data_table_cat_pd['median']*100).round(1).astype(str) + '%'
     data_table_cat_pd['<b>Standard Deviation</b>'] = (data_table_cat_pd['std']*100).round(1).astype(str) + '%'
     data_table_cat_pd['<b>Pearson\'s r</b>'] = [
-        f'<span style="color:{colourmap(4 * abs(r) if pd.notnull(r) else 0)}">{r:.4f}</span>' if pd.notnull(r) else '—'
+        f'<span style="color:{colourmap(4 * sqrt( abs(r) ) if pd.notnull(r) else 0)}">{r:.4f}</span>' if pd.notnull(r) else '—'
         for r in data_table_cat_pd['r']
     ]
     data_table_cat_pd['<b>p-value</b>'] = [
-        f'<span style="color:{colourmap(stats.norm.ppf(1-p/2) if pd.notnull(p) and p > 0 else 0)}">{p:.4f}</span>' if pd.notnull(p) else '—'
+        f'<span style="color:{colourmap(stats.norm.ppf(1-p/2) if p > 0 else 4)}">{p:.4f}</span>' if pd.notnull(p) else '—'
         for p in data_table_cat_pd['p']
     ]
     # Reorder and rename columns for display
@@ -355,12 +358,18 @@ def unit_specific_report(faction_name, foption_data, funit_data, unit_names):
     num_plots = (total_count - 1) // 25 + 1  # Number of graphs needed if we limit to 25 options each
     unique_types = list(option_type_counts.index)
 
+    # Check if this unit is a single model or not
+    if 'Models' in uunit_data.columns and uunit_data['Models'].n_unique() > 1:
+        plural = True
+    else:
+        plural = False
+
     if len(unique_types) == 1 or num_plots == 1:
         fig,_ = make_option_plot(unique_option_data, num_lists, var_score, mean_score)
         st.markdown(f'''
-        <p>The scatter plot below shows the performance and popularity of options for {'' if unit_name[-1]=='s' else 'a'} {unit_name}. 
+        <p>The scatter plot below shows the performance and popularity of options for {'' if plural else 'a'} {unit_name}. 
         The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated 
-        with respect to all the games played by {faction_name}, but just the games in which {'' if unit_name[-1]=='s' else 'a'} {unit_name} {'were' if unit_name[-1]=='s' else 'was'} taken. 
+        with respect to all the games played by {faction_name}, but just the games in which {'' if plural else 'a'} {unit_name} {'were' if plural else 'was'} taken. 
         The y-axis shows the average score of the games in which one or more choices of the given option was taken. 
         Finally, the heatmap displays the z-score for the mean; options in the green region score similarily to a random sample 
         with the same mean, whereas options in the red region do not. If the scores were randomly assigned, 
@@ -377,9 +386,9 @@ def unit_specific_report(faction_name, foption_data, funit_data, unit_names):
             group_counts[min_idx] += count
 
         st.markdown(f'''
-            <p>The scatter plot below shows the performance and popularity of options for {'' if unit_name[-1]=='s' else 'a'} {unit_name}. 
+            <p>The scatter plot below shows the performance and popularity of options for {'' if plural else 'a'} {unit_name}. 
             The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated 
-            with respect to all the games played by {faction_name}, but just the games in which {'' if unit_name[-1]=='s' else 'a'} {unit_name} {'were' if unit_name[-1]=='s' else 'was'} taken. 
+            with respect to all the games played by {faction_name}, but just the games in which {'' if plural else 'a'} {unit_name} {'were' if plural else 'was'} taken. 
             The y-axis shows the average score of the games in which one or more choices of the given option was taken. 
             Finally, the heatmap displays the z-score for the mean; options in the green region score similarily to a random sample 
             with the same mean, whereas options in the red region do not. If the scores were randomly assigned, 
@@ -401,7 +410,7 @@ def unit_specific_report(faction_name, foption_data, funit_data, unit_names):
 
     # Now create a histogram of the unit's model count
     # Provided, of course, it is not a single model unit
-    if 'Models' in uunit_data.columns and uunit_data['Models'].n_unique() > 1:
+    if plural:
         st.markdown(f'''<p>The histogram below shows the distribution of model counts for {unit_name} in the current dataset.
                 The bars are stacked according to the score of the lists in which that model count was taken.
                 The mean and one standard deviation above and below the mean are indicated by the black and grey dashed lines, respectively.</p>''', unsafe_allow_html=True)

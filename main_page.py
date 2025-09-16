@@ -166,7 +166,7 @@ with st.sidebar:
             filtered_list_data = filtered_list_data.filter(pl.col("Type") == tournament_type)
 
         # Get the list of valid list IDs after filtering
-        valid_list_ids = filtered_list_data.select(pl.col("list_id")).unique().to_series().to_list()
+        valid_list_ids = filtered_list_data.select(pl.col("list_id")).unique().to_series().implode()
 
         # Filter unit and option data based on valid list IDs
         filtered_unit_data = raw_unit_data.filter(pl.col("list_id").is_in(valid_list_ids))
