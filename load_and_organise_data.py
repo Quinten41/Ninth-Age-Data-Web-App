@@ -192,8 +192,8 @@ def load_and_organise_data(root_folder="data"):
                         'Magicalness': magicalness,
                         'Type': tourn_type,
                         'Tournament Size': tourn[0]['size'],
-                        'Start Date': datetime.strptime(tourn[0]['start'], "%Y-%m-%d"),
-                        'End Date': datetime.strptime(tourn[0]['end'], "%Y-%m-%d"),
+                        'Start Date': datetime.strptime(tourn[0]['start'], "%Y-%m-%d").date(),
+                        'End Date': datetime.strptime(tourn[0]['end'], "%Y-%m-%d").date(),
                     })
                     l_ind += 1
                 g_ind += 1
