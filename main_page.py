@@ -66,7 +66,9 @@ with st.sidebar:
     start_date, end_date = st.slider(
         "Select Date Range",
         value=(date(2024, 1, 1), date.today()),
-        format="YYYY-MM-DD"
+        format="YYYY-MM-DD",
+        min_value=date(2024, 1, 1),
+        max_value=date.today()
     )
 
     # Inject custom CSS to change selectbox format
