@@ -54,7 +54,7 @@ with st.sidebar:
         'Select Page',
         ['Welcome',
          'Game-Wide',
-         'Faction specific',
+         'Faction Specific',
          'List Finder',
          'Raw Data'],
          default='Welcome',
@@ -129,9 +129,11 @@ with st.sidebar:
     )
 
     # Tournament type selector
-    tournament_type = st.selectbox(
-        "Select Tournament Type",
-        ["Any", "Singles", "Teams"]
+    tournament_type = st.pills(
+        'Select Tournament Type',
+        ['Any', 'Singles', 'Teams'],
+        default='Any',
+        selection_mode='single'
     )
 
     # Now lets apply these filters to the raw data
@@ -200,7 +202,7 @@ if page == 'Welcome':
 elif page == 'Game-Wide':
     game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games)
 
-elif page == 'Faction specific':
+elif page == 'Faction Specific':
     faction_name = st.selectbox('Select a Faction', faction_names, index=None)
 
     if faction_name == None:

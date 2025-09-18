@@ -22,41 +22,28 @@ from helper_functions import colourmap, round_sig
 from constants import faction_keys
 
 @st.fragment()
-def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games):
-    ''' The content of the game-wide statistics page '''
-    num_faction = len(faction_keys) # Should be 16
-    # Set styling for plots
-    sns.set_theme()
-    plt.style.use(['seaborn-v0_8','fast'])
-
-    # The title of the page
-    st.title('Game-Wide Statistics')
-
-    # Some basic filtering and computations; first about turn order then removing mirror matchups
-    first_data = list_data.filter(pl.col('Turn') == 'First')
-    second_data = list_data.filter(pl.col('Turn') == 'Second')
-    fa, fe = round_sig(first_data['Score'].mean(), first_data['Score'].std() / (first_data.height ** 0.5))
-    sa, se = round_sig(second_data['Score'].mean(), second_data['Score'].std() / (second_data.height ** 0.5))
-
-    scores = list(range(21))
-    first_counts = [first_data.filter((pl.col('Score') == i)).height for i in scores]
-    second_counts = [second_data.filter((pl.col('Score') == i)).height for i in scores]
-
+def show_faction_scores(list_data, faction_keys):
+    ''' A fragment to show the average scores of each faction with error bars '''
     no_mirror_list_data = list_data.filter(pl.col('Faction') != pl.col('Opponent'))
 
-
-    # To start with, let's just show a basic scatter plot of faction performance
-    st.subheader('Faction Performance')
-
-    # Add an explanation of the plot
-    st.markdown(f'<p>The scatterplot below shows the average score of each faction (excluding mirror matchups) along with error bars indicating \
-            two standard deviations of the mean (95% confidence interval, assuming normally distributed means). Please keep in mind, \
-            with {num_faction} different factions, it is not statistically unreasonable for 1-2 factions to fall outside two \
-            standard deviations of the mean, even if balance is theoretically "perfect".</p>', unsafe_allow_html=True)
+    confidence_interval = st.slider('Confidence Interval for Error Bars', 
+                                    min_value=50.0, 
+                                    max_value=99.9, 
+                                    value=95.0, 
+                                    step=0.1,
+                                    format="%.1f%%")
 
     fig,ax = plt.subplots(layout="constrained")
+
+    sns.pointplot(data=no_mirror_list_data.to_pandas(), 
+                  x='Faction', 
+                  order=faction_keys, 
+                  y='Score', 
+                  linestyle='none', 
+                  ax=ax, 
+                  errorbar=('ci', confidence_interval)
+                  )
     
-    sns.pointplot(data=no_mirror_list_data.to_pandas(), x='Faction', order=faction_keys, y='Score', linestyle = 'none', ax=ax)
     plt.axhline(y=10, linestyle='--')
     plt.title('Average Score of Each Faction')
     plt.xlabel('Faction')
@@ -67,12 +54,20 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
     st.pyplot(fig)
     plt.close(fig)
 
-    # Now let's look at the distribution of scores when going first and second
-    st.subheader('Score Distribution')
+@st.fragment()
+def show_score_distribution(first_data, second_data, faction_keys):
+    ''' A fragment to show the distribution of scores '''
 
-    st.markdown(f'<p>The histogram below shows the distribution of scores across all games when going first and second.</p>', 
-            unsafe_allow_html=True
-            )
+    # Add a multiselect to choose which factions to include
+    selected_factions = st.multiselect('Select Factions to Include', options=faction_keys, default=faction_keys)
+
+    if not selected_factions:
+        st.warning('Please select at least one faction to display the score distribution.')
+        return
+
+    scores = list(range(21))
+    first_counts = [first_data.filter((pl.col('Score') == i) & (pl.col('Faction').is_in(selected_factions))).height for i in scores]
+    second_counts = [second_data.filter((pl.col('Score') == i) & (pl.col('Faction').is_in(selected_factions))).height for i in scores]
 
     # Plot using seaborn barplot with polars
     bar_data = pl.DataFrame({
@@ -92,6 +87,47 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
 
     st.pyplot(fig)
     plt.close(fig)
+
+@st.fragment()
+def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games):
+    ''' The content of the game-wide statistics page '''
+    num_faction = len(faction_keys) # Should be 16
+    # Set styling for plots
+    sns.set_theme()
+    plt.style.use(['seaborn-v0_8','fast'])
+
+    # The title of the page
+    st.title('Game-Wide Statistics')
+
+    # Some basic filtering and computations; first about turn order then removing mirror matchups
+    first_data = list_data.filter(pl.col('Turn') == 'First')
+    second_data = list_data.filter(pl.col('Turn') == 'Second')
+    fa, fe = round_sig(first_data['Score'].mean(), first_data['Score'].std() / (first_data.height ** 0.5))
+    sa, se = round_sig(second_data['Score'].mean(), second_data['Score'].std() / (second_data.height ** 0.5))
+
+    # To start with, let's just show a basic scatter plot of faction performance
+    st.subheader('Faction Performance')
+
+    # Add an explanation of the plot
+    st.markdown(f'<p>The scatterplot below shows the average score of each faction (excluding mirror matchups) along with error bars indicating \
+            the selected confidence interval (95%, or two standard deviations of the mean, is standard). Please keep in mind, \
+            with {num_faction} different factions, it is not statistically unreasonable for 1-2 factions to fall outside of \
+            95% confidence intervals, even if balance is theoretically "perfect".</p>', unsafe_allow_html=True)
+
+    # Show the plot in a fragment so it doesn't reload the whole page on interaction
+    show_faction_scores(list_data, faction_keys)
+
+    # Now let's look at the distribution of scores when going first and second
+    st.subheader('Score Distribution')
+
+    st.markdown(f'''<p>The histogram below shows the distribution of scores across all games when going first and second.
+                You can use the multiselect widget below to select which factions are included in the distribution.
+                By default, all factions are included.</p>''',
+                unsafe_allow_html=True
+            )
+
+    # Show the plot in a fragment so it doesn't reload the whole page on interaction
+    show_score_distribution(first_data, second_data, faction_keys)
 
     st.subheader('Matchup Performance Table')
 
