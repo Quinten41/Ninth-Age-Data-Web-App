@@ -55,33 +55,55 @@ def show_faction_scores(list_data, faction_keys):
     plt.close(fig)
 
 @st.fragment()
-def show_score_distribution(first_data, second_data, faction_keys):
+def show_score_distribution(list_data, first_data, second_data, faction_keys):
     ''' A fragment to show the distribution of scores '''
 
     # Add a multiselect to choose which factions to include
     selected_factions = st.multiselect('Select Factions to Include', options=faction_keys, default=faction_keys)
+
+    turn_separate = st.toggle('Show First and Second Turn Separately', value=True)
 
     if not selected_factions:
         st.warning('Please select at least one faction to display the score distribution.')
         return
 
     scores = list(range(21))
-    first_counts = [first_data.filter((pl.col('Score') == i) & (pl.col('Faction').is_in(selected_factions))).height for i in scores]
-    second_counts = [second_data.filter((pl.col('Score') == i) & (pl.col('Faction').is_in(selected_factions))).height for i in scores]
+    if len(selected_factions) == len(faction_keys) and turn_separate:
+        first_counts = [first_data.filter(pl.col('Score') == i).height for i in scores]
+        second_counts = [second_data.filter(pl.col('Score') == i).height for i in scores]
+        unknown_counts = [list_data.filter((pl.col('Score') == i) & (pl.col('Turn') == 'Unknown')).height for i in scores]
+        bar_data = pd.DataFrame({
+            'Number of Games': first_counts + second_counts + unknown_counts,
+            'Score': scores * 3,
+            'Turn': ['First'] * 21 + ['Second'] * 21 + ['Unknown'] * 21
+        })
+    elif turn_separate:
+        first_counts = [first_data.filter((pl.col('Score') == i) & (pl.col('Faction').is_in(selected_factions))).height for i in scores]
+        second_counts = [second_data.filter((pl.col('Score') == i) & (pl.col('Faction').is_in(selected_factions))).height for i in scores]
+        unknown_counts = [list_data.filter((pl.col('Score') == i) & (pl.col('Turn') == 'Unknown') & (pl.col('Faction').is_in(selected_factions))).height for i in scores]
+        bar_data = pd.DataFrame({
+            'Number of Games': first_counts + second_counts + unknown_counts,
+            'Score': scores * 3,
+            'Turn': ['First'] * 21 + ['Second'] * 21 + ['Unknown'] * 21
+        })
 
-    # Plot using seaborn barplot with polars
-    bar_data = pl.DataFrame({
-        'Number of Games': first_counts + second_counts,
-        'Score': scores * 2,
-        'Turn': ['First'] * 21 + ['Second'] * 21
-    })
+    else:
+        if len(selected_factions) == len(faction_keys):
+            counts = [list_data.filter(pl.col('Score') == i).height for i in scores]
+        else:
+            counts = [list_data.filter((pl.col('Score') == i) & (pl.col('Faction').is_in(selected_factions))).height for i in scores]
+        bar_data = pd.DataFrame({
+            'Number of Games': counts,
+            'Score': scores
+        })
 
     fig, ax = plt.subplots(layout="constrained")
-    sns.barplot(data=bar_data.to_pandas(), x='Score', y='Number of Games', hue='Turn')
-    plt.title('Distribution of Scores When Going First and Second')
+    sns.barplot(data=bar_data, x='Score', y='Number of Games', hue='Turn' if turn_separate else None, ax=ax)
+    plt.title('Distribution of Scores')
     plt.xlabel('Score')
     plt.ylabel('Number of Games')
-    plt.legend(title='Turn')
+    if turn_separate:
+        plt.legend(title='Turn')
     fig.patch.set_alpha(0.0)  # Figure background transparent
     ax.patch.set_alpha(0.0)  # Axes background transparent
 
@@ -120,14 +142,14 @@ def game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_d
     # Now let's look at the distribution of scores when going first and second
     st.subheader('Score Distribution')
 
-    st.markdown(f'''<p>The histogram below shows the distribution of scores across all games when going first and second.
+    st.markdown(f'''<p>The histogram below shows the distribution of scores across all games.
                 You can use the multiselect widget below to select which factions are included in the distribution.
                 By default, all factions are included.</p>''',
                 unsafe_allow_html=True
             )
 
     # Show the plot in a fragment so it doesn't reload the whole page on interaction
-    show_score_distribution(first_data, second_data, faction_keys)
+    show_score_distribution(list_data, first_data, second_data, faction_keys)
 
     st.subheader('Matchup Performance Table')
 
