@@ -12,7 +12,9 @@ import gc
 
 # Import functions to generate the different pages
 from welcome_page import welcome_page
-from game_wide_page import game_wide_page
+from scores_performance import scores_page
+from faction_popularity import popularity_page
+from magic import magic_page
 from faction_specific_page import faction_specific_page
 from list_finder import list_finder_page
 
@@ -53,7 +55,9 @@ with st.sidebar:
     page = st.pills(
         'Select Page',
         ['Welcome',
-         'Game-Wide',
+         'Scores & Faction Performance',
+         'Faction Popularity',
+         'Magic',
          'Faction Specific',
          'List Finder',
          'Raw Data'],
@@ -199,8 +203,14 @@ with st.sidebar:
 if page == 'Welcome':
     welcome_page()
 
-elif page == 'Game-Wide':
-    game_wide_page(tournament_type, faction_keys, magic_paths, list_data, unit_data, option_data, num_games)
+elif page == 'Scores & Faction Performance':
+    scores_page(faction_keys, list_data)
+
+elif page == 'Faction Popularity':
+    popularity_page(tournament_type, faction_keys, list_data, start_date, end_date)
+
+elif page == 'Magic':
+    magic_page(list_data, option_data, magic_paths)
 
 elif page == 'Faction Specific':
     faction_name = st.selectbox('Select a Faction', faction_names, index=None)
