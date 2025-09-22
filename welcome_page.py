@@ -17,11 +17,14 @@ def welcome_page():
     <h3>Pages</h3>
     <ul>
         <li><b>Welcome</b>: You are here! This page provides an overview of the app and some basic statistical concepts.</li>
-        <li><b>Game-Wide</b>: This page details general statistics about the game, such as the win rates of factions, 
-            the popularity of factions, the performance and popularity of magic paths, the game-wide distribution of score,
-            and favourable/unfavourable matchups between factions.</li>
+        <li><b>Scores & Faction Performance</b>: This page details general statistics about the performance of factions and the distribution
+                of scores in the game. It also gives insight into specific matchups between factions;</li>
+        <li><b>Faction Popularity</b>: This page presents information about the popularity of factions and 
+                the popularity of different pairings in team tournaments.</li>
+        <li><b>Magic</b>: This page provides an overview about how much magic lists take, what paths are taken, and how
+                these factors affect list performance.</li>
         <li><b>Faction Specific</b>: This page presents more specific insights for each faction; the performance of each category
-            (e.g., characters, core,  special, etc.) and the popularity and performance of units and unit options are all detailed here.</li>
+            (e.g., characters, core, special, etc.) and the popularity and performance of units and unit options are all detailed here.</li>
         <li><b>List Finder</b>: This page allows you to find, and view data on, lists that meet specified criteria. You can filter lists by
             faction, opponent's faction, turn order, units taken, and unit options taken. Once you have made your selections,
             you can view the overall distribution of scores for the lists that meet your criteria, as well as data on each of the

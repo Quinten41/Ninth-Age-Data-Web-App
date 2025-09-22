@@ -10,13 +10,15 @@ import polars as pl
 import pandas as pd
 import numpy as np
 
-# Other tools
-import datetime
-
 @st.fragment()
-def faction_list_count(list_data, faction_keys, start_date, end_date):
+def faction_list_count(tournament_type, list_data, faction_keys, start_date, end_date):
     '''Helper function to create a bar chart of the number of games played with each faction.'''
-    bar_stack = st.pills('Select Bar Split', ['No Split', 'By Turn', 'By Opponent Faction', 'By Score', 'By Date'], default='By Turn')
+
+    poss_splits = ['No Split', 'By Turn', 'By Opponent Faction', 'By Score', 'By Date']
+    if tournament_type == 'Any':
+        poss_splits.append('By Singles or Teams')
+    
+    bar_stack = st.pills('Select Bar Split', poss_splits, default='By Turn')
 
     # Make a histogram of the number of games played with each faction
     if bar_stack == 'No Split':
@@ -98,6 +100,17 @@ def faction_list_count(list_data, faction_keys, start_date, end_date):
             bottom += counts[date]
         ax.legend(title='Month', bbox_to_anchor=(1, 1))
 
+    elif bar_stack == 'By Singles or Teams':
+        types = ['Singles', 'Teams']
+        counts = {t: np.array([list_data.filter((pl.col('Faction') == fac) & (pl.col('Type') == t)).height for fac in faction_keys]) for t in types}
+
+        ind = np.arange(len(faction_keys))
+        width = 0.7
+        fig, ax = plt.subplots(layout='constrained')
+        ax.bar(ind, counts['Singles'], width, bottom=counts['Teams'], label='Singles')
+        ax.bar(ind, counts['Teams'], width, label='Teams')
+        ax.legend(title='Tournament Type')
+
 
     ax.set_xticks(ind)
     ax.set_xticklabels(faction_keys, rotation=45, ha='right')
@@ -135,7 +148,7 @@ def popularity_page(tournament_type, faction_keys, list_data, start_date, end_da
                 You can use the widget to decide how to show stacks in the bars.</p>''', unsafe_allow_html=True)
     
     # Show the bar chart (in a fragment to avoid the widget recomputing the whole page)
-    faction_list_count(list_data, faction_keys, start_date, end_date)
+    faction_list_count(tournament_type, list_data, faction_keys, start_date, end_date)
 
     st.subheader('Pairing Popularity')
     if tournament_type == 'Singles':

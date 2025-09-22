@@ -213,10 +213,10 @@ def load_and_organise_data(root_folder="data"):
     option_rows = correct_option_names(option_rows)
 
     # Convert to Polars DataFrames
-    raw_list_data = pl.DataFrame(list_rows).with_columns([
-        pl.col('Faction').cast(pl.Categorical),
-        pl.col('Turn').cast(pl.Categorical)
-    ])
+    raw_list_data = pl.DataFrame(list_rows)#.with_columns([
+    #     pl.col('Faction').cast(pl.Categorical),
+    #     pl.col('Turn').cast(pl.Categorical)
+    # ])
     raw_unit_data = pl.DataFrame(unit_rows)
     raw_option_data = pl.DataFrame(option_rows)
     magic_paths = (
