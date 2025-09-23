@@ -4,16 +4,12 @@ import streamlit as st
 # Plotting tools
 import matplotlib.pyplot as plt
 import seaborn as sns
-import matplotlib.colors as mcolors
 
 # Data analysis tools
 import polars as pl
 import pandas as pd
 import numpy as np
 import scipy.stats as stats
-
-# Plotting functions
-from plotting_functions import labelled_scatterplot_regions
 
 # Import helper function
 from helper_functions import colourmap, round_sig
