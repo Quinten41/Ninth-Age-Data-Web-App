@@ -28,7 +28,9 @@ def show_faction_scores(list_data, faction_keys):
                                     max_value=99.9, 
                                     value=95.0, 
                                     step=0.1,
-                                    format="%.1f%%")
+                                    format="%.1f%%",
+                                    key='faction_performance_ci'
+                                    )
 
     fig,ax = plt.subplots(layout="constrained")
 
@@ -56,7 +58,7 @@ def show_score_distribution(list_data, first_data, second_data, faction_keys):
     ''' A fragment to show the distribution of scores '''
 
     # Add a multiselect to choose which factions to include
-    selected_factions = st.multiselect('Select Factions to Include', options=faction_keys, default=faction_keys)
+    selected_factions = st.multiselect('Select Factions to Include', options=faction_keys, default=faction_keys, key='score_dist_factions')
 
     turn_separate = st.toggle('Show First and Second Turn Separately', value=True)
 

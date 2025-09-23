@@ -27,7 +27,8 @@ def path_performance_plot(list_data, option_data, magic_paths):
     factions = st.multiselect(
         'Select Factions to Include',
         options=faction_keys,
-        default=faction_keys
+        default=faction_keys,
+        key='path_performance_factions'
     )
     
     
