@@ -22,7 +22,7 @@ from constants import faction_names, faction_keys
 from helper_functions import colourmap, round_sig
 
 @st.fragment()
-def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_data, num_games):
+def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_data):
     ''' The content of the list finder page '''
 
     # The title of the page

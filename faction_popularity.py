@@ -21,7 +21,7 @@ def faction_list_count(tournament_type, list_data, faction_keys, start_date, end
     bar_stack = st.pills('Select Bar Split', poss_splits, default='By Turn')
 
     # Make a histogram of the number of games played with each faction
-    if bar_stack == 'No Split':
+    if bar_stack == 'No Split' or bar_stack is None:
         counts = np.array([list_data.filter(pl.col('Faction') == fac).height for fac in faction_keys])
         ind = np.arange(len(faction_keys))
         width = 0.7

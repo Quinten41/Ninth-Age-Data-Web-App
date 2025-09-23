@@ -229,7 +229,7 @@ elif page == 'Faction Specific':
         faction_specific_page(faction_name, flist_data, funit_data, foption_data)
 
 elif page == 'List Finder':
-    list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_data, num_games)
+    list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_data)
 
 elif page == 'Raw Data':
     st.title('Raw Data')

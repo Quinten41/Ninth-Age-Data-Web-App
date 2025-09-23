@@ -35,14 +35,15 @@ def path_performance_plot(list_data, option_data, magic_paths):
         st.warning('Please select at least one faction.')
         return
     elif len(factions) != len(faction_keys):
-        list_data = list_data.filter(pl.col('Faction').is_in(factions))
-        path_option_data = option_data.filter((pl.col('Option Type') == 'Path') & (pl.col('list_id').is_in(list_data['list_id'].implode())))
+        flist_data = list_data.filter(pl.col('Faction').is_in(factions))
+        path_option_data = option_data.filter((pl.col('Option Type') == 'Path') & (pl.col('list_id').is_in(flist_data['list_id'].implode())))
     else:
+        flist_data = list_data
         path_option_data = option_data.filter(pl.col('Option Type') == 'Path')
 
     # Get magic points
     path_list_ids = path_option_data.select('list_id').unique().to_series().implode()
-    magic_scores = list_data.filter(pl.col('list_id').is_in(path_list_ids))['Score']
+    magic_scores = flist_data.filter(pl.col('list_id').is_in(path_list_ids))['Score']
     mavg = magic_scores.mean()
 
     if len(path_list_ids[0]) == 0:
@@ -51,13 +52,15 @@ def path_performance_plot(list_data, option_data, magic_paths):
     
     # For each path, find all unique list_ids where it was taken
     path_points = []
+    # Make a copy of magic_paths to modify for display
+    fmagic_paths = magic_paths.copy()
     for i in range(len(magic_paths)-1,-1,-1):
         spell_list_ids = path_option_data.filter(pl.col('Option Name') == magic_paths[i]).select('list_id').unique().to_series().implode()
         if len(spell_list_ids[0]) == 0:
-            magic_paths.pop(i)
+            fmagic_paths.pop(i)
             continue
         # Get the scores for these lists
-        scores = list_data.filter(pl.col('list_id').is_in(spell_list_ids))['Score']
+        scores = flist_data.filter(pl.col('list_id').is_in(spell_list_ids))['Score']
         path_points.append((len(scores), scores.mean()))
 
     # Account for the fact the magic_paths were processed in reverse order in tha above loop
@@ -71,7 +74,7 @@ def path_performance_plot(list_data, option_data, magic_paths):
     fig, ax = labelled_scatterplot_regions(
         figsize=(8,6), # Matplotlib default
         points=path_points,
-        labels=magic_paths,
+        labels=fmagic_paths,
         num_games=len(magic_scores),
         variance=magic_scores.var(),
         mean=mavg,
