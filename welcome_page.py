@@ -7,8 +7,8 @@ def welcome_page():
     <h3>About This App</h3>
     <p>Whether you\'re looking for ideas for your next army list, want some hard numbers to back up your
         claim that your buddy\'s army is OP, or are just curious
-        about the current state of the game, you\'ve come to the right place. Below is a an overview of
-        the different pages in this app. Below that, is a review of some basic statistical concepts
+        about the current state of the game, you\'ve come to the right place. Below is an overview of
+        the different pages in this app. Below that is a review of some basic statistical concepts
         you may find helpful when interpreting the data.</p>
                 
     <p> When you're ready to get started you can use the sidebar on the left to filter the data to your specifications

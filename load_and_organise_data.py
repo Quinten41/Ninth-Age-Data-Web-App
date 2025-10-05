@@ -84,7 +84,7 @@ def correct_option_names(option_rows):
 
 # Cached function to load and organise the data
 @st.cache_data
-def load_and_organise_data(root_folder="data"):
+def load_and_organise_data(root_folder='data'):
     '''Function to load and organise data from JSON files in the specified root folder.'''
     script_dir = os.path.dirname(os.path.abspath(__file__))
     data_dir = os.path.join(script_dir, root_folder)
@@ -217,6 +217,7 @@ def load_and_organise_data(root_folder="data"):
     #     pl.col('Faction').cast(pl.Categorical),
     #     pl.col('Turn').cast(pl.Categorical)
     # ])
+    
     raw_unit_data = pl.DataFrame(unit_rows)
     raw_option_data = pl.DataFrame(option_rows)
     magic_paths = (
