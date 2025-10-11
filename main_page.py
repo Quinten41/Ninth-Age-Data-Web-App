@@ -40,12 +40,12 @@ st.image('https://bedroombattlefields.com/wp-content/uploads/2021/11/the-ninth-a
 # Cached function to get the minimum and maximums for sliders
 @st.cache_data
 def get_max_min(raw_list_data):
-    return raw_list_data['Tournament Size'].max(), raw_list_data['Game Size'].max(), raw_list_data['Game Size'].min()
+    return raw_list_data['Tournament Size'].max(), raw_list_data['Game Size'].max(), raw_list_data['Game Size'].min(), raw_list_data['Start Date'].min(), raw_list_data['End Date'].max()
 
 # Get the dataframes and minimum and maximums for sliders
 with st.spinner('Loading data...'):
     raw_list_data, raw_unit_data, raw_option_data, tnum_games, magic_paths = load_and_organise_data()
-    max_tournament_size, max_game_size, min_game_size = get_max_min(raw_list_data)
+    max_tournament_size, max_game_size, min_game_size, min_start_date, max_end_date = get_max_min(raw_list_data)
 
 # Add a sidebar for filtering and page selection
 with st.sidebar:
@@ -69,10 +69,10 @@ with st.sidebar:
     # Date range slider
     start_date, end_date = st.slider(
         "Select Date Range",
-        value=(date(2024, 1, 1), date.today()),
+        value=(min_start_date, max_end_date),
         format="YYYY-MM-DD",
-        min_value=date(2024, 1, 1),
-        max_value=date.today()
+        min_value=min_start_date,
+        max_value=max_end_date
     )
 
     # Inject custom CSS to change selectbox format

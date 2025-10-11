@@ -199,7 +199,7 @@ def load_and_organise_data(root_folder='data'):
                 g_ind += 1
                 points = [row['Total Points'] for row in list_rows[-2:] if row['Total Points'] is not None]
                 if points:
-                    max_points = ceil( max(points) / 100)*100
+                    max_points = ceil( max(points) / 50)*50
                     list_rows[-1]['Game Size'] = max_points
                     list_rows[-2]['Game Size'] = max_points
                 else:
