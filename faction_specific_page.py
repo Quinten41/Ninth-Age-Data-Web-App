@@ -186,6 +186,103 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
     plt.close(fig)
 
 
+    # Compute some overall list statistics (unique lists only)
+    # these will be used in the magic items and units tables
+    lists_unique = flist_data.unique(subset=['list_id'])
+    N_lists = lists_unique.height
+    overall_mean = lists_unique['Score'].mean()
+    overall_var = lists_unique['Score'].var()  # sample variance
+        
+    # Add a section about magic items
+    st.subheader('Magic Items')
+
+    st.markdown(f'<p>Magic item usage and performance statistics are shown in the table below. \
+                Each row corresponds to a magic item used by the {faction_name}, \
+                and each column a statistic about that magic item.</p>', 
+                unsafe_allow_html=True)
+    
+    # Compute magic item statistics
+    # Identify magic items by checking Option Type or Option Name for the substring "magic" (case-insensitive)
+    magic_cond = (
+        (pl.col('Option Type').is_not_null() & pl.col('Option Type').str.to_lowercase().str.contains('magic')) |
+        (pl.col('Option Name').is_not_null() & pl.col('Option Name').str.to_lowercase().str.contains('magic'))
+    )
+
+    foption_magic_all = foption_data.filter(magic_cond)
+
+    if foption_magic_all.is_empty():
+        st.warning('No magic item options found for this faction in the current dataset.')
+    else:
+        # 1) total occurrences (including duplicates) and 2) unique lists containing the magic item
+        magic_counts = foption_magic_all.group_by('Option Name').agg([
+            pl.count().alias('total_entries'),
+            pl.col('list_id').n_unique().alias('lists_with_item')
+        ])
+
+        # Average score of lists containing the magic item (unique list-level)
+        magic_avg_score_pl = foption_magic_all.unique(subset=['Option Name', 'list_id']).group_by('Option Name').agg([
+            pl.col('Score').mean().alias('avg_score')
+        ])
+
+        # Join counts and avg score
+        magic_table_pl = magic_counts.join(magic_avg_score_pl, on='Option Name', how='left')
+
+        # Move to pandas for fractions, p-value calculation and final formatting
+        magic_table_pd = magic_table_pl.to_pandas().set_index('Option Name')
+
+        # Use overall values computed earlier in the function
+        # N_lists, overall_mean, overall_var are defined above
+        magic_table_pd['fraction_total_entries'] = magic_table_pd['total_entries'] / max(1, N_lists)
+        magic_table_pd['fraction_lists_with_item'] = magic_table_pd['lists_with_item'] / max(1, N_lists)
+
+        from scipy.stats import norm
+        p_values = []
+        effect_sizes = []
+        for _, row in magic_table_pd.iterrows():
+            n = row['lists_with_item']
+            y = row.get('avg_score', np.nan)
+            effect = (y - overall_mean) if (y is not None and not np.isnan(y)) else np.nan
+            effect_sizes.append(effect)
+            if n is None or n <= 1 or overall_var is None or overall_var == 0 or np.isnan(y):
+                p_values.append(np.nan)
+                continue
+            denom = np.sqrt(overall_var * (1.0 - (n - 1.0) / max(1.0, (N_lists - 1.0))))
+            if denom == 0:
+                p_values.append(np.nan)
+                continue
+            z = (y - overall_mean) * np.sqrt(n) / denom
+            p = 2.0 * norm.sf(abs(z))
+            p_values.append(p)
+
+        magic_table_pd['avg_score'] = magic_table_pd['avg_score'].round(3)
+        magic_table_pd['p_value_avg_score'] = p_values
+        magic_table_pd['effect_size_avg_score'] = effect_sizes
+
+        # Reorder and rename columns for display (NO average-points column and don't compute points)
+        magic_table_pd = magic_table_pd.reset_index().rename(columns={
+            'Option Name': 'Magic Item',
+            'total_entries': '# of Entries',
+            'lists_with_item': '# of Lists with Item',
+            'fraction_total_entries': '# of Entries / Total # of Lists',
+            'fraction_lists_with_item': '# of Lists with Item / Total # of Lists',
+            'avg_score': 'Average Score',
+            'effect_size_avg_score': 'Average Score Effect Size',
+            'p_value_avg_score': 'p-value For Average Score'
+        })
+
+        # Keep only the relevant columns (no avg points column)
+        magic_items_table = magic_table_pd[[
+            'Magic Item',
+            '# of Entries / Total # of Lists',
+            '# of Lists with Item / Total # of Lists',
+            'Average Score',
+            'p-value For Average Score',
+            'Average Score Effect Size'
+        ]]
+
+        st.dataframe(magic_items_table.set_index('Magic Item').round(4))
+
+
     # Next a section on the units in the faction
     st.subheader('Units')
 
@@ -262,6 +359,111 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
     fig.patch.set_alpha(0.0)  # Figure background transparent
     ax.patch.set_alpha(0.0)   # Axes background transparent
     st.pyplot(fig)
+    plt.close(fig)
+
+    st.markdown(f'''<p>In the table below the unit statistics are summarised.
+                Each row corresponds to a unit in the {faction_name}, and each column a statistic about that unit.
+                ''', unsafe_allow_html=True)
+    
+
+    # 1) total occurrences of unit (including duplicates) and 2) unique lists containing unit
+    unit_counts = funit_data.group_by('Name').agg([
+        pl.count().alias('total_entries'),
+        pl.col('list_id').n_unique().alias('lists_with_unit')
+    ])
+
+    # 3) points spent per list for each unit (sum of Cost per list), then derive averages and mean score per unit
+    points_per_list = funit_data.group_by(['Name', 'list_id']).agg([
+        pl.col('Cost').sum().alias('points_in_list'),
+        pl.col('Score').first().alias('Score')  # score for that list
+    ])
+
+    # Convert to pandas to compute averages including lists where the unit is NOT present (treated as 0)
+    ppl_pd = points_per_list.select(['Name', 'list_id', 'points_in_list']).to_pandas()
+    all_list_ids = flist_data.select('list_id').unique().to_pandas()['list_id'].astype(object)
+
+    # Build full (unit, list_id) index so missing combinations become 0
+    unit_names = ppl_pd['Name'].unique()
+    full_idx = pd.MultiIndex.from_product([unit_names, all_list_ids], names=['Name', 'list_id'])
+    ppl_full = ppl_pd.set_index(['Name', 'list_id']).reindex(full_idx, fill_value=0).reset_index()
+
+    # avg_points_per_list now includes zeros for lists where the unit was not present
+    unit_points_stats_pd = (
+        ppl_full
+        .groupby('Name')
+        .agg(
+            avg_points_per_list=('points_in_list', 'mean'),
+            std_points_per_list=('points_in_list', 'std')
+        )
+        .reset_index()
+    )
+
+    # avg_score should remain the average score of lists that contain the unit (as before)
+    avg_score_pd = points_per_list.select(['Name', 'Score']).to_pandas().groupby('Name', as_index=False).agg(avg_score=('Score', 'mean'))
+
+    # Merge the pandas stats back into a polars DataFrame for further joins
+    unit_points_stats = pl.from_pandas(unit_points_stats_pd.merge(avg_score_pd, on='Name', how='left'))
+
+    # Join counts and stats
+    unit_table_pl = unit_counts.join(unit_points_stats, on='Name', how='left')
+
+    # Compute fractions and p-value for average score using the same z formula used in plotting_functions
+    # z = (y - mean) * sqrt(n) / sqrt(var * (1 - (n-1)/(N-1)))
+    unit_table_pd = unit_table_pl.to_pandas().set_index('Name')
+    unit_table_pd['fraction_total_entries'] = unit_table_pd['total_entries'] / max(1, N_lists)
+    unit_table_pd['fraction_lists_with_unit'] = unit_table_pd['lists_with_unit'] / max(1, N_lists)
+
+    # Average points per list (as computed), average score already present
+    # Compute p-value (two-sided) for avg_score vs overall distribution using formula above
+    from scipy.stats import norm
+    p_values = []
+    effect_sizes = []  # additional suggested stat: difference from overall mean
+    for _, row in unit_table_pd.iterrows():
+        n = row['lists_with_unit']
+        y = row['avg_score']
+        effect = (y - overall_mean) if (y is not None and not np.isnan(y)) else np.nan
+        effect_sizes.append(effect)
+        if n is None or n <= 1 or overall_var is None or overall_var == 0 or np.isnan(y):
+            p_values.append(np.nan)
+            continue
+        denom = np.sqrt(overall_var * (1.0 - (n - 1.0) / max(1.0, (N_lists - 1.0))))
+        if denom == 0:
+            p_values.append(np.nan)
+            continue
+        z = (y - overall_mean) * np.sqrt(n) / denom
+        p = 2.0 * norm.sf(abs(z))
+        p_values.append(p)
+
+    unit_table_pd['avg_points_per_list'] = unit_table_pd['avg_points_per_list'].round(2)
+    unit_table_pd['avg_score'] = unit_table_pd['avg_score'].round(3)
+    unit_table_pd['p_value_avg_score'] = p_values
+    unit_table_pd['effect_size_avg_score'] = effect_sizes
+
+    # Reorder and rename columns for display
+    unit_table_pd = unit_table_pd.reset_index().rename(columns={
+        'Name': 'Unit',
+        'total_entries': '# of Entries',
+        'lists_with_unit': '# of Lists with Unit',
+        'fraction_total_entries': '# of Entries / Total # of Lists',
+        'fraction_lists_with_unit': '# of Lists with Unit / Total # of Lists',
+        'avg_points_per_list': 'Average Points per List',
+        'avg_score': 'Average Score',
+        'effect_size_avg_score': 'Average Score Effect Size',
+        'p_value_avg_score': 'p-value For Average Score'
+    })
+
+    # Keep only the relevant coloumns
+    unit_table = unit_table_pd[[
+        'Unit',
+        '# of Entries / Total # of Lists',
+        '# of Lists with Unit / Total # of Lists',
+        'Average Points per List',
+        'Average Score',
+        'p-value For Average Score',
+        'Average Score Effect Size'
+    ]]
+
+    st.dataframe(unit_table.set_index('Unit').round(4))
 
 
     # Add a section on options for individual units
@@ -273,7 +475,7 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
 
 
 # Helper function to make an option plot
-def make_option_plot(group, num_lists, var_score, mean_score, plot_num=None):
+def make_option_plot(group, num_lists, var_score, mean_score, unit_name, plural, plot_num=None):
     option_stats = (
         group.groupby('Option Name')
         .agg(
@@ -293,9 +495,9 @@ def make_option_plot(group, num_lists, var_score, mean_score, plot_num=None):
         ylim=(8,12)
     )
     if plot_num != None:
-        plt.title(f'Option Performance and Popularity ({plot_num})')
+        plt.title(f'Option Performance and Popularity for {'' if plural else 'a '}{unit_name} ({plot_num})')
     else:
-        plt.title(f'Option Performance and Popularity')
+        plt.title(f'Option Performance and Popularity for {'' if plural else 'a '}{unit_name}')
 
     fig.patch.set_alpha(0.0)  # Figure background transparent
     ax.patch.set_alpha(0.0)   # Axes background transparent
@@ -365,7 +567,7 @@ def unit_specific_report(faction_name, foption_data, funit_data, unit_names):
         plural = False
 
     if len(unique_types) == 1 or num_plots == 1:
-        fig,_ = make_option_plot(unique_option_data, num_lists, var_score, mean_score)
+        fig,_ = make_option_plot(unique_option_data, num_lists, var_score, mean_score, unit_name, plural)
         st.markdown(f'''
         <p>The scatter plot below shows the performance and popularity of options for {'' if plural else 'a'} {unit_name}. 
         The x-axis is the percentage of games played with one or more choices of each option. The percentage is not calculated 
@@ -399,7 +601,7 @@ def unit_specific_report(faction_name, foption_data, funit_data, unit_names):
         # Create and display each plot
         for i in range(num_plots):
             group = unique_option_data[unique_option_data['Option Type'].isin(group_types[i])]
-            fig,_ = make_option_plot(group, num_lists, var_score, mean_score, plot_num=i+1)
+            fig,_ = make_option_plot(group, num_lists, var_score, mean_score, unit_name, plural, plot_num=i+1)
             st.markdown(f'''
             <p>This scatterplot shows options of the following types:</p>
             <ul>
