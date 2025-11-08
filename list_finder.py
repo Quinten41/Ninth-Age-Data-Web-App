@@ -128,6 +128,26 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
     turn_order = st.selectbox('Select Turn Order',
                             ['Any', 'First', 'Second'],
                             key='turn_order_selectbox')
+    
+    st.markdown('''<h5>Specify Deployment</h5><p>Use the multiselect below to filter the games by
+                the deployment type. Note that the 'Unknown' option indicates games where no
+                deployment information is available.</p>''', unsafe_allow_html=True)
+
+    all_deployments = list_data['Deployment'].unique().to_list()
+    deployment = st.multiselect('Select Deployment',
+                            all_deployments,
+                            default=all_deployments,
+                            key='deployment_selectbox')
+
+    st.markdown('''<h5>Specify Primary Deployment</h5><p>Use the multiselect below to filter the games by
+                the primary deployment type. Note that the 'Unknown' option indicates games where no
+                deployment information is available.</p>''', unsafe_allow_html=True)
+
+    all_primaries = list_data['Primary'].unique().to_list()
+    primary = st.multiselect('Select Primary',
+                            all_primaries,
+                            default=all_primaries,
+                            key='primary__selectbox')
 
     # Now that all the criteria are selected the user is given the option to generate the data
     st.markdown('''<h5>Generate List Data</h5><p>Once you are happy with your selected criteria for the lists you wish to examine,
@@ -137,11 +157,15 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
     submit = st.button('Find Selected Lists', disabled=(faction_name is None))
 
     if submit:
-        # First cut the size of the data down by filtering for turn order and selected opponents
+        # First cut the size of the data down by filtering for turn order, deployment, primary, and selected opponents
         if turn_order == 'First':
             flist_data = flist_data.filter(pl.col('Turn') == 'First')
         elif turn_order == 'Second':
             flist_data = flist_data.filter(pl.col('Turn') == 'Second')
+        if len(deployment) < len(all_deployments):
+            flist_data = flist_data.filter(pl.col('Deployment').is_in(deployment))
+        if len(primary) < len(all_primaries):
+            flist_data = flist_data.filter(pl.col('Primary').is_in(primary))
         if select_opponents:
             flist_data = flist_data.filter(pl.col('Opponent').is_in(selected_opponents))
             valid_list_ids = flist_data['list_id'].unique()
@@ -299,6 +323,8 @@ def show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, fop
                 <li>Game Size: {this_list['Game Size']}</li>
                 <li>Opponent's Faction: {faction_names[faction_keys.index(this_list['Opponent'])]}</li>
                 <li>Turn: {this_list['Turn']}</li>
+                <li>Deployment: {this_list['Deployment']}</li>
+                <li>Primary: {this_list['Primary']}</li>
                 <li>Score: {this_list['Score']}</li>
                 <li>Number of Units: {these_units.height}</li>
                 <li>List Points: {this_list['Total Points']}</li>

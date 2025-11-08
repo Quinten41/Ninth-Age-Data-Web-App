@@ -188,6 +188,8 @@ def load_and_organise_data(root_folder='data'):
                         'Opponent': army[1-i],
                         'Score': scores[i],
                         'Turn': turn[i],
+                        'Deployment': game.get('setup', dict()).get('deployment', 'Unknown'),
+                        'Primary': game.get('setup', dict()).get('primary', 'Unknown'),
                         'Total Points': list_points,
                         'Magicalness': magicalness,
                         'Type': tourn_type,
