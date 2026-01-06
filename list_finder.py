@@ -106,20 +106,18 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
         if select_options.intersection(ban_options):
             st.error('You have selected the same option to be both required and banned. Please adjust your selections.')
 
+        # Add the selected and banned options to the respective lists. These will be in the same order as the list selected_units.
         selected_options.append(select_options)
         banned_options.append(ban_options)
 
-    st.markdown('''<h5>Select Opponents</h5><p>Use the widget below to toggle whether or not you wish to specify the 
-                possible factions of the opponents. If you do, then use the multiselect to specify the factions.</p>''', unsafe_allow_html=True)
+    st.markdown('''<h5>Select Opponents</h5><p>Use the multiselect below to specify the possible opponents' faction.</p>''', unsafe_allow_html=True)
 
-    select_opponents = st.toggle('Select Opponents', value=False, key='select_opponents_toggle')
-    if select_opponents:
-        selected_opponents = st.multiselect(
-            'Select Opponents',
-            faction_keys,
-            default=faction_keys,
-            key=f'opponent_multiselect_{len(selected_units)}'
-        )
+    selected_opponents = st.multiselect(
+        'Select Opponents',
+        faction_keys,
+        default=faction_keys,
+        key=f'opponent_multiselect_{len(selected_units)}'
+    )
 
     st.markdown('''<h5>Specify Turn Order</h5><p>Use the following selectbox to specify whether the lists should have gone
                 first or second in the game. If "Any" is selected, lists from games where the faction went
@@ -166,17 +164,24 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
             flist_data = flist_data.filter(pl.col('Deployment').is_in(deployment))
         if len(primary) < len(all_primaries):
             flist_data = flist_data.filter(pl.col('Primary').is_in(primary))
-        if select_opponents:
+        if len(selected_opponents) < len(faction_keys):
             flist_data = flist_data.filter(pl.col('Opponent').is_in(selected_opponents))
-            valid_list_ids = flist_data['list_id'].unique()
-        else:
-            valid_list_ids = flist_data['list_id'].unique()
+
+        # Get the valid list ids
+        valid_list_ids = flist_data['list_id'].unique()
+
         # Now filter the unit and option data for these list ids
         funit_data = funit_data.filter(pl.col('list_id').is_in(valid_list_ids))
         foption_data = foption_data.filter(pl.col('list_id').is_in(valid_list_ids))
 
+        # Sort the selected_units, selected_options, selected_model_counts, and banned_options so like units are next to each other
+        perm, selected_units = map(list, zip( *sorted(enumerate(selected_units),key=lambda x: x[1]) ) )
+        selected_options = [ selected_options[perm[i]] for i in range(len(selected_options)) ]
+        selected_model_counts = [ selected_model_counts[perm[i]] for i in range(len(selected_model_counts)) ]
+        banned_options = [ banned_options[perm[i]] for i in range(len(banned_options)) ]
+        
         # Get required unit counts
-        unit_counts = Counter(selected_units)
+        unit_counts = Counter(selected_units).items()
         # Get unit counts in the actual data
         unit_mults = (
             funit_data
@@ -184,7 +189,7 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
             .agg(pl.count().alias('unit_count'))
         )
         valid_list_ids = funit_data['list_id'].unique()
-        for unit, count in unit_counts.items():
+        for unit, count in unit_counts:
             ids_with_enough = (
                 unit_mults
                 .filter((pl.col('Name') == unit) & (pl.col('unit_count') >= count))['list_id']
@@ -198,16 +203,14 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
         foption_data = foption_data.filter(pl.col('list_id').is_in(valid_list_ids))
 
         # Next, filter for the selected options
-        valid_list_ids = []
-        for list_id in funit_data['list_id'].unique().to_list():
+        matched_list_ids = [] # List to store the lits that are matched to the selected and banned options
+        for list_id in valid_list_ids:
             units_in_list = funit_data.filter(pl.col('list_id') == list_id)
             # For each unique unit name, get all unit_ids
-            unit_name_counts = Counter(selected_units)
             unit_id_assignments = []
-            for unit_name, count in unit_name_counts.items():
+            for unit_name, count in unit_counts:
                 unit_ids = units_in_list.filter(pl.col('Name') == unit_name)['unit_id'].to_list()
                 # Generate all possible assignments of unit_ids to the selected units of this name
-                # Use permutations if unit_ids are unique, combinations if not
                 if len(unit_ids) >= count:
                     unit_id_assignments.append(list(itr.permutations(unit_ids, count)))
                 else:
@@ -234,24 +237,24 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
                             match = False
                             break
                 if match:
-                    valid_list_ids.append(list_id)
+                    matched_list_ids.append(list_id)
                     break  # Only need one valid assignment per list_id
 
         # Filter the data for valid list ids
-        flist_data = flist_data.filter(pl.col('list_id').is_in(valid_list_ids))
+        flist_data = flist_data.filter(pl.col('list_id').is_in(matched_list_ids))
         # Check if any lists remain
         if flist_data.is_empty():
             st.warning('No lists found matching the specified criteria. Please adjust your selections and try again.')
             return
         # If lists remain filter the unit and option data as well
-        funit_data = funit_data.filter(pl.col('list_id').is_in(valid_list_ids))
-        foption_data = foption_data.filter(pl.col('list_id').is_in(valid_list_ids))
+        funit_data = funit_data.filter(pl.col('list_id').is_in(matched_list_ids))
+        foption_data = foption_data.filter(pl.col('list_id').is_in(matched_list_ids))
 
         # Show the data on the filtered lists
-        show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, foption_data, num_faction_lists, avg_faction_lists, var_faction_lists)
+        show_filtered_data(faction_name, matched_list_ids, flist_data, funit_data, foption_data, num_faction_lists, avg_faction_lists, var_faction_lists)
 
 @st.fragment()
-def show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, foption_data, num_faction_lists, avg_faction_lists, var_faction_lists):
+def show_filtered_data(faction_name, matched_list_ids, flist_data, funit_data, foption_data, num_faction_lists, avg_faction_lists, var_faction_lists):
     ''' Show data on the filtered lists '''    
     # Set the styles for the plots
     sns.set_theme()
@@ -308,7 +311,7 @@ def show_filtered_data(faction_name, valid_list_ids, flist_data, funit_data, fop
                 (i.e., including all factions).</p>''', unsafe_allow_html=True)
 
     # Create strings of the form "List {list_id}" for the selectbox
-    valid_list_strings = [f'List {lid}' for lid in sorted( valid_list_ids )]
+    valid_list_strings = [f'List {lid}' for lid in sorted( matched_list_ids )]
     selected_list_string = st.selectbox('Select a List to View Details', valid_list_strings, key='list_details_selectbox')
     id = int(selected_list_string.split(' ')[1])
     # Get the data for this list
