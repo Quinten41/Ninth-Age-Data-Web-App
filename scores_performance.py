@@ -177,6 +177,8 @@ def scores_page(faction_keys, list_data):
             scores = list_data.filter(pl.col('Faction') == fac)['Score'].to_list()
             if len(scores) == 0:
                 cell = ''
+            elif len(scores) == 1:
+                cell = f'{int(mean)}'
             else:
                 mean = np.mean(scores)
                 sem = stats.sem(scores) if len(scores) > 1 else 0
@@ -191,6 +193,8 @@ def scores_page(faction_keys, list_data):
             scores = first_data.filter(pl.col('Faction') == fac)['Score'].to_list()
             if len(scores) == 0:
                 cell = ''
+            elif len(scores) == 1:
+                cell = f'{int(mean)}'
             else:
                 mean = np.mean(scores)
                 sem = stats.sem(scores) if len(scores) > 1 else 0
@@ -225,6 +229,8 @@ def scores_page(faction_keys, list_data):
                 scores = list_data.filter((pl.col('Faction') == fac) & (pl.col('Opponent') == opp))['Score'].to_list()
                 if len(scores) == 0:
                     cell = ''
+                elif len(scores) == 1:
+                    cell = f'{int(mean)}'
                 else:
                     mean = np.mean(scores)
                     sem = stats.sem(scores) if len(scores) > 1 else 0
