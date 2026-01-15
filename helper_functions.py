@@ -45,6 +45,10 @@ def round_sig(num, err):
     if err is None or err == 0:
         return (round(num, 2), 0)
     sig_dig = -floor( log( err, 10 ) )
+    # If the number of sig digs on the error is equal to or greater than that of the number,
+    # then we just return the values rounded to integers.
+    if -floor( log( num, 10 ) ) >= sig_dig:
+        return (int(round(num)), int(round(num)))
     err = round( err, ndigits = sig_dig )
     sig_dig = -floor( log( err, 10 ) ) # We repeate this in case the first rounding changed the signifigant digits
     if sig_dig > 0:

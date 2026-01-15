@@ -193,13 +193,14 @@ def scores_page(faction_keys, list_data):
             scores = first_data.filter(pl.col('Faction') == fac)['Score'].to_list()
             if len(scores) == 0:
                 cell = ''
-            elif len(scores) == 1:
-                cell = f'{int(mean)}'
             else:
                 mean = np.mean(scores)
                 sem = stats.sem(scores) if len(scores) > 1 else 0
-                mean, sem = round_sig(mean, sem)
-                cell = f'{mean}±{sem}'
+                if sem < 1e-6:
+                    cell = f'{int(mean)}'
+                else:
+                    mean, sem = round_sig(mean, sem)
+                    cell = f'{mean}±{sem}'
             first_row.append(cell)
         rows.append(first_row)
         index.append('First')
@@ -208,14 +209,15 @@ def scores_page(faction_keys, list_data):
         for fac in factions:
             scores = second_data.filter(pl.col('Faction') == fac)['Score'].to_list()
             if len(scores) == 0:
-                cell = ''
-            elif len(scores) == 1:
-                cell = f'{int(mean)}'
+                    cell = ''
             else:
                 mean = np.mean(scores)
                 sem = stats.sem(scores) if len(scores) > 1 else 0
-                mean, sem = round_sig(mean, sem)
-                cell = f'{mean}±{sem}'
+                if sem < 1e-6:
+                    cell = f'{int(mean)}'
+                else:
+                    mean, sem = round_sig(mean, sem)
+                    cell = f'{mean}±{sem}'
             second_row.append(cell)
         rows.append(second_row)
         index.append('Second')
@@ -229,13 +231,17 @@ def scores_page(faction_keys, list_data):
                 scores = list_data.filter((pl.col('Faction') == fac) & (pl.col('Opponent') == opp))['Score'].to_list()
                 if len(scores) == 0:
                     cell = ''
-                elif len(scores) == 1:
-                    cell = f'{int(mean)}'
                 else:
                     mean = np.mean(scores)
                     sem = stats.sem(scores) if len(scores) > 1 else 0
-                    mean, sem = round_sig(mean, sem)
-                    cell = f'{mean}±{sem}'
+                    if sem < 1e-6:
+                        cell = f'{int(mean)}'
+                    else:
+                        try:
+                            mean, sem = round_sig(mean, sem)
+                            cell = f'{mean}±{sem}'
+                        except:
+                            print(sem)
                 matchup_row.append(cell)
             rows.append(matchup_row)
             index.append(opp)
