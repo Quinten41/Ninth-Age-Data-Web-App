@@ -238,9 +238,8 @@ def scores_page(faction_keys, list_data):
                     if sem < 1e-6:
                         cell = f'{int(mean)}'
                     else:
-                        try:
-                            mean, sem = round_sig(mean, sem)
-                            cell = f'{mean}±{sem}'
+                        mean, sem = round_sig(mean, sem)
+                        cell = f'{mean}±{sem}'
                 matchup_row.append(cell)
             rows.append(matchup_row)
             index.append(opp)
