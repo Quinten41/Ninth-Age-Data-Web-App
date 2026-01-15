@@ -180,8 +180,11 @@ def scores_page(faction_keys, list_data):
             else:
                 mean = np.mean(scores)
                 sem = stats.sem(scores) if len(scores) > 1 else 0
-                mean, sem = round_sig(mean, sem)
-                cell = f'{mean}±{sem}'
+                if sem < 1e-6:
+                    cell = f'{int(mean)}'
+                else:
+                    mean, sem = round_sig(mean, sem)
+                    cell = f'{mean}±{sem}'
             all_row.append(cell)
         rows.append(all_row)
         index.append('All')
