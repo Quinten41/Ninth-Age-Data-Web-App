@@ -42,13 +42,11 @@ def round_sig(num, err):
         tuple: A tuple containing the rounded number and its rounded error.
     '''
     # Find the number of significant digits in the error
-    if err is None or err == 0:
+    if err < 0:
+        raise ValueError("The error must be a positive number to determine significant digits.")  
+    elif err is None or err == 0:
         return (round(num, 2), 0)
     sig_dig = -floor( log( err, 10 ) )
-    # If the number of sig digs on the error is equal to or greater than that of the number,
-    # then we just return the values rounded to integers.
-    if -floor( log( num, 10 ) ) >= sig_dig:
-        return (int(round(num)), int(round(num)))
     err = round( err, ndigits = sig_dig )
     sig_dig = -floor( log( err, 10 ) ) # We repeate this in case the first rounding changed the signifigant digits
     if sig_dig > 0:
@@ -56,4 +54,5 @@ def round_sig(num, err):
     elif sig_dig == 0:
         return ( int(round( num, ndigits = sig_dig )), int(round( err, ndigits = sig_dig )) )
     else:
-        raise ValueError("The error must be a positive number to determine significant digits.")   
+        return (int(round(num)), int(round(num)))
+         
