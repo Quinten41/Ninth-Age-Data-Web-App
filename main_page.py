@@ -220,7 +220,7 @@ elif page == 'Faction Specific':
     else:
         # Filter data to only include the selected faction
         fkey = faction_keys[ faction_names.index(faction_name) ]
-        flist_data = list_data.filter(pl.col('Faction') == fkey)
+        flist_data = list_data.filter((pl.col('Faction') == fkey) & (pl.col('List')))
         valid_list_ids = flist_data.select(pl.col("list_id")).unique().to_series().implode()
         funit_data = unit_data.filter(pl.col('list_id').is_in(valid_list_ids))
         foption_data = option_data.filter(pl.col('list_id').is_in(valid_list_ids))
