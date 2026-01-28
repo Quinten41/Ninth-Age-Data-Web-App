@@ -238,7 +238,7 @@ def magic_page(list_data, option_data, magic_paths):
     # Create the figure and axes with constrained layout
     fig, ax = plt.subplots(layout='constrained')
     ax = path_df_percent.plot(kind='bar', stacked=True, colormap='Paired', width=0.7, ax=ax)
-    ax.set_ylabel('Percentage of Lists (%)')
+    ax.set_ylabel('Percentage of Wizards (%)')
     ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _: f'{100*y:.0f}%'))
     ax.set_xlabel('Faction')
     ax.set_title('Magic Path Popularity by Faction')
