@@ -83,7 +83,7 @@ def correct_option_names(option_rows):
 
 
 # Cached function to load and organise the data
-@st.cache_data
+#@st.cache_data
 def load_and_organise_data(root_folder='data'):
     '''Function to load and organise data from JSON files in the specified root folder.'''
     script_dir = os.path.dirname(os.path.abspath(__file__))
