@@ -261,7 +261,8 @@ def show_filtered_data(faction_name, matched_list_ids, flist_data, funit_data, f
     plt.style.use(['seaborn-v0_8','fast'])
 
     num_found = flist_data.height
-    st.success(f'Found {num_found} lists matching the specified criteria from the {num_faction_lists} lists for {faction_name} in the dataset.')
+    num_players = flist_data['player_id'].n_unique()
+    st.success(f'Found {num_found} lists played by {num_players} players matching the specified criteria from the {num_faction_lists} lists for {faction_name} in the dataset.')
 
     # Compute the average score and its error
     avg = flist_data['Score'].mean()
@@ -302,6 +303,35 @@ def show_filtered_data(faction_name, matched_list_ids, flist_data, funit_data, f
         ax.axvline(avg-std,label='-1 Standard Deviation', linestyle=':', color='red')
     ax.legend(loc='upper right')
 
+    st.pyplot(fig)
+    plt.close(fig)
+
+    st.markdown('''<p>The scatterplot below details the number of games played by each unique player that played at least one game with a list that matches the
+    along with the average score he/she achieved in those games. Each point is a different player, the x-axis shows the number of games played, and the y-axis
+    the average score. The error bars in the y-axis indicate on standard error. The points have been slightly jittered around the x-axis for visual clarity;
+    of course, all players played an integral number of games.</p>''', unsafe_allow_html=True)
+
+    player_data = flist_data.group_by('player_id').agg(num_games=pl.count(),average_score=pl.col('Score').mean(),std=pl.col('Score').std())
+    fig, ax = plt.subplots(layout='constrained')
+    fig.patch.set_alpha(0.0)
+    ax.patch.set_alpha(0.0)
+    std_err = player_data["std"] / np.sqrt(player_data["num_games"])
+    jitter = np.random.uniform(-0.1, 0.1, size=len(player_data))
+    x_jittered = player_data["num_games"] + jitter
+    plt.errorbar(
+        x_jittered,
+        player_data["average_score"],
+        yerr=std_err,
+        fmt="o",
+        capsize=4,
+        elinewidth=1,
+        markersize=5,
+        alpha=0.6,
+    )
+    ax.set_xlabel('Number of Games Played')
+    ax.set_ylabel('Average Score')
+    ax.set_title('Distribution of Players and their Average Scores in Selected Lists')
+    
     st.pyplot(fig)
     plt.close(fig)
 

@@ -127,6 +127,8 @@ def load_and_organise_data(root_folder='data'):
                 army = [correct_cap(game['armyOne']), correct_cap(game['armyTwo'])]
                 arm_key = ('armyListOne', 'armyListTwo')
                 scores = (game['scoreOne'], game['scoreTwo'])
+                player_id = (game.get('playerOneId'), game.get('playerTwoId'))
+                secondary = (game['secondaryPlayerOne'], game['secondaryPlayerTwo'])
                 if game['firstTurn'] == 0:
                     turn = ('First', 'Second')
                 elif game['firstTurn'] == 1:
@@ -187,9 +189,13 @@ def load_and_organise_data(root_folder='data'):
                         'Faction': army[i],
                         'Opponent': army[1-i],
                         'Score': scores[i],
+                        'player_id': player_id[i],
+                        'opponent_id': player_id[1-i],
                         'Turn': turn[i],
                         'Deployment': game.get('setup', dict()).get('deployment', 'Unknown'),
                         'Primary': game.get('setup', dict()).get('primary', 'Unknown'),
+                        'Secondary': secondary[i],
+                        'Opponent Secondary': secondary[1-i],
                         'Total Points': list_points,
                         'Magicalness': magicalness,
                         'Type': tourn_type,
