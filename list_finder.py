@@ -174,6 +174,11 @@ def list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_dat
         funit_data = funit_data.filter(pl.col('list_id').is_in(valid_list_ids))
         foption_data = foption_data.filter(pl.col('list_id').is_in(valid_list_ids))
 
+        # Check if no units have been selected and, if so, show the data as is.
+        if not selected_units:
+            show_filtered_data(faction_name, matched_list_ids, flist_data, funit_data, foption_data, num_faction_lists, avg_faction_lists, var_faction_lists)
+            return
+
         # Sort the selected_units, selected_options, selected_model_counts, and banned_options so like units are next to each other
         perm, selected_units = map(list, zip( *sorted(enumerate(selected_units),key=lambda x: x[1]) ) )
         selected_options = [ selected_options[perm[i]] for i in range(len(selected_options)) ]
