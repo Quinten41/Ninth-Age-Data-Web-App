@@ -313,7 +313,7 @@ def show_filtered_data(faction_name, matched_list_ids, flist_data, funit_data, f
 
     st.markdown('''<p>The scatterplot below details the number of games played by each unique player that played at least one game with a list that matches the
     along with the average score he/she achieved in those games. Each point is a different player, the x-axis shows the number of games played, and the y-axis
-    the average score. The error bars in the y-axis indicate on standard error. The points have been slightly jittered around the x-axis for visual clarity;
+    the average score. The error bars in the y-axis indicate one standard error. The points have been slightly jittered around the x-axis for visual clarity;
     of course, all players played an integral number of games.</p>''', unsafe_allow_html=True)
 
     player_data = flist_data.group_by('player_id').agg(num_games=pl.count(),average_score=pl.col('Score').mean(),std=pl.col('Score').std())
