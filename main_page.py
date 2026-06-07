@@ -67,12 +67,15 @@ with st.sidebar:
     st.header('Data Filters')
 
     # Date range slider
-    start_date, end_date = st.slider(
-        "Select Date Range",
-        value=(min_start_date, max_end_date),
-        format="YYYY-MM-DD",
-        min_value=min_start_date,
-        max_value=max_end_date
+    start_date = st.date_input(
+        "Select Start Date",
+        value = date(2026,4,15),
+        key = "start_date"
+    )
+    end_date = st.date_input(
+        "Select End Date",
+        value = max_end_date,
+        key = "end_date"
     )
 
     # Inject custom CSS to change selectbox format
@@ -101,6 +104,18 @@ with st.sidebar:
             ul[data-testid="stSelectboxVirtualDropdown"]>div>div>li[aria-selected="true"] {
                 background: #DEAA46;  /* change the highlighting background */
             }
+
+            /* Text colours in date submissions */
+            [data-baseweb="input"] input {
+                color: #f2f2f2;
+                background-color: #254C73;
+            }
+
+            /* All text inside the calendar */
+            [data-baseweb="calendar"] * {
+                color: black;
+            }
+
         </style>
         """,
         unsafe_allow_html=True
