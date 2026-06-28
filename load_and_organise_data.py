@@ -124,9 +124,12 @@ def load_and_organise_data(root_folder='data'):
                 tourn_type = 'Unknown'
 
             for game in tourn[1:]:
+                scores = (game['scoreOne'], game['scoreTwo'])
+                # Make sure the score is valid
+                if sum(scores) != 20 or min(scores)<0:
+                    continue
                 army = [correct_cap(game['armyOne']), correct_cap(game['armyTwo'])]
                 arm_key = ('armyListOne', 'armyListTwo')
-                scores = (game['scoreOne'], game['scoreTwo'])
                 player_id = (game.get('playerOneId'), game.get('playerTwoId'))
                 secondary = (game['secondaryPlayerOne'], game['secondaryPlayerTwo'])
                 if game['firstTurn'] == 0:

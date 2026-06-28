@@ -197,8 +197,8 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
     st.subheader('Faction Options')
 
     st.markdown(f'<p>Usage and performance statistics for faction wide options (e.g., magic items) are shown in the table below. \
-                Each row corresponds to a magic item used by the {faction_name}, \
-                and each column a statistic about that magic item.</p>', 
+                Each row corresponds to an option used by the {faction_name}, \
+                and each column a statistic about that option.</p>', 
                 unsafe_allow_html=True)
     
     # Compute magic item statistics
@@ -372,9 +372,14 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
     plt.close(fig)
     
      
-#    st.markdown(f'''<p>In the table below the unit statistics are summarised.
-#                Each row corresponds to a unit in the {faction_name}, and each column a statistic about that unit.
-#                ''', unsafe_allow_html=True)
+    st.markdown(f'''<p>In the table below the unit statistics are summarised.
+                Each row corresponds to a unit in the {faction_name}, 
+                and each column a statistic about that unit.
+                The reported p-values are the likelihood of the unit score being
+                as extreme as it is given the overal faction performance. In other words,
+                like the performance plot above, they are computed to indicate internal,
+                rather than external, balance of units.
+                ''', unsafe_allow_html=True)
 #    
 #
 #    # 1) total occurrences of unit (including duplicates) and 2) unique lists containing unit
@@ -477,15 +482,6 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
 
 
     # Add a section on options for individual units
-    st.subheader('Unit Options')
-
-    # Create a table detailing statistics on the unit options
-    st.markdown(f'''<p>The table below displays various option statistics.
-                Each row corresponds to a unit in the {faction_name} and an option that unit can take,
-                and each column a statistic about that option. The option 'base' indicates that the
-                corresponding statistics are about the whole unit.
-                ''', unsafe_allow_html=True)
-
 
 # ============================================================
 # OPTION ROWS
@@ -607,7 +603,52 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
         .sort(['Unit Name', 'Option Name'])
     )
 
-    st.dataframe(full_option_data_table)
+    unit_data_table = (
+        full_option_data_table
+        .filter(pl.col('Option Name') == 'Base') 
+        .select([
+            'Unit Name',
+            '# Taken / # of Lists',
+            '# of Lists with Option / # of Lists',
+            'Average Points per List',
+            'Average Score',
+            'p-value for Average Score',
+            'Average Score Effect Size',
+        ])
+        .rename(
+        {'# of Lists with Option / # of Lists':'# of Lists with Unit / # of Lists'}
+        )
+    )
+
+    st.dataframe(unit_data_table)
+
+
+    option_data_table = full_option_data_table.select([
+            'Unit Name', 'Option Name',
+            '# Taken / # of Lists',
+            '# of Lists with Option / # of Lists',
+            'Average Score',
+            'p-value for Average Score',
+            'Average Score Effect Size',
+    ])
+
+
+    st.subheader('Unit Options')
+
+    # Create a table detailing statistics on the unit options
+    st.markdown(f'''<p>The table below displays various option statistics.
+                Each row corresponds to a unit in the {faction_name} and an option that unit can take,
+                and each column a statistic about that option. The option 'base' indicates that the
+                corresponding statistics are about the whole unit.
+                The reported p-values are the likelihood of the unit score being
+                as extreme as it is given the overal faction performance. In other words,
+                like the performance plot above, they are computed to indicate internal,
+                rather than external, balance of units. If you want to see the p-value of an
+                option with computed using the distribution of scores of the unit it was taken on,
+                select the unit in the unit specific section below the chart.
+                ''', unsafe_allow_html=True)
+
+    st.dataframe(option_data_table)
 
     # Show the unit specific report
     # This allows the user to select a specific unit and see more data about that units options
