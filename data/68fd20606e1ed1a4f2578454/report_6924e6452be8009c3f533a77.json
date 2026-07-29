@@ -1,0 +1,141 @@
+{
+    "id_match": "6924e6452be8009c3f533a77",
+    "firstTurn": 0,
+    "primary": 0,
+    "secondaryPlayerOne": true,
+    "secondaryPlayerTwo": false,
+    "type": 1,
+    "id": "6924e6452be8009c3f533a77",
+    "scoreOne": 20,
+    "scoreTwo": 0,
+    "playerOneId": "62c887cdea6031439894631c",
+    "playerTwoId": "5f7f5bbb4a48af02881328e7",
+    "armyOne": "ID",
+    "armyTwo": "KoE",
+    "setup": {
+        "map": "Vetia 1",
+        "deployment": "Refused Flank",
+        "primary": "Trophies of War"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Paladin",
+                "cost": 410,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Revered Unicorn",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Uther's Mettle",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Percival's Panoply",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Sainted and Gallantry",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Knights of the Realm",
+                "cost": 365,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 9,
+                "category": "Core"
+            },
+            {
+                "name": "Knights of the Realm",
+                "cost": 365,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 9,
+                "category": "Core"
+            },
+            {
+                "name": "Men-at-Arms",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Ordo Wardens",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Sacred Reliquary",
+                "cost": 180,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Fey Knight",
+                "cost": 360,
+                "options": [
+                    {
+                        "name": "Champion of the Green Knight",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Fey"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 410,
+            "Core": 730,
+            "Special": 500,
+            "Total": 2000
+        },
+        "magicalness": 0,
+        "modelCount": {
+            "characters": 1,
+            "height0": 0,
+            "height1": 25,
+            "height2": 18,
+            "height3": 1,
+            "height4": 1,
+            "height5": 0,
+            "total": 46
+        },
+        "unitCount": {
+            "characters": 1,
+            "singleModel": 2,
+            "rankAndFile": 3,
+            "total": 6
+        }
+    }
+}

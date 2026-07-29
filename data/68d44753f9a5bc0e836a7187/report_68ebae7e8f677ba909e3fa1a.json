@@ -1,0 +1,186 @@
+{
+    "id_match": "68ebae7e8f677ba909e3fa1a",
+    "firstTurn": 1,
+    "primary": 1,
+    "secondaryPlayerOne": false,
+    "secondaryPlayerTwo": true,
+    "type": 1,
+    "id": "68ebae7e8f677ba909e3fa1a",
+    "scoreOne": 2,
+    "scoreTwo": 18,
+    "playerOneId": "5fe25c4419847f482e002ad0",
+    "playerTwoId": "5ff1d7cca0e7c81c04d81467",
+    "armyOne": "UD",
+    "armyTwo": "DL",
+    "setup": {
+        "deployment": "Mutual Encroachment"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Miser of Sugulag",
+                "cost": 860,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Mirrored Scales",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Segmented Shell",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sentinel of Nukuja",
+                "cost": 700,
+                "options": [
+                    {
+                        "name": "Thaumaturgy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Strixian Spirit",
+                        "type": "Mount"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Mesmerising Plumage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 23,
+                "category": "Core"
+            },
+            {
+                "name": "Succubi",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Mesmerising Plumage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 22,
+                "category": "Core"
+            },
+            {
+                "name": "Hoarders",
+                "cost": 445,
+                "options": [
+                    {
+                        "name": "Clinging Ichor",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Favoured of Greed",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Hoarders",
+                "cost": 445,
+                "options": [
+                    {
+                        "name": "Clinging Ichor",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Favoured of Greed",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Hoarders",
+                "cost": 240,
+                "options": [],
+                "index": 2,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Bloat Flies",
+                "cost": 310,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Aves"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1560,
+            "Core": 1000,
+            "Special": 1130,
+            "Total": 4000
+        },
+        "magicalness": 14,
+        "modelCount": {
+            "characters": 2,
+            "height0": 0,
+            "height1": 45,
+            "height2": 0,
+            "height3": 13,
+            "height4": 3,
+            "height5": 0,
+            "total": 63
+        },
+        "unitCount": {
+            "characters": 2,
+            "singleModel": 0,
+            "rankAndFile": 6,
+            "total": 8
+        }
+    }
+}
