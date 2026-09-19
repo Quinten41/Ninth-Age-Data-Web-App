@@ -1,0 +1,518 @@
+{
+    "id_match": "688ce770bd2bd8f9118732f3",
+    "firstTurn": 1,
+    "primary": 0,
+    "secondaryPlayerOne": true,
+    "secondaryPlayerTwo": false,
+    "type": 1,
+    "id": "688ce770bd2bd8f9118732f3",
+    "scoreOne": 17,
+    "scoreTwo": 3,
+    "playerOneId": "5e451bdda07d3f7c73f2bb38",
+    "playerTwoId": "66d5de9464fc1b255b2ba227",
+    "armyOne": "DH",
+    "armyTwo": "WDG",
+    "setup": {
+        "map": "Clearwater Springs",
+        "deployment": "Bottleneck",
+        "primary": "Forage and Plunder",
+        "secondaryPlayerTwo": "Commit to Battle"
+    },
+    "armyListOne": {
+        "units": [
+            {
+                "name": "King",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Shield Bearers",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Rune of Steel",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Destruction",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Might",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Craftsmanship",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Shielding",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Rune",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Resolve",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Runic Smith",
+                "cost": 405,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Iron",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Lightning",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Harnessing",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Rune of Channelling",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Battle Rune",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Rune of Resolve",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Resilience",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Greybeards",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Vanguard",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of the Anvil",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Greybeards",
+                "cost": 505,
+                "options": [
+                    {
+                        "name": "Shield Wall",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Throwing Weapons",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Swiftness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Deep Watch",
+                "cost": 426,
+                "options": [
+                    {
+                        "name": "Rune of Resolve",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Runic Standard of Wisdom",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 22,
+                "category": "Special"
+            },
+            {
+                "name": "Deep Watch",
+                "cost": 385,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 1,
+                "models": 20,
+                "category": "Special"
+            },
+            {
+                "name": "Deep Watch",
+                "cost": 360,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 20,
+                "category": "Special"
+            },
+            {
+                "name": "Miners",
+                "cost": 224,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Special"
+            },
+            {
+                "name": "Forge Wardens",
+                "cost": 200,
+                "options": [],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Forge Wardens",
+                "cost": 200,
+                "options": [],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Anvil of Power",
+                "cost": 200,
+                "options": [
+                    {
+                        "name": "Rune of Resolve",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Gleaming",
+                        "type": "Battle Runes"
+                    },
+                    {
+                        "name": "Rune of Resilience",
+                        "type": "Battle Runes"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 985,
+            "Core": 1015,
+            "Special": 1995,
+            "Total": 3995
+        },
+        "magicalness": 0,
+        "modelCount": {
+            "characters": 2,
+            "height0": 0,
+            "height1": 134,
+            "height2": 1,
+            "height3": 0,
+            "height4": 0,
+            "height5": 0,
+            "total": 137
+        },
+        "unitCount": {
+            "characters": 2,
+            "singleModel": 1,
+            "rankAndFile": 8,
+            "total": 11
+        }
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Sorcerer",
+                "cost": 550,
+                "options": [
+                    {
+                        "name": "Black Steed",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Occultism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Dark Familiar",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Doomlord",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Warding of Unity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Supernatural Dexterity",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Mask of Mindless Violence",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Trophy Rack",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 576,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Zealots' Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 0,
+                "models": 23,
+                "category": "Core"
+            },
+            {
+                "name": "Barbarian Horsemen",
+                "cost": 225,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Core"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 570,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Damnation",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Warrior Knights",
+                "cost": 545,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Icon of the Infinite",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 9,
+                "category": "Special"
+            },
+            {
+                "name": "Battleshrine",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Warrior Chariot",
+                "cost": 220,
+                "options": [
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1040,
+            "Core": 1001.25,
+            "Special": 2155,
+            "Total": 3996
+        },
+        "magicalness": 11,
+        "modelCount": {
+            "characters": 2,
+            "height0": 0,
+            "height1": 23,
+            "height2": 17,
+            "height3": 14,
+            "height4": 2,
+            "height5": 0,
+            "total": 58
+        },
+        "unitCount": {
+            "characters": 2,
+            "singleModel": 2,
+            "rankAndFile": 5,
+            "total": 9
+        }
+    }
+}

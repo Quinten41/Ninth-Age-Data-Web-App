@@ -1,0 +1,256 @@
+{
+    "id_match": "67f140361fed61a6cc2e3e45",
+    "firstTurn": 0,
+    "primary": 0,
+    "secondaryPlayerOne": false,
+    "secondaryPlayerTwo": false,
+    "type": 1,
+    "id": "67f140361fed61a6cc2e3e45",
+    "scoreOne": 13,
+    "scoreTwo": 7,
+    "playerOneId": "5de7603e29951610d11f742d",
+    "playerTwoId": "65b42a6844f96203af8dced1",
+    "armyOne": "SA",
+    "armyTwo": "DL",
+    "setup": {
+        "deployment": "Refused Flank",
+        "primary": "Hold the Centre",
+        "secondaryPlayerTwo": ""
+    },
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Anurarch Archmage",
+                "cost": 555,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops and Closely Guarded",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Carved Tablet",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Invasive Mastery",
+                        "type": "Telepathic Mastery"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Veteran",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Talisman of the Void",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Saurian Raptor",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Enclave Wizard",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Shield",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Dusk Forged",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Glory of the Dawn Age",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Skink Veteran",
+                "cost": 280,
+                "options": [
+                    {
+                        "name": "Serpent's Nest Charm",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Pouakai Sky Tyrant",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Obelisk of Collaboration",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Warriors",
+                "cost": 350,
+                "options": [
+                    {
+                        "name": "Rending Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear and Shield",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 35,
+                "category": "Core"
+            },
+            {
+                "name": "Raptor Pack",
+                "cost": 160,
+                "options": [],
+                "index": 0,
+                "models": 6,
+                "category": "Core"
+            },
+            {
+                "name": "Raptor Riders",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 14,
+                "category": "Special"
+            },
+            {
+                "name": "Tegu Guards",
+                "cost": 580,
+                "options": [
+                    {
+                        "name": "Koru Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Special"
+            },
+            {
+                "name": "Thyroscutus Herd",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Lodestone Shield",
+                        "type": "Howdah"
+                    },
+                    {
+                        "name": "Great Protector",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Venomous Fortress",
+                        "type": "Howdah"
+                    }
+                ],
+                "index": 0,
+                "models": 1,
+                "category": "Special"
+            },
+            {
+                "name": "Rhamphodon Riders",
+                "cost": 220,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1325,
+            "Core": 1005,
+            "Special": 1670,
+            "Total": 4000
+        },
+        "magicalness": 3,
+        "modelCount": {
+            "characters": 3,
+            "height0": 0,
+            "height1": 85,
+            "height2": 20,
+            "height3": 3,
+            "height4": 1,
+            "height5": 0,
+            "total": 112
+        },
+        "unitCount": {
+            "characters": 3,
+            "singleModel": 1,
+            "rankAndFile": 6,
+            "total": 10
+        }
+    }
+}

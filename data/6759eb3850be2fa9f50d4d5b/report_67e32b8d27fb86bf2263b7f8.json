@@ -1,0 +1,454 @@
+{
+    "id_match": "67e32b8d27fb86bf2263b7f8",
+    "firstTurn": -1,
+    "primary": 2,
+    "secondaryPlayerOne": false,
+    "secondaryPlayerTwo": false,
+    "type": 1,
+    "id": "67e32b8d27fb86bf2263b7f8",
+    "scoreOne": 5,
+    "scoreTwo": 15,
+    "playerOneId": "5ed9a33d2753723c242b6857",
+    "playerTwoId": "5f7b8acd4a48af02881328dc",
+    "armyOne": "DL",
+    "armyTwo": "SE",
+    "setup": {},
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Sentinel of Nukuja",
+                "cost": 740,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Strixian Spirit",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Thaumaturgy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Sorcerous Antennae",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Miser of Sugulag",
+                "cost": 730,
+                "options": [
+                    {
+                        "name": "Divination",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Unnatural Roots",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Mirrored Scales",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Musician",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Succubi",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Imps",
+                "cost": 267,
+                "options": [
+                    {
+                        "name": "All-Seeing Eye",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Firestarter - Spear of Infinity",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 11,
+                "category": "Core"
+            },
+            {
+                "name": "Imps",
+                "cost": 255,
+                "options": [
+                    {
+                        "name": "All-Seeing Eye",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Firestarter - Spear of Infinity",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Clawed Fiends",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 430,
+                "options": [],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Threshing Engine",
+                "cost": 430,
+                "options": [],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1470,
+            "Core": 1172,
+            "Special": 1355,
+            "Total": 3997
+        },
+        "magicalness": 13,
+        "modelCount": {
+            "characters": 2,
+            "height0": 0,
+            "height1": 51,
+            "height2": 0,
+            "height3": 6,
+            "height4": 6,
+            "height5": 0,
+            "total": 65
+        },
+        "unitCount": {
+            "characters": 2,
+            "singleModel": 0,
+            "rankAndFile": 7,
+            "total": 9
+        }
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Druid",
+                "cost": 455,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Shamanism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Sylvan Bow",
+                        "type": "Shooting Weapons"
+                    },
+                    {
+                        "name": "Sylvan Blades",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Rod of Battle",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sylvan Archers",
+                "cost": 505,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 25,
+                "category": "Core"
+            },
+            {
+                "name": "Heath Riders",
+                "cost": 345,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Heath Hunters",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Forest Guard",
+                "cost": 165,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Core"
+            },
+            {
+                "name": "Kestrel Knights",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Skirmisher, Light Lance and Sylvan Bow",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Wild Huntsmen",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Wild Huntsmen",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 5,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 2,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Forest Rangers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 3,
+                "models": 10,
+                "category": "Special"
+            },
+            {
+                "name": "Blade Dancers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 7,
+                "category": "Special"
+            },
+            {
+                "name": "Blade Dancers",
+                "cost": 190,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 7,
+                "category": "Special"
+            },
+            {
+                "name": "Briar Maidens",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Unseen Arrows"
+            },
+            {
+                "name": "Briar Maidens",
+                "cost": 320,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 10,
+                "category": "Unseen Arrows"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 455,
+            "Core": 1015,
+            "Special": 1890,
+            "Total": 4000
+        },
+        "magicalness": 7,
+        "modelCount": {
+            "characters": 1,
+            "height0": 0,
+            "height1": 94,
+            "height2": 40,
+            "height3": 3,
+            "height4": 0,
+            "height5": 0,
+            "total": 138
+        },
+        "unitCount": {
+            "characters": 1,
+            "singleModel": 0,
+            "rankAndFile": 14,
+            "total": 15
+        },
+        "sylvanShooting": 49
+    }
+}

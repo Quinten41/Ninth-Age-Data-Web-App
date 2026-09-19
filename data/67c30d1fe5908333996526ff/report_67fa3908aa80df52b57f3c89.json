@@ -1,0 +1,245 @@
+{
+    "id_match": "67fa3908aa80df52b57f3c89",
+    "firstTurn": 0,
+    "primary": 1,
+    "secondaryPlayerOne": false,
+    "secondaryPlayerTwo": false,
+    "type": 1,
+    "id": "67fa3908aa80df52b57f3c89",
+    "scoreOne": 0,
+    "scoreTwo": 20,
+    "playerOneId": "6004a98f3b57873d448d5d44",
+    "playerTwoId": "5de7603e29951610d11f75dc",
+    "armyOne": "WDG",
+    "armyTwo": "WDG",
+    "setup": {
+        "deployment": "Refused Flank",
+        "primary": "Forage and Plunder",
+        "secondaryPlayerOne": "",
+        "secondaryPlayerTwo": ""
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Chosen Lord",
+                "cost": 660,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Recruiting Officer",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "War Dais",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Trophy Rack",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Burning Portent",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Immortal Gauntlets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Potion of Swiftness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wrath",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Idol of Spite",
+                        "type": "Gifts of the Dark Gods"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Sorcerer",
+                "cost": 560,
+                "options": [
+                    {
+                        "name": "Trusted Adviser",
+                        "type": "Specialist Skill"
+                    },
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Mimic Cloak",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wizard Master",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Occultism",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Zealots' Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Barbarian Horsemen",
+                "cost": 180,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Light Lance",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Fallen",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Feldrak Elder",
+                "cost": 500,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 500,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 7,
+                "category": "Special"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Damnation",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 490,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Damnation",
+                        "type": "Other"
+                    }
+                ],
+                "index": 2,
+                "models": 6,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1220,
+            "Core": 1000,
+            "Special": 1980,
+            "Total": 4000
+        },
+        "magicalness": 7,
+        "modelCount": {
+            "characters": 2,
+            "height0": 0,
+            "height1": 25,
+            "height2": 5,
+            "height3": 19,
+            "height4": 0,
+            "height5": 1,
+            "total": 52
+        },
+        "unitCount": {
+            "characters": 2,
+            "singleModel": 1,
+            "rankAndFile": 6,
+            "total": 9
+        }
+    }
+}

@@ -1,0 +1,414 @@
+{
+    "id_match": "67fa5dd14e67620f41354bdd",
+    "firstTurn": 0,
+    "primary": 0,
+    "secondaryPlayerOne": false,
+    "secondaryPlayerTwo": false,
+    "type": 1,
+    "id": "67fa5dd14e67620f41354bdd",
+    "scoreOne": 12,
+    "scoreTwo": 8,
+    "playerOneId": "611e689e2781604de4d20ba0",
+    "playerTwoId": "5e38865ba07d3f7c73f2bafe",
+    "armyOne": "WDG",
+    "armyTwo": "DL",
+    "setup": {
+        "deployment": "Spearhead",
+        "primary": "Hidden Agendas",
+        "secondaryPlayerTwo": ""
+    },
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Chosen Lord",
+                "cost": 870,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wasteland Dragon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Trophy Rack",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Icon of the Infinite",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Touch of Greatness",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Immortal Gauntlets",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Wyrd Stone",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Dark Prelate",
+                        "type": "Gifts of the Dark Gods"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Doomlord",
+                "cost": 510,
+                "options": [
+                    {
+                        "name": "Light Troops",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Trophy Rack",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Basalt Infusion",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Mask of Mindless Violence",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Binding Scroll",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 550,
+                "options": [
+                    {
+                        "name": "Zealots' Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 24,
+                "category": "Core"
+            },
+            {
+                "name": "Warriors",
+                "cost": 250,
+                "options": [
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 595,
+                "options": [
+                    {
+                        "name": "Flaming Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 8,
+                "category": "Special"
+            },
+            {
+                "name": "Forsworn",
+                "cost": 330,
+                "options": [
+                    {
+                        "name": "Great Weapon",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Damnation",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Chosen Knights",
+                "cost": 405,
+                "options": [
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Battleshrine",
+                "cost": 320,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Flayers",
+                "cost": 170,
+                "options": [],
+                "index": 0,
+                "models": 5,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1380,
+            "Core": 1000,
+            "Special": 1820,
+            "Total": 4000
+        },
+        "magicalness": 6,
+        "modelCount": {
+            "characters": 2,
+            "height0": 0,
+            "height1": 36,
+            "height2": 5,
+            "height3": 12,
+            "height4": 4,
+            "height5": 0,
+            "total": 59
+        },
+        "unitCount": {
+            "characters": 2,
+            "singleModel": 1,
+            "rankAndFile": 6,
+            "total": 9
+        }
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Maw of Akaan",
+                "cost": 820,
+                "options": [
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Evocation",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Hammer Hand",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Unholy Appetite",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Miser of Sugulag",
+                "cost": 780,
+                "options": [
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Trampling Hooves",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Mirrored Scales",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Thaumaturgy",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Smothering Coils",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Horrifying Visage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Succubi",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Horrifying Visage",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 20,
+                "category": "Core"
+            },
+            {
+                "name": "Imps",
+                "cost": 255,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "All-Seeing Eye",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Firestarter - Smite the Unbeliever",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 10,
+                "category": "Core"
+            },
+            {
+                "name": "Hoarders",
+                "cost": 544,
+                "options": [
+                    {
+                        "name": "Chitinous Scales",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Blazing Glory",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Trampling Hooves",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Blazing Glory",
+                "cost": 370,
+                "options": [
+                    {
+                        "name": "Trampling Hooves",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 1,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1600,
+            "Core": 1115,
+            "Special": 1284,
+            "Total": 3999
+        },
+        "magicalness": 9,
+        "modelCount": {
+            "characters": 2,
+            "height0": 0,
+            "height1": 50,
+            "height2": 0,
+            "height3": 6,
+            "height4": 2,
+            "height5": 0,
+            "total": 60
+        },
+        "unitCount": {
+            "characters": 2,
+            "singleModel": 2,
+            "rankAndFile": 4,
+            "total": 8
+        }
+    }
+}
