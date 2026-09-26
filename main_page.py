@@ -15,6 +15,7 @@ from welcome_page import welcome_page
 from scores_performance import scores_page
 from faction_popularity import popularity_page
 from magic import magic_page
+from objectives_deployment import objectives_deployment_page
 from faction_specific_page import faction_specific_page
 from list_finder import list_finder_page
 
@@ -58,6 +59,7 @@ with st.sidebar:
          'Scores & Faction Performance',
          'Faction Popularity',
          'Magic',
+         'Objectives and Deployment',
          'Faction Specific',
          'List Finder',
          'Raw Data'],
@@ -66,7 +68,7 @@ with st.sidebar:
 
     st.header('Data Filters')
 
-    # Date range slider
+    # Date range selector
     start_date = st.date_input(
         "Select Start Date",
         value = date(2026,4,15),
@@ -78,48 +80,6 @@ with st.sidebar:
         key = "end_date"
     )
 
-    # Inject custom CSS to change selectbox format
-    st.markdown(
-        """
-        <style>
-            div[data-baseweb="select"] > div:first-child {
-                background-color: #f2f2f2;  /* change to desired background */
-                color: #254C73;  /* change the selected text's colour */
-            }
-
-            ul[data-testid="stSelectboxVirtualDropdown"]>div>div>li {
-                color: #254C73; /* change the dropdown text's colour */
-            }
-
-            /* Attempt to style the dropdown arrow */
-            .stSelectbox [data-baseweb="select"] svg {
-                color: #254C73 !important;  /* Change to your desired color */
-                fill: #254C73 !important;
-            }
-            /* Change the cursor color in input and textarea fields */
-            input, textarea {
-                caret-color: #254C73 !important;
-            }
-
-            ul[data-testid="stSelectboxVirtualDropdown"]>div>div>li[aria-selected="true"] {
-                background: #DEAA46;  /* change the highlighting background */
-            }
-
-            /* Text colours in date submissions */
-            [data-baseweb="input"] input {
-                color: #f2f2f2;
-                background-color: #254C73;
-            }
-
-            /* All text inside the calendar */
-            [data-baseweb="calendar"] * {
-                color: black;
-            }
-
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
 
     # Choose whether or not to select by list size
     select_by_list_size = st.checkbox('Filter by List Size (in points)', value=False)
@@ -226,6 +186,9 @@ elif page == 'Faction Popularity':
 
 elif page == 'Magic':
     magic_page(list_data, option_data, magic_paths)
+
+elif page == 'Objectives and Deployment':
+    objectives_deployment_page(list_data, faction_keys)
 
 elif page == 'Faction Specific':
     faction_name = st.selectbox('Select a Faction', faction_names, index=None)

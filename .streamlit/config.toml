@@ -1,29 +1,31 @@
 [theme]
-# The preset Streamlit theme that your custom theme inherits from.
-#
-# This can be one of the following: "light" or "dark".
-#base = 'dark'
+# Base light mode ensures main body & popovers use dark text
+base = "light"
 
-# Primary accent color.
+# Primary accent color (gold/amber)
 primaryColor = "#DEAA46"
 
-# Background color of the app.
+# Main app body background (near-white)
 backgroundColor = "#f2f2f2"
 
-# Background color used for most interactive widgets.
-secondaryBackgroundColor = "#254C73"
+# Main app widget/popover background (light gray)
+secondaryBackgroundColor = "#e5e7eb"
 
-# Color used for almost all text.
-#textColor = "#000000"
+# Dark text for main page and datepicker popovers
+textColor = "#1f2937"
 
-# Color used for all links.
-#linkColor =
+font = "DejaVuSans"
 
-# Whether or not links should be displayed with an underline.
-#linkUnderline =
+# Dedicated sidebar styling
+[theme.sidebar]
+# Dark blue sidebar background
+backgroundColor = "#254C73"
 
-# The default font
-font="DejaVuSans"
+# Dark blue container background for sidebar inputs
+secondaryBackgroundColor = "#1b3a5a"
+
+# White text for sidebar labels and controls
+textColor = "#ffffff"
 
 [runner]
 magicEnabled = false

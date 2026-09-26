@@ -131,7 +131,9 @@ def load_and_organise_data(root_folder='data'):
                 army = [correct_cap(game['armyOne']), correct_cap(game['armyTwo'])]
                 arm_key = ('armyListOne', 'armyListTwo')
                 player_id = (game.get('playerOneId'), game.get('playerTwoId'))
-                secondary = (game['secondaryPlayerOne'], game['secondaryPlayerTwo'])
+                secondary_scored = (game['secondaryPlayerOne'], game['secondaryPlayerTwo'])
+                setup = game.get('setup', dict())
+                secondary = (setup.get('secondaryPlayerOne'),setup.get('secondaryPlayerTwo'))
                 if game['firstTurn'] == 0:
                     turn = ('First', 'Second')
                 elif game['firstTurn'] == 1:
@@ -195,10 +197,12 @@ def load_and_organise_data(root_folder='data'):
                         'player_id': player_id[i],
                         'opponent_id': player_id[1-i],
                         'Turn': turn[i],
-                        'Deployment': game.get('setup', dict()).get('deployment', 'Unknown'),
-                        'Primary': game.get('setup', dict()).get('primary', 'Unknown'),
-                        'Secondary': secondary[i],
+                        'Deployment': setup.get('deployment', 'Unknown'),
+                        'Primary': setup.get('primary', 'Unknown'),
+                        'Secondary': secondary[i], 
                         'Opponent Secondary': secondary[1-i],
+                        'Secondary Scored': secondary_scored[i],
+                        'Opponent Secondary Scored': secondary_scored[1-i],
                         'Total Points': list_points,
                         'Magicalness': magicalness,
                         'Type': tourn_type,
