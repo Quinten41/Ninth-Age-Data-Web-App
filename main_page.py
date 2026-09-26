@@ -59,7 +59,7 @@ with st.sidebar:
          'Scores & Faction Performance',
          'Faction Popularity',
          'Magic',
-         'Objectives and Deployment',
+         'Objectives & Deployment',
          'Faction Specific',
          'List Finder',
          'Raw Data'],
@@ -187,7 +187,7 @@ elif page == 'Faction Popularity':
 elif page == 'Magic':
     magic_page(list_data, option_data, magic_paths)
 
-elif page == 'Objectives and Deployment':
+elif page == 'Objectives & Deployment':
     objectives_deployment_page(list_data, faction_keys)
 
 elif page == 'Faction Specific':
