@@ -84,7 +84,8 @@ def faction_performance_breakdown(list_data, faction_keys):
     margin_vals = summary['margin'].to_numpy()
     percent_vals = summary['percent'].to_numpy()
 
-    fig, ax = plt.subplots(layout="constrained", figsize=(10, 5))
+    # Removed figsize to allow constrained layout to work naturally, matching the magicalness plot
+    fig, ax = plt.subplots(layout="constrained")
     
     # Draw error bars
     ax.errorbar(
@@ -119,7 +120,6 @@ def faction_performance_breakdown(list_data, faction_keys):
     # Clean background
     fig.patch.set_alpha(0.0)
     ax.patch.set_alpha(0.0)
-    ax.grid(True, axis='y', linestyle=':', alpha=0.6)
     
     st.pyplot(fig)
     plt.close(fig)
