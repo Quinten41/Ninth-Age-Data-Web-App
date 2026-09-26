@@ -84,7 +84,6 @@ def faction_performance_breakdown(list_data, faction_keys):
     margin_vals = summary['margin'].to_numpy()
     percent_vals = summary['percent'].to_numpy()
 
-    # Removed figsize to allow constrained layout to work naturally, matching the magicalness plot
     fig, ax = plt.subplots(layout="constrained")
     
     # Draw error bars
@@ -152,24 +151,43 @@ def objectives_deployment_page(list_data, faction_keys):
     st.dataframe(dep_table.set_index('Deployment'), use_container_width=True)
 
     # -------------------------------------------------------------------------
+    # Faction Filter for Primary/Secondary
+    # -------------------------------------------------------------------------
+    st.divider()
+    st.subheader('Primary & Secondary Objectives')
+    st.markdown('''<p>Use the multi-select below to filter the Primary and Secondary objective tables by specific factions.</p>''', unsafe_allow_html=True)
+    
+    selected_factions = st.multiselect(
+        'Select Factions to Include',
+        options=faction_keys,
+        default=faction_keys,
+        key='obj_table_factions'
+    )
+    
+    if selected_factions:
+        filtered_list_data = list_data.filter(pl.col('Faction').is_in(selected_factions))
+    else:
+        filtered_list_data = list_data.filter(pl.lit(False))
+
+    # -------------------------------------------------------------------------
     # Primary Objective Stats
     # -------------------------------------------------------------------------
-    st.subheader('Primary Objectives')
-    st.markdown('''<p>The table below tracks the total frequency of each primary objective. It provides the average scores and standard error for both the attacking and defending players across all matches.</p>''', unsafe_allow_html=True)
+    st.markdown('#### Primary Objectives')
+    st.markdown('''<p>The table below tracks the total frequency of each primary objective. It provides the average scores and standard error for both the attacking and defending players across all selected matches.</p>''', unsafe_allow_html=True)
 
-    prim_games = list_data.filter(pl.col('Primary') != 'Unknown').unique(subset=['game_id']).group_by('Primary').agg(
+    prim_games = filtered_list_data.filter(pl.col('Primary') != 'Unknown').unique(subset=['game_id']).group_by('Primary').agg(
         pl.len().alias('Total Games')
     )
     
     prim_attacker = calc_mean_se(
-        list_data, 
+        filtered_list_data, 
         'Primary', 
         (pl.col('Primary') != 'Unknown') & (pl.col('Turn') == 'First'), 
         'Attacker Avg Score (±SE)'
     )
     
     prim_defender = calc_mean_se(
-        list_data, 
+        filtered_list_data, 
         'Primary', 
         (pl.col('Primary') != 'Unknown') & (pl.col('Turn') == 'Second'), 
         'Defender Avg Score (±SE)'
@@ -184,37 +202,43 @@ def objectives_deployment_page(list_data, faction_keys):
     # -------------------------------------------------------------------------
     # Secondary Objective Stats
     # -------------------------------------------------------------------------
-    st.subheader('Secondary Objectives')
-    st.markdown('''<p>The table below displays the total selections for each secondary objective. It breaks down the average scores (including standard error) overall, as well as grouped by attackers and defenders.</p>''', unsafe_allow_html=True)
+    st.markdown('#### Secondary Objectives')
+    st.markdown('''<p>The table below displays the total selections for each secondary objective. It breaks down the average scores (including standard error) overall, grouped by attackers and defenders, and displays the success rate percentage.</p>''', unsafe_allow_html=True)
 
     sec_filter = (pl.col('Secondary').is_not_null()) & (pl.col('Secondary') != 'Unknown')
 
-    sec_games = list_data.filter(sec_filter).group_by('Secondary').agg(
+    sec_games = filtered_list_data.filter(sec_filter).group_by('Secondary').agg(
         pl.len().alias('Total Selections')
     )
     
     sec_overall = calc_mean_se(
-        list_data, 
+        filtered_list_data, 
         'Secondary', 
         sec_filter, 
         'Overall Avg Score (±SE)'
     )
     
     sec_attacker = calc_mean_se(
-        list_data, 
+        filtered_list_data, 
         'Secondary', 
         sec_filter & (pl.col('Turn') == 'First'), 
         'Attacker Avg Score (±SE)'
     )
     
     sec_defender = calc_mean_se(
-        list_data, 
+        filtered_list_data, 
         'Secondary', 
         sec_filter & (pl.col('Turn') == 'Second'), 
         'Defender Avg Score (±SE)'
     )
 
-    sec_table = sec_games.join(sec_overall, on='Secondary', how='left') \
+    # Calculate success rate as a percentage of 'Secondary Scored' outcomes
+    sec_success = filtered_list_data.filter(sec_filter).group_by('Secondary').agg(
+        (pl.col('Secondary Scored').cast(pl.Float64).mean() * 100).round(1).alias('Success Rate (%)')
+    )
+
+    sec_table = sec_games.join(sec_success, on='Secondary', how='left') \
+                         .join(sec_overall, on='Secondary', how='left') \
                          .join(sec_attacker, on='Secondary', how='left') \
                          .join(sec_defender, on='Secondary', how='left') \
                          .sort('Total Selections', descending=True).to_pandas()
