@@ -282,7 +282,7 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
 
         # Keep only the relevant columns (no avg points column)
         magic_items_table = magic_table_pd[[
-            'Magic Item',
+            'Option Name',
             '# of Entries / Total # of Lists',
             '# of Lists with Item / Total # of Lists',
             'Average Score',
