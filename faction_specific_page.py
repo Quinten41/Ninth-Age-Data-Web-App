@@ -270,7 +270,6 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
 
         # Reorder and rename columns for display (NO average-points column and don't compute points)
         magic_table_pd = magic_table_pd.reset_index().rename(columns={
-            'Option Name': 'Option Name',
             'total_entries': '# of Entries',
             'lists_with_item': '# of Lists with Item',
             'fraction_total_entries': '# of Entries / Total # of Lists',
@@ -290,7 +289,7 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
             'Average Score Effect Size'
         ]]
 
-        st.dataframe(magic_items_table.set_index('Magic Item').round(4))
+        st.dataframe(magic_items_table.set_index('Option Name').round(4))
 
 
     # Next a section on the units in the faction
