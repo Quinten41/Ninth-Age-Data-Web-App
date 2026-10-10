@@ -23,12 +23,14 @@ def welcome_page():
                 the popularity of different pairings in team tournaments.</li>
         <li><b>Magic</b>: This page provides an overview about how much magic lists take, what paths are taken, and how
                 these factors affect list performance.</li>
+        <li><b>Objectives & Deployment</b>: This page gives data on primary and secondary objectives as well as deployment.
+                The data is broken down faction by faction.
         <li><b>Faction Specific</b>: This page presents more specific insights for each faction; the performance of each category
             (e.g., characters, core, special, etc.) and the popularity and performance of units and unit options are all detailed here.</li>
-        <li><b>List Finder</b>: This page allows you to find, and view data on, lists that meet specified criteria. You can filter lists by
-            faction, opponent's faction, turn order, units taken, and unit options taken. Once you have made your selections,
-            you can view the overall distribution of scores for the lists that meet your criteria, as well as data on each of the
-            individual lists. The full roster of units and options for each list is also provided.</li>
+        <li><b>Advanced Filtering</b>: This page allows you to find, filter, and view data on, lists that meet specified criteria. You can filter lists by
+            faction, opponent's faction, turn order, units taken, unit options taken, unit options not taken, deployment, etc. Once you have made your selections,
+            you can view the overall distribution of scores for the lists that meet your criteria, data on each of the
+            individual lists, and player distribution. The full roster of units and options for each list is also provided.</li>
         <li><b>Raw Data</b>: This page allows you to view the raw data tables that underpin the analysis shown on the other pages. You
             can even download these tables as .csv files and start performing your own analysis. Please keep in mind that,
             if you haven't applied many filters, these .csv files could be very, very large.</li>

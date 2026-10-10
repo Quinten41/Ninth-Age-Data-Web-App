@@ -16,8 +16,9 @@ from scores_performance import scores_page
 from faction_popularity import popularity_page
 from magic import magic_page
 from objectives_deployment import objectives_deployment_page
-from faction_specific_page import faction_specific_page
-from list_finder import list_finder_page
+from faction_specific import faction_specific_page
+from advanced_filtering import advanced_filtering_page
+from average_list_tool import average_list_tool_page
 
 # Import function to organise and load data
 from load_and_organise_data import load_and_organise_data
@@ -61,7 +62,8 @@ with st.sidebar:
          'Magic',
          'Objectives & Deployment',
          'Faction Specific',
-         'List Finder',
+         'Advanced Filtering',
+         'Average List Tool',
          'Raw Data'],
          default='Welcome',
     )
@@ -206,8 +208,11 @@ elif page == 'Faction Specific':
         # This is a fragment so data won't be resorted on each interaction
         faction_specific_page(faction_name, flist_data, funit_data, foption_data)
 
-elif page == 'List Finder':
-    list_finder_page(faction_keys, magic_paths, list_data, unit_data, option_data)
+elif page == 'Advanced Filtering':
+    advanced_filtering_page(faction_keys, magic_paths, list_data, unit_data, option_data)
+
+elif page == 'Average List Tool':
+    average_list_tool_page(faction_keys, list_data, unit_data, option_data)
 
 elif page == 'Raw Data':
     st.title('Raw Data')
