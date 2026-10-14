@@ -26,7 +26,7 @@ def advanced_filtering_page(faction_keys, magic_paths, list_data, unit_data, opt
     ''' The content of the list finder page '''
 
     # The title of the page
-    st.title('List Finder')
+    st.title('Advanced Filtering')
 
     # Add a description of the page
     st.markdown(f'''<p>This page allows you to select a faction and specify list and game details (units, options, opponents).
