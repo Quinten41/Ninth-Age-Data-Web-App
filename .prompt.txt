@@ -1,0 +1,17 @@
+Hello. I am building a streamlit app to analyse data from a game called Ninth Age. I attached the main_page.py, the script to load and organise the data, and some other files.
+
+
+I want to make the following changes to the average_list_tool page:
+
+
+1. The UI should change so the global options can be expanded and contracted like each of the units.
+
+2. I attached a file called units.js. This file will be in the same folder as average_list_tool.py and contains all the unit names with their type. For units with more than one model it contains a min entry. This entry will tell you how to calculate the change in the average list price when the extra model pricing is adjusted. For example, if extra models go up by 4 points in a unit with 20 models whose "min" is 15, then the unit's price should change by 4*5 = 20.
+
+3. I attached a text file called pricing_exceptions.txt. Please read through this carefully. The generic rule is that options are priced differently for each unit, and the price applies per model not per unit. For example, if unit "Swarms" and "Clusters" both had an option named "Bats", the default should be that the price of "Bats" can be adjusted for units "Swarms" and "Clusters" separately, and the resulting price change is multiplied by the number of models in the unit (if the model count is None, it means you should assume there is one model in the unit, as in the original average_list_tool.py).  The pricing_exceptions.txt document details, in plain text, every exception to that (i.e. options that are just priced at the faction level, so any price changes apply to every type of unit that took that option, and/or options whose price is for the entire unit, not each model, and thus should not be multiplied by the number of models in the unit). The rules in this document should entirely replace the previous magic_cond variable in the old average_list_tool.py
+
+4. I attached a file that will be placed in the same folder as the main file called constants.py. Please put lists of exceptions from pricing_exceptions.txt in constants.py rather than cluttering up the main file. This also makes it much easier to change if these exceptions change. The min unit sizes should be extracted directly from units.js, and should not be placed in constants.py.
+
+
+
+Your output should be an updated constants.py and an updated average_list_tool.py. 

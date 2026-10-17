@@ -1,0 +1,56 @@
+The average list page generically assumes that options are priced per-model and that prices of options can change for each unit. This document lists exceptions to this rule.
+
+Global exceptions:
+ - Options with type "Magic Items" are priced at the faction level and are priced per unit.
+ - Options with type "Command Group" are priced at the faction level and are always priced per unit, not per model.
+  - The option named "Wizard Conclave" is always priced per unit rather than per model.
+
+BH exceptions:
+  - Options with type "Totem Bearer" are priced per unit rather than per model.
+  - Options with the type "Totems" are not priced and shouldn't be included at all.
+  - Options with the name "Ambush" should be priced per unit rather than per model. This does not apply to the unit named "Centaurs".
+
+DE exceptions:
+  - The "Warlock Acolytes" option for the unit "Dread Acolytes" is priced per unit rather than per model.
+
+DH exceptions:
+
+DL exceptions:
+  - Options with type "Manifestations" are priced at the faction level for units in the category "Characters" and are priced, as is normal, at the unit level for every other unit. 
+  - The following manifestations are priced per unit rather than per model: Mark of the Eternal Champion; Sorcerous Antennae; Unnatural Roots.
+
+EoS exceptions:
+
+HE exceptions:
+  - Options with type "Honour" are priced at the faction level rather than the unit level.
+
+ID exceptions:
+  - The keys to the citadel creates an exception, but it's minor and I don't know how to handle it so we'll ignore it for now.
+
+KoE exceptions:
+  - The options "Solemn Oath", "Knight Banneret", and "Prepared Position" are priced per unit rather than per model.
+
+OK exceptions:
+  - Options with the type "Big Name" are priced at the faction level rather than the unit level.
+
+OnG exceptions:
+  - The option names "Herd" and "Dashers" are priced per unit.
+
+SA exceptions:
+  - Options with the type "Howdah" are priced at the faction level.
+
+SE exceptions:
+  - Options with type "Kindred" or "Aspect of Nature" are priced at the faction level.
+
+UD exceptions:
+
+VC exceptions:
+  - Options with type "Ancestral Blood Power" or "Blood Powers" are priced at the faction level.
+
+VS exceptions:
+  - The options "Bloodfur Praetorian" and "Tunnel Digger" are priced per unit rather than per model.
+
+WDG exceptions:
+  - For the purposes of calculating the point changes in the average list, any changes in point costs of the faction-level-priced options of the type "Magic Items", when taken by the unit "Feldrak Ancestor", are doubled.
+
+
