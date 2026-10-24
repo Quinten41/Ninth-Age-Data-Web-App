@@ -156,30 +156,29 @@ def popularity_page(tournament_type, faction_keys, list_data, start_date, end_da
                     information about pairing popularity in team tournaments.')
         return
 
-    team_games = list_data.filter(pl.col('Type') == 'Teams')
     # Count games for each (Opponent, Faction) pair
-    counts = team_games.group_by(['Opponent', 'Faction']).agg([
+    counts = list_data.group_by(['Opponent', 'Faction']).agg([
         pl.len().alias('num_games')
     ])
     # Pivot to wide format
     counts_pivot = counts.pivot(
         values='num_games',
         index='Opponent',
-        columns='Faction'
+        on='Faction'
     ).fill_null(0)
     # For each Faction, compute the total number of games played (as Faction)
-    faction_totals = team_games.group_by('Faction').agg([
+    faction_totals = list_data.group_by('Faction').agg([
         pl.len().alias('All')
     ])
     # Total number of games
     All = faction_totals['All'].sum()
 
-    st.markdown(f'The heatmap below shows the percentage of games each faction has been paired against an opponent in a team tournament \
-                out of all games played by that faction in team tournaments. \
+    st.markdown(f'The heatmap below shows the percentage of games each faction has been paired against an opponent \
+                out of all games played by that faction. \
                 The rows indicate the faction, while the columns indicate the opponent. \
                 The colour provides a visual cue of the percentage, with darker colours indicating a higher percentage. \
-                The "All" column is the percentage of games played by that faction in team tournaments out of all games played in team tournaments; \
-                given the current selections, the total number of games played in team tournaments is {All//2}.</p>',
+                The "All" column is the percentage of games played by that faction in all tournaments out of all games played in any tournament; \
+                given the current selections, the total number of games played is {All//2}.</p>',
                 unsafe_allow_html=True)
 
     # Calculate the percent for each (Opponent, Faction) entry
@@ -211,7 +210,7 @@ def popularity_page(tournament_type, faction_keys, list_data, start_date, end_da
     plt.rcParams['figure.constrained_layout.use'] = True
     plt.xlabel('Faction')
     plt.ylabel('Opponent')
-    plt.title('Matchup Popularity in Team Tournaments')
+    plt.title('Pairing Popularity')
     fig = plt.gcf()
     fig.patch.set_alpha(0.0)  # Figure background transparent
     ax.patch.set_alpha(0.0)  # Axes background transparent

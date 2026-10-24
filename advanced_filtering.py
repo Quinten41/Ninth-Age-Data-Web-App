@@ -191,7 +191,7 @@ def advanced_filtering_page(faction_keys, magic_paths, list_data, unit_data, opt
         unit_mults = (
             funit_data
             .group_by(['list_id', 'Name'])
-            .agg(pl.count().alias('unit_count'))
+            .agg(pl.len().alias('unit_count'))
         )
         valid_list_ids = funit_data['list_id'].unique()
         for unit, count in unit_counts:
@@ -316,7 +316,7 @@ def show_filtered_data(faction_name, matched_list_ids, flist_data, funit_data, f
     the average score. The error bars in the y-axis indicate one standard error. The points have been slightly jittered around the x-axis for visual clarity;
     of course, all players played an integral number of games.</p>''', unsafe_allow_html=True)
 
-    player_data = flist_data.group_by('player_id').agg(num_games=pl.count(),average_score=pl.col('Score').mean(),std=pl.col('Score').std())
+    player_data = flist_data.group_by('player_id').agg(num_games=pl.len(),average_score=pl.col('Score').mean(),std=pl.col('Score').std())
     fig, ax = plt.subplots(layout='constrained')
     fig.patch.set_alpha(0.0)
     ax.patch.set_alpha(0.0)

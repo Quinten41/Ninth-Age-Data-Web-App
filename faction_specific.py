@@ -48,7 +48,7 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
     cat_points_wide = cat_points.pivot(
         values='cat_points',
         index='list_id',
-        columns='Category'
+        on='Category'
     ).fill_null(0)
 
     # Join with Score and Total Points from flist_data
@@ -60,9 +60,9 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
 
     # Melt to long format for plotting
     melt_vars = [cat for cat in categories if cat in cat_points_wide.columns]
-    cat_data = cat_points_wide.melt(
-        id_vars=['list_id', 'Score', 'Total Points'],
-        value_vars=melt_vars,
+    cat_data = cat_points_wide.unpivot(
+        index=['list_id', 'Score', 'Total Points'],
+        on=melt_vars,
         variable_name='Category',
         value_name='cat_points'
     ).filter(pl.col('cat_points').is_not_null())

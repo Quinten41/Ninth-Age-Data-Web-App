@@ -211,7 +211,7 @@ def magic_page(list_data, option_data, magic_paths):
         .pivot(
             values='count',
             index='Faction',
-            columns='Option Name'
+            on='Option Name'
         )
         .fill_null(0)
     )
