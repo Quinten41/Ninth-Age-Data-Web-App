@@ -132,7 +132,7 @@ def popularity_page(tournament_type, faction_keys, list_data, start_date, end_da
                 unsafe_allow_html=True)
     # Make a pie chart of the number of games played with each faction
     faction_counts = list_data.group_by('Faction').agg([
-        pl.count().alias('num_games')
+        pl.len().alias('num_games')
     ]).sort('num_games', descending=True)
     faction_counts_pd = faction_counts.to_pandas()
     fig, ax = plt.subplots(layout='constrained')
@@ -159,7 +159,7 @@ def popularity_page(tournament_type, faction_keys, list_data, start_date, end_da
     team_games = list_data.filter(pl.col('Type') == 'Teams')
     # Count games for each (Opponent, Faction) pair
     counts = team_games.group_by(['Opponent', 'Faction']).agg([
-        pl.count().alias('num_games')
+        pl.len().alias('num_games')
     ])
     # Pivot to wide format
     counts_pivot = counts.pivot(
@@ -169,7 +169,7 @@ def popularity_page(tournament_type, faction_keys, list_data, start_date, end_da
     ).fill_null(0)
     # For each Faction, compute the total number of games played (as Faction)
     faction_totals = team_games.group_by('Faction').agg([
-        pl.count().alias('All')
+        pl.len().alias('All')
     ])
     # Total number of games
     All = faction_totals['All'].sum()

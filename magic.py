@@ -126,7 +126,7 @@ def magicalness_plot(list_data):
     # Group by magicalness and calculate mean, count, std, sem, percent
     summary = magicalness_data.group_by('Magicalness').agg([
         pl.col('Score').mean().alias('mean'),
-        pl.col('Score').count().alias('count'),
+        pl.col('Score').len().alias('count'),
         pl.col('Score').std().alias('std')
     ])
     z_ci = norm.ppf(1 - (1 - confidence_interval / 100) / 2)
@@ -201,7 +201,7 @@ def magic_page(list_data, option_data, magic_paths):
     counts_df = (
         joined
         .group_by(['Faction', 'Option Name'])
-        .agg(pl.count().alias('count'))
+        .agg(pl.len().alias('count'))
         .filter(pl.col('Option Name').is_in(magic_paths))
     )
 

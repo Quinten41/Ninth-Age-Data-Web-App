@@ -67,7 +67,7 @@ def faction_performance_breakdown(list_data, faction_keys):
     # Group by faction and calculate mean, count, std
     summary = filtered_data.group_by('Faction').agg([
         pl.col('Score').mean().alias('mean'),
-        pl.col('Score').count().alias('count'),
+        pl.col('Score').len().alias('count'),
         pl.col('Score').std().alias('std')
     ]).sort('mean', descending=True)
     

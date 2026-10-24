@@ -226,7 +226,7 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
     else:
         # 1) total occurrences (including duplicates) and 2) unique lists containing the magic item
         magic_counts = foption_magic_all.group_by('Option Name').agg([
-            pl.count().alias('total_entries'),
+            pl.len().alias('total_entries'),
             pl.col('list_id').n_unique().alias('lists_with_item')
         ])
 
@@ -345,7 +345,7 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
 
     # Create a plot showing how many units are being taken and how many points are being spent on them
     unit_stats = funit_data.group_by(['Name', 'list_id']).agg([
-        pl.col('Name').count().alias('count'),
+        pl.col('Name').len().alias('count'),
         pl.col('Cost').mean().alias('points')
     ])
     unit_summary = unit_stats.group_by('Name').agg([
@@ -383,7 +383,7 @@ def faction_specific_page(faction_name, flist_data, funit_data, foption_data):
 #
 #    # 1) total occurrences of unit (including duplicates) and 2) unique lists containing unit
 #    unit_counts = funit_data.group_by('Name').agg([
-#        pl.count().alias('total_entries'),
+#        pl.len().alias('total_entries'),
 #        pl.col('list_id').n_unique().alias('lists_with_unit')
 #    ])
 #
@@ -708,7 +708,7 @@ def unit_specific_report(faction_name, foption_data, funit_data, unit_names):
 
     # Add information about the number of units being taken to uoption_data using polars
     unit_counts = uunit_data.group_by('list_id').agg([
-        pl.col('unit_id').count().alias('num_units'),
+        pl.col('unit_id').len().alias('num_units'),
         pl.col('Score').first().alias('Score')
     ])
     # Build new rows as polars DataFrame
