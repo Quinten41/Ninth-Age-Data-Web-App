@@ -1,0 +1,20 @@
+{
+    "id_match": "6949cdf83a9acb213fa08b6c",
+    "firstTurn": 0,
+    "primary": 1,
+    "secondaryPlayerOne": false,
+    "secondaryPlayerTwo": true,
+    "type": 1,
+    "id": "6949cdf83a9acb213fa08b6c",
+    "scoreOne": 0,
+    "scoreTwo": 20,
+    "playerOneId": "5e80cadd564ba657f6b8fc41",
+    "playerTwoId": "614dcf762e819071f9f291ef",
+    "armyOne": "BH",
+    "armyTwo": "OK",
+    "setup": {
+        "map": "Taphria 7",
+        "deployment": "Bottleneck",
+        "primary": "Divide and Conquer"
+    }
+}

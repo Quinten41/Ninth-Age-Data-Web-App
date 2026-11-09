@@ -1,0 +1,184 @@
+{
+    "id_match": "67d6ee589ef8c4cd450f1899",
+    "firstTurn": 1,
+    "primary": 0,
+    "secondaryPlayerOne": false,
+    "secondaryPlayerTwo": false,
+    "type": 1,
+    "id": "67d6ee589ef8c4cd450f1899",
+    "scoreOne": 20,
+    "scoreTwo": 0,
+    "playerOneId": "62419e64c4babc7434f75ccb",
+    "playerTwoId": "5e148e0d2e0a9f5fff274c63",
+    "armyOne": "VC",
+    "armyTwo": "SA",
+    "setup": {
+        "deployment": "Mutual Encroachment",
+        "primary": "Secure Target"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Anurarch Archmage",
+                "cost": 460,
+                "options": [
+                    {
+                        "name": "Light Troops and Closely Guarded",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Alchemy",
+                        "type": "Path"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Tegu Warriors",
+                "cost": 555,
+                "options": [
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Wizard Conclave",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 30,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Hunters",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Skink Hunters",
+                "cost": 170,
+                "options": [
+                    {
+                        "name": "Poisoned Javelin",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 12,
+                "category": "Core"
+            },
+            {
+                "name": "Raptor Pack",
+                "cost": 160,
+                "options": [],
+                "index": 0,
+                "models": 6,
+                "category": "Core"
+            },
+            {
+                "name": "Tegu Guards",
+                "cost": 549,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Koru Stone",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "models": 24,
+                "category": "Special"
+            },
+            {
+                "name": "Caiman Elders",
+                "cost": 495,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 6,
+                "category": "Special"
+            },
+            {
+                "name": "Weapon Beasts",
+                "cost": 470,
+                "options": [
+                    {
+                        "name": "Spearback",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Taurosaur",
+                "cost": 485,
+                "options": [
+                    {
+                        "name": "Magnetic Great Bow",
+                        "type": "Howdah"
+                    }
+                ],
+                "index": 0,
+                "category": "Magna Sauria"
+            },
+            {
+                "name": "Taurosaur",
+                "cost": 485,
+                "options": [
+                    {
+                        "name": "Magnetic Great Bow",
+                        "type": "Howdah"
+                    }
+                ],
+                "index": 1,
+                "category": "Magna Sauria"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 460,
+            "Core": 1055,
+            "Special": 1514,
+            "Total": 3999
+        },
+        "magicalness": 1,
+        "modelCount": {
+            "characters": 1,
+            "height0": 0,
+            "height1": 78,
+            "height2": 6,
+            "height3": 10,
+            "height4": 0,
+            "height5": 2,
+            "total": 97
+        },
+        "unitCount": {
+            "characters": 1,
+            "singleModel": 2,
+            "rankAndFile": 7,
+            "total": 10
+        }
+    }
+}

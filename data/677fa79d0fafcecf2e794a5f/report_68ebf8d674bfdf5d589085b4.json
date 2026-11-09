@@ -1,0 +1,200 @@
+{
+    "id_match": "68ebf8d674bfdf5d589085b4",
+    "firstTurn": 0,
+    "primary": 0,
+    "secondaryPlayerOne": false,
+    "secondaryPlayerTwo": false,
+    "type": 1,
+    "id": "68ebf8d674bfdf5d589085b4",
+    "scoreOne": 15,
+    "scoreTwo": 5,
+    "playerOneId": "5de7603e29951610d11f773b",
+    "playerTwoId": "6030075794eaaf62bf838f37",
+    "armyOne": "DL",
+    "armyTwo": "DL",
+    "setup": {
+        "map": "Vetia 4",
+        "deployment": "Assault at First Light",
+        "primary": "Trophies of War"
+    },
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Vanadra's Scourge",
+                "cost": 740,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Unnatural Roots",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Whipcrack Tail",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Incendiary Ichor",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Kuulima's Deceiver",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Protean Magic [2]",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Charged Tendrils",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Guiding Charged Tendrils",
+                        "type": "Other"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Kuulima's Deceiver",
+                "cost": 430,
+                "options": [
+                    {
+                        "name": "Protean Magic [2]",
+                        "type": "Other"
+                    },
+                    {
+                        "name": "Charged Tendrils",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Guiding Charged Tendrils",
+                        "type": "Other"
+                    }
+                ],
+                "index": 1,
+                "category": "Characters"
+            },
+            {
+                "name": "Succubi",
+                "cost": 534,
+                "options": [
+                    {
+                        "name": "Bronze Backbone",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 22,
+                "category": "Core"
+            },
+            {
+                "name": "Myrmidons",
+                "cost": 471,
+                "options": [
+                    {
+                        "name": "Bronze Backbone",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 21,
+                "category": "Core"
+            },
+            {
+                "name": "Hellhounds",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Digestive Vomit",
+                        "type": "Manifestations"
+                    }
+                ],
+                "index": 0,
+                "models": 15,
+                "category": "Special"
+            },
+            {
+                "name": "Hellhounds",
+                "cost": 240,
+                "options": [],
+                "index": 1,
+                "models": 9,
+                "category": "Special"
+            },
+            {
+                "name": "Brazen Beasts",
+                "cost": 382,
+                "options": [
+                    {
+                        "name": "Incendiary Ichor",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Brazen Beasts",
+                "cost": 382,
+                "options": [
+                    {
+                        "name": "Incendiary Ichor",
+                        "type": "Manifestations"
+                    },
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 1,
+                "models": 3,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 1600,
+            "Core": 1005,
+            "Special": 1394,
+            "Total": 3999
+        },
+        "magicalness": 0,
+        "modelCount": {
+            "characters": 3,
+            "height0": 0,
+            "height1": 43,
+            "height2": 24,
+            "height3": 0,
+            "height4": 6,
+            "height5": 0,
+            "total": 76
+        },
+        "unitCount": {
+            "characters": 3,
+            "singleModel": 0,
+            "rankAndFile": 6,
+            "total": 9
+        }
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "id_match": "692320a8e19ea3d9055f3e76",
+    "firstTurn": 1,
+    "primary": 0,
+    "secondaryPlayerOne": true,
+    "secondaryPlayerTwo": false,
+    "type": 1,
+    "id": "692320a8e19ea3d9055f3e76",
+    "scoreOne": 14,
+    "scoreTwo": 6,
+    "playerOneId": "628ea2f1e93d8a55fec51088",
+    "playerTwoId": "5de7603e29951610d11f73ef",
+    "armyOne": "OK",
+    "armyTwo": "OK",
+    "setup": {
+        "map": "Vetia 1",
+        "deployment": "Frontline Crash",
+        "primary": "Trophies of War"
+    },
+    "armyListTwo": {
+        "units": [
+            {
+                "name": "Bruisers",
+                "cost": 290,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    }
+                ],
+                "index": 0,
+                "models": 5,
+                "category": "Core"
+            },
+            {
+                "name": "Scraplings",
+                "cost": 230,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Spear",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 30,
+                "category": "Core"
+            },
+            {
+                "name": "Tusker Cavalry",
+                "cost": 475,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Tusker Cavalry",
+                "cost": 475,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Stalker's Standard",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 1,
+                "models": 4,
+                "category": "Special"
+            },
+            {
+                "name": "Kin-Eater",
+                "cost": 150,
+                "options": [],
+                "index": 0,
+                "category": "Special"
+            },
+            {
+                "name": "Frost Mammoth",
+                "cost": 380,
+                "options": [
+                    {
+                        "name": "Hunting Spear",
+                        "type": "Shooting Weapons"
+                    }
+                ],
+                "index": 0,
+                "category": "Chained Beasts"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 0,
+            "Core": 520,
+            "Special": 1100,
+            "Total": 2000
+        },
+        "magicalness": 1,
+        "modelCount": {
+            "characters": 0,
+            "height0": 0,
+            "height1": 30,
+            "height2": 0,
+            "height3": 6,
+            "height4": 8,
+            "height5": 1,
+            "total": 45
+        },
+        "unitCount": {
+            "characters": 0,
+            "singleModel": 2,
+            "rankAndFile": 4,
+            "total": 6
+        }
+    }
+}

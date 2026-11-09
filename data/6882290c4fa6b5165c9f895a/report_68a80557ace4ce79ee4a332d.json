@@ -1,0 +1,137 @@
+{
+    "id_match": "68a80557ace4ce79ee4a332d",
+    "firstTurn": 0,
+    "primary": 0,
+    "secondaryPlayerOne": true,
+    "secondaryPlayerTwo": false,
+    "type": 1,
+    "id": "68a80557ace4ce79ee4a332d",
+    "scoreOne": 20,
+    "scoreTwo": 0,
+    "playerOneId": "60546a223ad7e32e26993109",
+    "playerTwoId": "6137111ab374db6e592d10dc",
+    "armyOne": "WDG",
+    "armyTwo": "HE",
+    "setup": {
+        "deployment": "Mutual Encroachment",
+        "primary": "Spoils of War"
+    },
+    "armyListOne": {
+        "units": [
+            {
+                "name": "Sorcerer",
+                "cost": 695,
+                "options": [
+                    {
+                        "name": "General",
+                        "type": "Leadership"
+                    },
+                    {
+                        "name": "Wasteland Dragon",
+                        "type": "Mount"
+                    },
+                    {
+                        "name": "Wizard Adept",
+                        "type": "Wizard Level"
+                    },
+                    {
+                        "name": "Occultism",
+                        "type": "Path"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    },
+                    {
+                        "name": "Hero's Heart",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Spell Scroll",
+                        "type": "Magic Items"
+                    }
+                ],
+                "index": 0,
+                "category": "Characters"
+            },
+            {
+                "name": "Warriors",
+                "cost": 390,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Zealots' Banner",
+                        "type": "Magic Items"
+                    },
+                    {
+                        "name": "Paired Weapons",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 16,
+                "category": "Core"
+            },
+            {
+                "name": "Chosen Knights",
+                "cost": 405,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Lust",
+                        "type": "Favour"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            },
+            {
+                "name": "Feldraks",
+                "cost": 310,
+                "options": [
+                    {
+                        "name": "Standard Bearer",
+                        "type": "Command Group"
+                    },
+                    {
+                        "name": "Halberd",
+                        "type": "Melee Weapons"
+                    }
+                ],
+                "index": 0,
+                "models": 3,
+                "category": "Special"
+            }
+        ],
+        "pointsPerCategory": {
+            "Characters": 695,
+            "Core": 487.5,
+            "Special": 715,
+            "Total": 1800
+        },
+        "magicalness": 4,
+        "modelCount": {
+            "characters": 1,
+            "height0": 0,
+            "height1": 16,
+            "height2": 0,
+            "height3": 0,
+            "height4": 6,
+            "height5": 0,
+            "total": 23
+        },
+        "unitCount": {
+            "characters": 1,
+            "singleModel": 0,
+            "rankAndFile": 3,
+            "total": 4
+        }
+    }
+}
